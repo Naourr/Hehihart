@@ -70,7 +70,8 @@ p {
 }
 section, .section {
     width: 100vw;
-    height: fit-content;
+    min-height: 100vh;
+    max-height: fit-content;
     gap: var(--title-content-gap);
     padding: var(--vpad) var(--hpad);
 }
