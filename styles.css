@@ -24,11 +24,11 @@
 }
 @font-face {
     font-family: 'futura';
-    src: url(/Hehihart/fonts/futura/futura\ medium\ bt.ttf);
+    src: url(/fonts/futura/futura\ medium\ bt.ttf);
 }
 @font-face {
     font-family: 'aquire';
-    src: url(/Hehihart/fonts/aquire/Aquire.otf);
+    src: url(/fonts/aquire/Aquire.otf);
 }
 * {
     box-sizing: border-box;
@@ -221,7 +221,7 @@ nav {
     height: calc(100vh - var(--navheight));
     width: 100vw;
     overflow: hidden;
-    background-image: url(/Hehihart/images/parallax/demon_wood/parallax-demon-woods-bg.png);
+    background-image: url(/images/parallax/demon_wood/parallax-demon-woods-bg.png);
     background-size: cover;
     background-position: center;
     color: var(--bg2text);
@@ -233,13 +233,13 @@ nav {
     position: relative;
 }
 .parallax-layer:nth-child(1) {
-  background-image: url('/Hehihart/images/parallax/demon_wood/parallax-demon-woods-far-trees.png');
+  background-image: url('/images/parallax/demon_wood/parallax-demon-woods-far-trees.png');
 }
 .parallax-layer:nth-child(2) {
-  background-image: url('/Hehihart/images/parallax/demon_wood/parallax-demon-woods-mid-trees.png');
+  background-image: url('/images/parallax/demon_wood/parallax-demon-woods-mid-trees.png');
 }
 .parallax-layer:nth-child(3) {
-  background-image: url('/Hehihart/images/parallax/demon_wood/parallax-demon-woods-close-trees.png');
+  background-image: url('/images/parallax/demon_wood/parallax-demon-woods-close-trees.png');
 }
 .parallax-layer {
     width: 120%;
