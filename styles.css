@@ -70,7 +70,7 @@ p {
 }
 section, .section {
     width: 100vw;
-    min-height: 100vh;
+    min-height: calc(100vh - var(--navheight));
     max-height: fit-content;
     gap: var(--title-content-gap);
     padding: var(--vpad) var(--hpad);
@@ -230,8 +230,9 @@ nav {
 .parallax-title {
     z-index: 10;
     height: 100%;
-    text-align: center;
     position: relative;
+    top: 26vh;
+    text-align: center;
 }
 .parallax-layer:nth-child(1) {
   background-image: url('/images/parallax/demon_wood/parallax-demon-woods-far-trees.png');
