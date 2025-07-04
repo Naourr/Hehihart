@@ -313,8 +313,7 @@ nav {
 /* SECTIONS START */
 
 #services, #gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
 }
 
 /* SECTIONS END */
@@ -367,5 +366,7 @@ footer {
         width: 100%;
     }
 }
-
+@media screen and (orientation: portrait) {
+    
+}
 /* MEDIAS END */
