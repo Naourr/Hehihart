@@ -279,7 +279,7 @@ footer {
         --hpad: 1.5rem;
     }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 680px) {
     .menu-icon {
         display: flex;
     }
@@ -288,7 +288,7 @@ footer {
         flex-direction: column;
         background-color: var(--nav-footer-bg);
         position: fixed;
-        top: -300px;
+        top: -100vh;
         left: 0;
         width: 100%;
         opacity: 0;
