@@ -143,6 +143,48 @@ nav {
 
 /* NAV END */
 
+/* PARALLAX START */
+
+.parallax {
+    position: relative;
+    height: calc(100vh - var(--navheight));
+    width: 100vw;
+    overflow: hidden;
+    background-image: url(/images/parallax/demon_wood/parallax-demon-woods-bg.png);
+    background-size: cover;
+    background-position: center;
+    color: var(--bg2text);
+}
+.parallax-title {
+    z-index: 10;
+    height: 100%;
+    position: relative;
+    top: 26vh;
+    text-align: center;
+}
+.parallax-layer:nth-child(1) {
+  background-image: url('/images/parallax/demon_wood/parallax-demon-woods-far-trees.png');
+}
+.parallax-layer:nth-child(2) {
+  background-image: url('/images/parallax/demon_wood/parallax-demon-woods-mid-trees.png');
+}
+.parallax-layer:nth-child(3) {
+  background-image: url('/images/parallax/demon_wood/parallax-demon-woods-close-trees.png');
+}
+.parallax-layer {
+    width: 120%;
+    height: 120%;
+    position: absolute;
+    top: -10%;
+    left: -10%;
+    background-size: cover;
+    background-position: center;
+    will-change: transform;
+    pointer-events: none;
+}
+
+/* PARALLAX END */
+
 /* HERO START */
 
 #hero {
@@ -215,47 +257,14 @@ nav {
 
 /* SECTIONS TEMPLATE END */
 
-/* PARALLAX SECTION START */
+/* SECTIONS START */
 
-.parallax {
-    position: relative;
-    height: calc(100vh - var(--navheight));
-    width: 100vw;
-    overflow: hidden;
-    background-image: url(/images/parallax/demon_wood/parallax-demon-woods-bg.png);
-    background-size: cover;
-    background-position: center;
-    color: var(--bg2text);
-}
-.parallax-title {
-    z-index: 10;
-    height: 100%;
-    position: relative;
-    top: 26vh;
-    text-align: center;
-}
-.parallax-layer:nth-child(1) {
-  background-image: url('/images/parallax/demon_wood/parallax-demon-woods-far-trees.png');
-}
-.parallax-layer:nth-child(2) {
-  background-image: url('/images/parallax/demon_wood/parallax-demon-woods-mid-trees.png');
-}
-.parallax-layer:nth-child(3) {
-  background-image: url('/images/parallax/demon_wood/parallax-demon-woods-close-trees.png');
-}
-.parallax-layer {
-    width: 120%;
-    height: 120%;
-    position: absolute;
-    top: -10%;
-    left: -10%;
-    background-size: cover;
-    background-position: center;
-    will-change: transform;
-    pointer-events: none;
+#services, #gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
-/* PARALLAX SECTION END */
+/* SECTIONS END */
 
 /* FOOTER START */
 
