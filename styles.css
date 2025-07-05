@@ -15,12 +15,40 @@
 .loading {
     width: 100vw;
     height: 100vh;
-    background-color: var(--bg1);
+    background-color: black;
     color: var(--accent1);
     position: fixed;
     top: 0;
     left: 0;
     z-index: 100;
+}
+.loadscreen {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 200;
+    top: 0;
+    left: 0;
+    pointer-events: all;
+    background-color: black;
+    opacity: 1;
+}
+.loadscreen.fade-out {
+    animation-name: fade-out;
+    animation-delay: 5s;
+    animation-timing-function: ease-in;
+    animation-duration: 0.8s;
+}
+@keyframes fade-out {
+    0% {
+    }
+    100% {
+        opacity: 0;
+    }
+}
+.loadscreen video {
+    height: 100%;
+    width: auto;
 }
 @font-face {
     font-family: 'futura';

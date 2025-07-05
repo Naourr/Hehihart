@@ -1,8 +1,13 @@
 const menu = document.querySelector('.menu-icon');
 const menulinks = document.querySelector('.menu-links');
+const loadscreen = document.querySelector('.loadscreen');
 
 window.addEventListener("load", function() {
   	document.querySelector(".loading").style.display = "none";
+    loadscreen.classList.toggle('fade-out');
+    loadscreen.addEventListener('animationend', function() {
+        loadscreen.style.display = 'none';
+    });
 });
 menu.addEventListener('click', function() {
     menulinks.classList.toggle('active');
