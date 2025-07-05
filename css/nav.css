@@ -33,7 +33,11 @@ nav {
     transition: all 0.3s ease;
 }
 .menu-links a:hover {
-    background-color: var(--accent1);
+    background-image: linear-gradient(to left, var(--accent1), transparent);
+    transition: all 0.3s ease;
+}
+.menu-links a:active {
+    background-image: linear-gradient(to left, var(--accent2), transparent);
     transition: all 0.3s ease;
 }
 /* .menu-icon {
