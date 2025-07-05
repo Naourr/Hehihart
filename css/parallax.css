@@ -11,9 +11,10 @@
 .parallax-title {
   z-index: 4;
   position: relative;
-  top: 40vh;
   text-align: center;
   user-select: none;
+  height: 100%;
+  
 }
 .parallax-layer:nth-child(1) {
   background-image: url('/ken/ken-parallax/2.png');
