@@ -55,7 +55,6 @@ html {
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
     overflow-x: hidden;
-    scroll-padding-top: var(--navheight);
 }
 html::-webkit-scrollbar {
     display: none;
@@ -85,7 +84,7 @@ p {
 }
 section, .section {
     width: 100vw;
-    min-height: calc(100vh - var(--navheight));
+    min-height: calc(100vh);
     max-height: fit-content;
     gap: var(--title-content-gap);
     padding: var(--vpad) var(--hpad);
@@ -94,7 +93,6 @@ section, .section {
 }
 .content {
     width: 100%;
-    max-width: 1300px;
 }
 .scale-onhover:hover {
     scale: 1.1;
