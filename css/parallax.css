@@ -9,7 +9,7 @@
   color: var(--bg2text);
 }
 .parallax-title {
-  z-index: 10;
+  z-index: 4;
   position: relative;
   top: 40vh;
   text-align: center;
