@@ -16,7 +16,6 @@ nav {
     justify-content: space-between;
     gap: 1rem;
 }
-
 .nav-left {
     gap: 1rem;
 }
@@ -25,20 +24,6 @@ nav {
     height: 30px;
     border-radius: 50%;
     background-color: var(--bg1text);
-}
-.menu-links a {
-    color: var(--bg1text);
-    height: var(--navheight);
-    padding: 0px .5rem;
-    transition: all 0.3s ease;
-}
-.menu-links a:hover {
-    background-image: linear-gradient(to left, var(--accent1), transparent);
-    transition: all 0.3s ease;
-}
-.menu-links a:active {
-    background-image: linear-gradient(to left, var(--accent2), transparent);
-    transition: all 0.3s ease;
 }
 /* .menu-icon {
     display: none;
