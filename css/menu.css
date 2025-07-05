@@ -74,16 +74,17 @@
 .menubar-wrapper {
     position: fixed;
     bottom: 0px;
+    height: 100vh;
     right: -100vw;
     transition: all 1s ease-out;
     transition-delay: .6s;
 }
 .menubar-wrapper video {
-    height: 100vh;
+    height: 100%;
     width: auto;
 }
 .menubar-wrapper.active {
-    right: -100px;
+    right: 0;
     transition: all 1s ease-out;
     transition-delay: .6s;
 }
