@@ -61,4 +61,5 @@
   background-position: center;
   will-change: transform;
   pointer-events: none;
+  transition: all 0.15s ease;
 }
