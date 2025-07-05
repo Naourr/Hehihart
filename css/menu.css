@@ -6,7 +6,6 @@
     border-radius: 50%;
     width: 85px;
     height: 85px;
-   
 }
 
 .menu-areaback {
@@ -19,5 +18,26 @@
     bottom: -40px;
     right: -20px;
     pointer-events: none;
-    
+}
+.menu-links {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 100px;
+    right: -50vw;
+    width: 30vw;
+    opacity: 1;
+    gap: 4px;
+    transition: all 1s ease-out;
+    transition-delay: .6s;
+}
+
+.menu-links.active {
+    right: 0px;
+    transition: all 1s ease-out;
+    transition-delay: .6s;
+}
+.menu-links a {
+    width: 100%;
+    background-color: rgba(36, 36, 36, 0.8);
 }
