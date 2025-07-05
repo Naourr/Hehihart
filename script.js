@@ -32,6 +32,7 @@ menuarea.addEventListener('click', menuvidclicked);
 const menulinks = document.querySelector('.menu-links');
 function menuvidclicked() {
     menuvid.play();
+    menulinks.classList.toggle('active');
 }
 
 menuvid.addEventListener('ended', function() {
@@ -40,12 +41,10 @@ menuvid.addEventListener('ended', function() {
 });
 
 function changemenuvid() {
-    if (menuvidsrc.getAttribute('src') === '/ken/animated_menu_reversed.webm') {
+    if (menuvidsrc.getAttribute('src') == '/ken/animated_menu_reversed.webm') {
         menuvidsrc.setAttribute('src', '/ken/animated_menu.webm');
-        menulinks.classList.add('active');
     } else {
         menuvidsrc.setAttribute('src', '/ken/animated_menu_reversed.webm');
-        menulinks.classList.remove('active');
     }
 }
 
