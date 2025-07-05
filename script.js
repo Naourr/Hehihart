@@ -26,3 +26,34 @@ document.addEventListener('mousemove', e => {
         layer.style.transform = `translate(${translateX}px, ${translateY}px)`;
     });
 });
+
+const menuarea = document.querySelector('.menu-area');
+const menuvid = document.querySelector('#menu-vid');
+const menuvidsrc = document.querySelector('#menu-vidsrc');
+
+
+// let firstmenuclick = true; // Use let if you want to change its value
+
+menuarea.addEventListener('click', menuvidclicked);
+
+function menuvidclicked() {
+    // firstmenuclick = false;
+    menuvid.play();
+}
+
+if (menuvid) {
+    menuvid.addEventListener('ended', function() {
+        changemenuvid();
+        menuvid.load();
+    });
+}
+
+function changemenuvid() {
+    // Use .getAttribute('src') for comparison, as .src returns absolute URL
+    if (menuvidsrc.getAttribute('src') === '/ken/animated_menu-ezgif.com-reverse-video.webm') {
+        menuvidsrc.setAttribute('src', '/ken/animated_menu.webm');
+    } else {
+        menuvidsrc.setAttribute('src', '/ken/animated_menu-ezgif.com-reverse-video.webm');
+    }
+}
+

@@ -1,0 +1,17 @@
+.menu-area {
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    background-color: rgba(24, 24, 24, 0.8);
+    border-radius: 50%;
+    width: 85px;
+    height: 85px;
+}
+
+
+
+.menu-vidwrapper {
+    position: fixed;
+    bottom: -40px;
+    right: -20px;
+}
