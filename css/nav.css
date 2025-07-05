@@ -1,0 +1,47 @@
+.behindnav {
+    height: var(--navheight);
+}
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: var(--navheight);
+    background-color: var(--nav-footer-bg);
+    color: var(--bg1text);
+    padding: 0px var(--hpad);
+    z-index: 10;
+}
+.nav-contents {
+    justify-content: space-between;
+    gap: 1rem;
+}
+.nav-left {
+    gap: 1rem;
+}
+.nav-logo {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--bg1text);
+}
+.menu-links a {
+    color: var(--bg1text);
+    height: var(--navheight);
+    padding: 0px .5rem;
+    transition: all 0.3s ease;
+}
+.menu-links a:hover {
+    background-color: var(--accent1);
+    transition: all 0.3s ease;
+}
+.menu-icon {
+    display: none;
+}
+.menu-icon span {
+    width: 28px;
+    height: 4px;
+    margin: 2px;
+    background-color: var(--bg2text);
+    border-radius: 2px;
+}

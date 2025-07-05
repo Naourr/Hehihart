@@ -1,0 +1,12 @@
+.section1 {
+    background-color: var(--bg1);
+    color: var(--bg1text);
+}
+.section2 {
+    background-color: var(--bg2);
+    color: var(--bg2text);
+}
+.title {
+    width: 100%;
+    text-align: center;
+}

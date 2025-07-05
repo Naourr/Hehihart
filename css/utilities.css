@@ -1,0 +1,106 @@
+.loading {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    color: var(--accent1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+.loadscreen {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 200;
+    top: 0;
+    left: 0;
+    pointer-events: all;
+    background-color: black;
+    opacity: 1;
+}
+.loadscreen.fade-out {
+    animation-name: fade-out;
+    animation-delay: 5s;
+    animation-timing-function: ease-in;
+    animation-duration: 0.8s;
+}
+@keyframes fade-out {
+    0% {
+    }
+    100% {
+        opacity: 0;
+    }
+}
+.loadscreen video {
+    height: 100%;
+    width: auto;
+}
+@font-face {
+    font-family: 'futura';
+    src: url(/fonts/futura/futura\ medium\ bt.ttf);
+}
+@font-face {
+    font-family: 'aquire';
+    src: url(/fonts/aquire/Aquire.otf);
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: var(--font-size);
+    font-family: 'futura';
+}
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    scroll-padding-top: var(--navheight);
+}
+html::-webkit-scrollbar {
+    display: none;
+}
+a {
+    text-decoration: none;
+}
+h1 {
+    font-size: calc(var(--font-size) + 1rem);
+    font-family: 'aquire';
+}
+p {
+    font-family: 'futura';
+    font-size: calc(var(--font-size) + 0.2rem);
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+section, .section {
+    width: 100vw;
+    min-height: calc(100vh - var(--navheight));
+    max-height: fit-content;
+    gap: var(--title-content-gap);
+    padding: var(--vpad) var(--hpad);
+}
+.content {
+    width: 100%;
+    max-width: 1300px;
+}
+.scale-onhover:hover {
+    scale: 1.1;
+    transition: all 0.3s ease;
+}
+.textbox {
+    gap: 1rem;
+}
+.textbox * {
+    text-align: left;
+    width: 100%;
+}

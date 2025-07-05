@@ -1,0 +1,31 @@
+.button {
+    padding: 10px 15px;
+    border-radius: 18px;
+}
+.btns {
+    gap: 1rem;
+}
+.btn1 {
+    background-color: var(--accent1);
+    color: var(--bg2text);
+    border: 2px solid var(--accent1);
+    transition: all 0.3s ease;
+}
+.btn1:hover {
+    background-color: transparent;
+    color: var(--bg1text);
+    border: 2px solid var(--bg1text);
+    transition: all 0.3s ease;
+}
+.btn2 {
+    background-color: transparent;
+    color: var(--bg1text);
+    border: 2px solid var(--bg1text);
+    transition: all 0.3s ease;
+}
+.btn2:hover {
+    background-color: var(--accent1);
+    color: var(--bg2text);
+    border: 2px solid var(--accent1);
+    transition: all 0.3s ease;
+}

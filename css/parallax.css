@@ -1,0 +1,61 @@
+.parallax {
+  position: relative;
+  height: calc(100vh - var(--navheight));
+  width: 100vw;
+  overflow: hidden;
+  background-image: url('/ken/ken-parallax/1.png');
+  background-size: cover;
+  background-position: center;
+  color: var(--bg2text);
+}
+.parallax-title {
+  z-index: 10;
+  height: 100%;
+  position: relative;
+  top: 40vh;
+  text-align: center;
+}
+.parallax-layer:nth-child(1) {
+  background-image: url('/ken/ken-parallax/2.png');
+}
+.parallax-layer:nth-child(2) {
+  background-image: url('/ken/ken-parallax/3.png');
+}
+.parallax-layer:nth-child(3) {
+  background-image: url('/ken/ken-parallax/4.png');
+}
+.parallax-layer:nth-child(4) {
+  background-image: url('/ken/ken-parallax/5.png');
+}
+.parallax-layer:nth-child(5) {
+  background-image: url('/ken/ken-parallax/6.png');
+}
+.parallax-layer:nth-child(6) {
+  background-image: url('/ken/ken-parallax/7.png');
+}
+.parallax-layer:nth-child(7) {
+  background-image: url('/ken/ken-parallax/8.png');
+}
+.parallax-layer:nth-child(8) {
+  background-image: url('/ken/ken-parallax/9.png');
+}
+.parallax-layer:nth-child(9) {
+  background-image: url('/ken/ken-parallax/10.png');
+}
+.parallax-layer:nth-child(10) {
+  background-image: url('/ken/ken-parallax/11.png');
+}
+.parallax-layer:nth-child(11) {
+  background-image: url('/ken/ken-parallax/12.png');
+}
+.parallax-layer {
+  width: 120%;
+  height: 120%;
+  position: absolute;
+  top: -10%;
+  left: -10%;
+  background-size: cover;
+  background-position: center;
+  will-change: transform;
+  pointer-events: none;
+}

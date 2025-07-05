@@ -1,7 +1,10 @@
-const menu = document.querySelector('.menu-icon');
-const menulinks = document.querySelector('.menu-links');
-const loadscreen = document.querySelector('.loadscreen');
+// const menu = document.querySelector('.menu-icon');
+// const menulinks = document.querySelector('.menu-links');
+// menu.addEventListener('click', function() {
+//     menulinks.classList.toggle('active');
+// });
 
+const loadscreen = document.querySelector('.loadscreen');
 window.addEventListener("load", function() {
   	document.querySelector(".loading").style.display = "none";
     loadscreen.classList.toggle('fade-out');
@@ -9,12 +12,8 @@ window.addEventListener("load", function() {
         loadscreen.style.display = 'none';
     });
 });
-menu.addEventListener('click', function() {
-    menulinks.classList.toggle('active');
-});
 
 const layers = document.querySelectorAll('.parallax-layer');
-
 document.addEventListener('mousemove', e => {
     const x = (e.clientX / window.innerWidth - 0.5) * 2;
     const y = (e.clientY / window.innerHeight - 0.5) * 2;

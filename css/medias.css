@@ -1,0 +1,30 @@
+@media screen and (max-width: 700px) {
+    :root {
+        --hpad: 1.5rem;
+        --font-size: 0.8rem;
+    }
+}
+@media screen and (max-width: 680px) {
+    .menu-icon {
+        display: flex;
+    }
+    .menu-links {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--nav-footer-bg);
+        position: fixed;
+        top: -100vh;
+        left: 0;
+        width: 100%;
+        opacity: 0;
+        transition: all 0.3s ease;
+    }
+    .menu-links.active {
+        top: var(--navheight);
+        opacity: 1;
+        transition: all 0.3s ease;
+    }
+    .menu-links a {
+        width: 100%;
+    }
+}

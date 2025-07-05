@@ -1,0 +1,12 @@
+footer {
+    background-color: white;
+    color: black;
+    width: 100vw;
+    height: fit-content;
+    gap: var(--title-content-gap);
+    padding: 1rem;
+}
+.bottom p {
+    font-size: calc(var(--font-size) - 0.2rem);
+    text-align: center;
+}
