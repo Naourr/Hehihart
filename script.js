@@ -38,6 +38,7 @@ function menuvidclicked() {
 menuvid.addEventListener('ended', function() {
     changemenuvid();
     menuvid.load();
+    menuarea.style.pointerEvents = 'all';
 });
 
 function changemenuvid() {
@@ -48,3 +49,6 @@ function changemenuvid() {
     }
 }
 
+menuvid.addEventListener("playing", function() {
+    menuarea.style.pointerEvents = 'none';
+});
