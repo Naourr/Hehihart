@@ -50,10 +50,10 @@ if (menuvid) {
 
 function changemenuvid() {
     // Use .getAttribute('src') for comparison, as .src returns absolute URL
-    if (menuvidsrc.getAttribute('src') === '/ken/animated_menu-ezgif.com-reverse-video.webm') {
+    if (menuvidsrc.getAttribute('src') === '/ken/animated_menu_reversed.webm') {
         menuvidsrc.setAttribute('src', '/ken/animated_menu.webm');
     } else {
-        menuvidsrc.setAttribute('src', '/ken/animated_menu-ezgif.com-reverse-video.webm');
+        menuvidsrc.setAttribute('src', '/ken/animated_menu_reversed.webm');
     }
 }
 
