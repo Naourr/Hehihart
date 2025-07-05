@@ -1,30 +1,40 @@
-@media screen and (max-width: 750px) {
+
+@media screen and (max-width: 980px) {
     :root {
-        --hpad: 1.5rem;
         --font-size: 0.8rem;
     }
 }
-@media screen and (max-width: 680px) {
-    .menu-icon {
-        display: flex;
+@media screen and (max-width: 700px) {
+    :root {
+        --hpad: 1.5rem;
     }
+}
+@media screen and (max-width: 680px) {
+    /* .menu-icon {
+        display: flex;
+    } */
     .menu-links {
         display: flex;
         flex-direction: column;
-        background-color: var(--nav-footer-bg);
+        
         position: fixed;
-        top: -100vh;
-        left: 0;
-        width: 100%;
-        opacity: 0;
-        transition: all 0.3s ease;
-    }
-    .menu-links.active {
-        top: var(--navheight);
+        bottom: 100px;
+        right: -50vw;
+        width: 30vw;
         opacity: 1;
-        transition: all 0.3s ease;
+        gap: 4px;
+
+        transition: all 1s ease-out;
+        transition-delay: .6s;
+    }
+
+    .menu-links.active {
+        right: 0px;
+        transition: all 1s ease-out;
+        transition-delay: .6s;
     }
     .menu-links a {
         width: 100%;
+        background-color: rgba(36, 36, 36, 0.8);
     }
 }

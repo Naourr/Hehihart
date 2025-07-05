@@ -16,6 +16,7 @@ nav {
     justify-content: space-between;
     gap: 1rem;
 }
+
 .nav-left {
     gap: 1rem;
 }
@@ -35,7 +36,7 @@ nav {
     background-color: var(--accent1);
     transition: all 0.3s ease;
 }
-.menu-icon {
+/* .menu-icon {
     display: none;
 }
 .menu-icon span {
@@ -44,4 +45,4 @@ nav {
     margin: 2px;
     background-color: var(--bg2text);
     border-radius: 2px;
-}
+} */
