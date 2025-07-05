@@ -4,11 +4,13 @@
     --hpad: 3rem;
     --title-content-gap: 2rem;
     --nav-footer-bg: transparent;
+    --icon-size: 30px;
     --bg1: rgb(63, 63, 63);
     --bg2: rgb(58, 58, 58);
     --bg1text: white;
     --bg2text: white;
     --accent1: rgb(255, 88, 116);
+    --accent2: pink;
     --debug: rgb(185, 185, 185);
     --font-size: 1rem;
 }

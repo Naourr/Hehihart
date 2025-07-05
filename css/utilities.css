@@ -54,10 +54,20 @@
 html {
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
-    overflow-x: hidden;
+    overflow-x: hidden; 
 }
 html::-webkit-scrollbar {
-    display: none;
+    width: 10px;
+    background: rgb(41, 41, 41);
+}   
+html::-webkit-scrollbar-thumb {
+    background-color: var(--accent2);
+    border-radius: 6px;
+}
+html::-webkit-scrollbar-button {
+    background-color: rgb(63, 63, 63);
+    height: 10px;
+    border-radius: 6px;
 }
 a {
     text-decoration: none;
