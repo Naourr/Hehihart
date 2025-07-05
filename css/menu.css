@@ -42,7 +42,7 @@
     width: 50vw;
     height: 100vh;
     opacity: 1;
-    transition: all 1s ease-out;
+    transition: right 1s ease-out;
     transition-delay: .6s;
     
     justify-content: space-evenly;
@@ -51,7 +51,7 @@
 }
 .menu-links.active {
     right: 0px;
-    transition: all 1s ease-out;
+    transition: right 1s ease-out;
     transition-delay: .6s;
 }
 .menu-links a {
@@ -71,12 +71,12 @@
     width: 1000px;
     height: 100vh;
     opacity: 1;
-    transition: all 1s ease-out;
+    transition: right 1s ease-out;
     transition-delay: .6s;
 }
 .menubar-bg.active {
     right: 0px;
-    transition: all 1s ease-out;
+    transition: right 1s ease-out;
     transition-delay: .6s;
 }
 .menubar-wrapper {
@@ -84,7 +84,7 @@
     bottom: 0px;
     height: 100vh;
     right: -100vw;
-    transition: all 1s ease-out;
+    transition: right 1s ease-out;
     transition-delay: .6s;
 }
 .menubar-wrapper video {
@@ -94,6 +94,6 @@
 }
 .menubar-wrapper.active {
     right: 35px;
-    transition: all 1s ease-out;
+    transition: right 1s ease-out;
     transition-delay: .6s;
 }
