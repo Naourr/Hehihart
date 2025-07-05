@@ -6,6 +6,11 @@
 }
 @media screen and (max-width: 700px) {
     :root {
-        --hpad: 1.5rem;
+        --hpad: 2rem;
+    }
+}
+@media screen and (orientation: portrait) {
+    .bawal {
+        opacity: 1;
     }
 }
