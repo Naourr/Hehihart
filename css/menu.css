@@ -19,9 +19,20 @@
     pointer-events: none;
     z-index: 100;
 }
-
-
-
+.menu-links a {
+    color: var(--bg1text);
+    height: var(--navheight);
+    padding: 0px .5rem;
+    transition: all 0.3s ease;
+}
+.menu-links a:hover {
+    background-image: linear-gradient(to left, var(--accent1), transparent);
+    transition: all 0.3s ease;
+}
+.menu-links a:active {
+    background-image: linear-gradient(to left, var(--accent2), transparent);
+    transition: all 0.3s ease;
+}
 .menu-links {
     display: flex;
     flex-direction: column;
@@ -50,7 +61,6 @@
 .neg {
     pointer-events: none;
 }
-
 .menubar-bg {
     background-image: linear-gradient(to left, black , transparent );
     display: flex;
@@ -69,7 +79,6 @@
     transition: all 1s ease-out;
     transition-delay: .6s;
 }
-
 .menubar-wrapper {
     position: fixed;
     bottom: 0px;

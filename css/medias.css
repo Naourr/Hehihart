@@ -7,8 +7,22 @@
 @media screen and (max-width: 700px) {
     :root {
         --hpad: 2rem;
+
     }
+    #menu-vid {
+        width: 200px;
+        height: auto;
+    }
+    .menu-area, .menu-areaback {
+        width: 60px;
+        height: 60px;
+    }
+    .menu-vidwrapper {
+        bottom: -25px;
+        right: -10px;
 }
+}
+
 @media screen and (orientation: portrait) {
     .bawal {
         opacity: 1;
