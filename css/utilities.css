@@ -53,6 +53,7 @@
 }
 html {
     scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
     overflow-x: hidden;
     scroll-padding-top: var(--navheight);
 }
@@ -88,6 +89,8 @@ section, .section {
     max-height: fit-content;
     gap: var(--title-content-gap);
     padding: var(--vpad) var(--hpad);
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
 }
 .content {
     width: 100%;
