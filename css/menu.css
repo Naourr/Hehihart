@@ -1,4 +1,4 @@
-.menu-area {
+.menu-area, .menu-areaback {
     position: fixed;
     bottom: 5px;
     right: 5px;
@@ -6,12 +6,18 @@
     border-radius: 50%;
     width: 85px;
     height: 85px;
+   
 }
 
-
+.menu-areaback {
+    background-color: rgba(36, 36, 36, 0.8);
+    pointer-events: none;
+}
 
 .menu-vidwrapper {
     position: fixed;
     bottom: -40px;
     right: -20px;
+    pointer-events: none;
+    
 }
