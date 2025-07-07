@@ -1,0 +1,126 @@
+/* .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    justify-items: center;
+    gap: 1rem;
+}
+.gallery-card {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.gallery-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.gallery-card-radio {
+    display: none;
+}
+.gallery-card-radio:checked + .gallery-card {
+    
+    
+}
+.gallery-card.active {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 80vh;
+    width: 80vh;
+}
+.close {
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+    border: none;
+    border-radius: 10px;
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    overflow: hidden;
+    display: none;
+}
+.close:hover {
+    scale: 1.1;
+}
+.close:active {
+    background-color: rgba(26, 26, 26, 0.5);
+}
+.close.active {
+    display: flex;
+} */
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    justify-items: center;
+    gap: 1rem;
+    position: relative;
+}
+.gallery-card {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 1;
+}
+.gallery-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery-card-radio {
+    display: none;
+}
+
+/* Enlarged view when radio is checked */
+.gallery-card-radio:checked + .gallery-card {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80vh;
+    height: 80vh;
+    z-index: 10;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+.gallery-card-radio:checked {
+    display: flex;
+    opacity: 0;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 10px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+/* Show close button when any card is checked */
+.gallery-card-radio:checked ~ .close {
+    display: flex;
+}
+
+.close {
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+    border: none;
+    border-radius: 10px;
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+}
+.close:hover {
+    scale: 1.1;
+}
+.close:active {
+    background-color: rgba(26, 26, 26, 0.5);
+}
