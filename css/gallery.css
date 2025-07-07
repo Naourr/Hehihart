@@ -99,10 +99,7 @@
     z-index: 1;
 }
 
-/* Show close button when any card is checked */
-.gallery-card-radio:checked ~ .close {
-    display: flex;
-}
+
 
 .close {
     width: 60px;
@@ -123,4 +120,7 @@
 }
 .close:active {
     background-color: rgba(26, 26, 26, 0.5);
+}
+.close.active {
+    display: flex;
 }

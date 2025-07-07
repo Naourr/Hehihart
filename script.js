@@ -83,10 +83,15 @@ menubar_slidein();
 
 function closeimage() {
     const closecard = document.querySelector('.close');
-    const radios = document.querySelectorAll('.gallery-card-radio');
-
+    const radios = document.querySelectorAll("input[type='radio']");
+    radios.forEach(radio => 
+        radio.addEventListener('change', () => {
+            radio.checked ? closecard.classList.add('active') : closecard.classList.remove('active')
+        })
+    );
     closecard.addEventListener('click', () => {
         radios.forEach(radio => radio.checked = false);
+        closecard.classList.toggle('active');
     });
 }
 closeimage();
