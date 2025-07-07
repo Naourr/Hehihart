@@ -61,7 +61,9 @@
 }
 
 
-
+#menubar, .menubar-bg, .menubar-wrapper, .menubar-wrapper video {
+    pointer-events: none;
+}
 .menubar-bg {
     background-image: linear-gradient(to left, black , transparent );
     display: flex;
