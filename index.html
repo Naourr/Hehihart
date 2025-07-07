@@ -3,16 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Hehihart`s Portfolio Website" content="Hehihart`s 2d&3d Art and Music Portfolio Website">
     <link rel="stylesheet" href="/styles.css">
     <title>Hehihart</title>
 </head>
 <body>
-    <div class="row loading"></div>
-    <div class="row loadscreen">
+    <div class="row fullscreen loading"></div>
+    <div class="row fullscreen loadscreen">
         <video id="loadvid" autoplay muted playsinline>
             <source src="/ken/loadscreen.webm" type="video/webm">
         </video>
     </div>
+    <div class="row fullscreen bawal">Bawal nakaportrait ahehe. Pls rotate.</div>
     <!-- <div class="behindnav"></div> -->
     <nav class="row">
         <div class="row content nav-contents">
@@ -26,6 +28,13 @@
                     <source src="/ken/ui_level.webm" type="video/webm">
                 </video>
             </div>
+            <div class="menu-areaback"></div>
+            <div class="column menu-vidwrapper">
+                <video id="menu-vid" muted playsinline width="300px" height="auto" preload="auto">
+                    <source id="menu-vidsrc" src="/ken/animated_menu.webm" type="video/webm">
+                </video>
+            </div>
+            <div class="menu-area" tabindex="0" aria-label="Open nav menu"></div>
             <div class="row nav-right">
                 <div class="row menu-links">
                     <a href="/index.html#parallax" class="row"><p>Home</p></a>
@@ -38,16 +47,11 @@
                     <a href="/index.html#contact" class="row"><p>Contact</p></a>
                     <a class="neg"></a>
                 </div>
-                <!-- <div class="column scale-onhover menu-icon">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div> -->
             </div>
         </div>
     </nav>
     <section id="parallax" class="parallax">
-        <div class="parallax-layer" data-depth="0.2"></div>
+        <div class="parallax-layer" data-depth="0.2" ></div>
         <div class="parallax-layer" data-depth="0.3"></div>
         <div class="parallax-layer" data-depth="0.5"></div>
         <div class="parallax-layer" data-depth="1.4"></div>
@@ -60,31 +64,6 @@
         <div class="parallax-layer" data-depth="1.9"></div>
         <h1 class="row parallax-title">Welcome</h1>
     </section>
-    <div class="menu-areaback"></div>
-    <div class="column menu-vidwrapper">
-        <video id="menu-vid" muted playsinline width="300px" height="auto" preload="auto">
-            <source id="menu-vidsrc" src="/ken/animated_menu.webm" type="video/webm">
-        </video>
-    </div>
-    <div class="menu-area"></div>
-    <div class="row bawal">Bawal nakaportrait ahehe. Pls rotate.</div>
-    <!-- <section id="hero" class="column section1">
-        <div class="row content hero-content">
-            <div class="column hero-textbox">
-                <h1>HEYAAA</h1>
-                <p>Lets go gambling, yipiiieee yayyy.</p>
-                <div class="row btns">
-                    <a href="#" class="button scale-onhover btn1">
-                        <p>Le ho biethch</p>
-                    </a>
-                    <a href="#" class="button scale-onhover btn2">
-                        <p>WOoOOOOo</p>
-                    </a>
-                </div>
-            </div>
-            <img src="/images/omniman.jpeg" class="hero-img"></img>
-        </div>
-    </section> -->
     <section id="about" class="column section1">
         <div class="row title">
             <h1>ABOUT</h1>
