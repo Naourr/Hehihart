@@ -92,10 +92,10 @@
 }
 
 .menubar-bg, .menubar-wrapper, .menu-links {
-    transition: right 1s ease-in;
-    transition-delay: .6s;
+    transition: right .8s ease-in;
+    transition-delay: .5s;
 }
 .menubar-bg.active, .menubar-wrapper.active, .menu-links.active {
-    transition: right 1s ease-out;
-    transition-delay: .2s;
+    transition: right .8s ease-out;
+    transition-delay: .5s;
 }
