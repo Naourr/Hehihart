@@ -12,6 +12,7 @@
 .dnd-card img {
     width: 22vw;
     height: auto;
+    border-radius: 10px;
 }
 .dnd-card-holder {
     pointer-events: all;

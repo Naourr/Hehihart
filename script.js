@@ -84,9 +84,16 @@ menubar_slidein();
 function closeimage() {
     const closecard = document.querySelector('.close');
     const radios = document.querySelectorAll("input[type='radio']");
+    const dnd_card_holder = document.querySelectorAll('.dnd-card-holder');
+    const dnd_card_radio = document.querySelectorAll('.dnd-card-radio');
+    const source_height = dnd_card_holder.offsetHeight;
     radios.forEach(radio => 
         radio.addEventListener('change', () => {
-            radio.checked ? closecard.classList.add('active') : closecard.classList.remove('active')
+            if (radio.checked) {
+                closecard.classList.add('active');
+            } else {
+                closecard.classList.remove('active')
+            }
         })
     );
     closecard.addEventListener('click', () => {
@@ -95,3 +102,7 @@ function closeimage() {
     });
 }
 closeimage();
+
+
+
+
