@@ -1,41 +1,3 @@
-.loading {
-    width: 100vw;
-    height: 100vh;
-    background-color: black;
-    color: var(--accent1);
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 100;
-}
-.loadscreen {
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    z-index: 200;
-    top: 0;
-    left: 0;
-    pointer-events: all;
-    background-color: black;
-    opacity: 1;
-}
-.loadscreen.fade-out {
-    animation-name: fade-out;
-    animation-delay: 5s;
-    animation-timing-function: ease-in;
-    animation-duration: 0.8s;
-}
-@keyframes fade-out {
-    0% {
-    }
-    100% {
-        opacity: 0;
-    }
-}
-.loadscreen video {
-    height: 100%;
-    width: auto;
-}
 @font-face {
     font-family: 'futura';
     src: url(/fonts/futura/futura\ medium\ bt.ttf);
@@ -54,20 +16,8 @@
 html {
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
-    overflow-x: hidden; 
-}
-html::-webkit-scrollbar {
-    width: 10px;
-    background: rgb(41, 41, 41);
-}   
-html::-webkit-scrollbar-thumb {
-    background-color: var(--accent2);
-    border-radius: 6px;
-}
-html::-webkit-scrollbar-button {
-    background-color: rgb(63, 63, 63);
-    height: 10px;
-    border-radius: 6px;
+    overflow-x: hidden;
+    scrollbar-color: var(--accent2) rgb(41,41,41);
 }
 a {
     text-decoration: none;
@@ -115,13 +65,44 @@ section, .section {
     text-align: left;
     width: 100%;
 }
-.bawal {
+.fullscreen {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 199;
-    height: 100vh;
     width: 100vw;
+    height: 100vh;
+}
+
+.loading {
+    background-color: black;
+    color: var(--accent1);
+    z-index: 100;
+}
+.loadscreen {
+    z-index: 200;
+    pointer-events: all;
+    background-color: black;
+    opacity: 1;
+}
+.loadscreen.fade-out {
+    animation-name: fade-out;
+    animation-delay: 5s;
+    animation-timing-function: ease-in;
+    animation-duration: 0.8s;
+}
+@keyframes fade-out {
+    0% {
+    }
+    100% {
+        opacity: 0;
+    }
+}
+.loadscreen video {
+    height: 100%;
+    width: auto;
+}
+.bawal {
+    z-index: 199;
     background-color: black;
     color: var(--accent2);
     pointer-events: none;

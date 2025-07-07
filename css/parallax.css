@@ -14,7 +14,6 @@
   text-align: center;
   user-select: none;
   height: 100%;
-  
 }
 .parallax-layer:nth-child(1) {
   background-image: url('/ken/ken-parallax/2.png');
@@ -62,5 +61,5 @@
   background-position: center;
   will-change: transform;
   pointer-events: none;
-  transition: all 0.15s ease;
+  transition: all 0.3s ease-out;
 }
