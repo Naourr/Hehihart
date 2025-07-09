@@ -11,6 +11,8 @@ function loading() {
 }
 loading();
 
+document.querySelectorAll('img').forEach(img => img.loading = 'lazy');
+
 function parallax() {
     const layers = document.querySelectorAll('.parallax-layer');
     document.addEventListener('mousemove', e => {
