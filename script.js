@@ -1,3 +1,5 @@
+document.querySelectorAll('img').forEach(img => img.loading = 'lazy');
+
 function loading() {
     const loadscreen = document.querySelector('.loadscreen');
     const loading = document.querySelector('.loading');
@@ -10,8 +12,6 @@ function loading() {
     });
 }
 loading();
-
-document.querySelectorAll('img').forEach(img => img.loading = 'lazy');
 
 function parallax() {
     const layers = document.querySelectorAll('.parallax-layer');
