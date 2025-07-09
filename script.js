@@ -92,6 +92,32 @@ function closeimage() {
 }
 closeimage();
 
+let clickedRadio = null;
+let originalHeight = null;
+
+document.querySelectorAll('.dnd-card label').forEach(label => {
+    label.addEventListener('pointerdown', () => {
+        const wrapper = label.closest('.dnd-card-wrapper');
+        const holder = wrapper.querySelector('.dnd-card-holder');
+        originalHeight = holder.offsetHeight;
+        clickedRadio = wrapper.querySelector('.dnd-card-radio');
+    });
+});
+
+document.querySelectorAll('.dnd-card-radio').forEach(radio => {
+    radio.addEventListener('change', () => {
+        document.querySelectorAll('.dnd-card-wrapper').forEach(wrapper => {
+            const holder = wrapper.querySelector('.dnd-card img');
+            if (wrapper.contains(radio) && radio.checked && radio === clickedRadio) {
+                wrapper.style.height = originalHeight + 'px';
+            } else {
+                const h = holder.offsetHeight;
+                wrapper.style.height = h + 'px';
+            }
+        });
+    });
+});
+
 
 
 
