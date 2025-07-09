@@ -61,26 +61,6 @@ function menubar_slidein() {
 }
 menubar_slidein();
 
-// function closeimage() {
-//     const closecard = document.querySelector('.close');
-//     const radios = document.querySelectorAll('.gallery-card-radio');
-//     const gallery_cards = document.querySelectorAll('.gallery-card');
-//     radios.forEach((radio) => {
-//         radio.addEventListener('change', () => {
-//             if (radio.checked) {
-//                 closecard.classList.add('active');
-               
-//             }
-//         });
-//     });
-//     closecard.addEventListener('click', () => {
-//         radios.forEach((radio) => radio.checked = false);
-//         closecard.classList.remove('active');
-        
-//     });
-// }
-// closeimage();
-
 function closeimage() {
     const closecard = document.querySelector('.close');
     const radios = document.querySelectorAll("input[type='radio']");
@@ -111,8 +91,6 @@ function closeimage() {
     });
 }
 closeimage();
-
-
 
 
 
