@@ -18,9 +18,7 @@
     pointer-events: all;
 }
 .dnd-card-radio {
-    width: 25vw;
     display: none;
-    position: relative;
 }
 
 .dnd-card-radio:checked + .dnd-card-holder {
