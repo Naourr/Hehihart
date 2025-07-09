@@ -47,3 +47,11 @@
     display: flex;
 }
 
+.dnd-card:hover {
+    scale: 1.02;
+}
+.dnd-card-wrapper {
+    width: 22vw;
+    border-radius: 10px;
+    background-color: rgb(44, 44, 44);
+}
