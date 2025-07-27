@@ -68,10 +68,14 @@
 .parallax-title h1 {
   font-size: 1.3rem;
   font-family: 'futura';
-  
+  color: white;
 }
 .parallax-big-title {
   font-family: 'aquire';
   font-size: 6rem;
   margin-bottom: 2rem;
+  text-shadow: 0 0 8px white;
+}
+.parallax-title a h1:hover {
+  text-shadow: 0 0 5px white;
 }
