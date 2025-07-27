@@ -8,13 +8,7 @@
   background-position: center;
   color: var(--bg2text);
 }
-.parallax-title {
-  z-index: 4;
-  position: relative;
-  text-align: center;
-  user-select: none;
-  height: 100%;
-}
+
 .parallax-layer:nth-child(1) {
   background-image: url('/ken/ken-parallax/2.png');
 }
@@ -62,4 +56,22 @@
   will-change: transform;
   pointer-events: none;
   transition: all 0.3s ease-out;
+}
+.parallax-title {
+  gap: 2rem;
+  z-index: 4;
+  position: relative;
+  height: 100%;
+  text-align: center;
+  user-select: none;
+}
+.parallax-title h1 {
+  font-size: 1.3rem;
+  font-family: 'futura';
+  
+}
+.parallax-big-title {
+  font-family: 'aquire';
+  font-size: 6rem;
+  margin-bottom: 2rem;
 }

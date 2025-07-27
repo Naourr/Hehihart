@@ -10,3 +10,51 @@
     width: 100%;
     text-align: center;
 }
+#about {
+    position: relative;
+    justify-content: space-evenly;
+    gap: 5rem;
+    padding: 7rem;
+    background-image: url(/ken/rand_imageasset/images/Illustration85\ \ for\ ai.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    aspect-ratio: auto;
+}
+.about-bg {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.35);
+}
+.profile {
+    position: relative;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    width: 400px;
+    height: auto;
+    background-color: white;
+    overflow: hidden;
+}
+.profile img {
+    aspect-ratio: auto;
+    height: 100%;
+    width: auto;
+}
+.profile:hover {
+    scale: 1.1;
+}
+#about .content {
+    position: relative;
+}
+#services {
+    background-image: url(/ken/rand_imageasset/images/Illustration\ practice\ 1\ actual.webp);
+    position: relative;
+    justify-content: space-evenly;
+    gap: 5rem;
+    padding: 7rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    aspect-ratio: auto;
+}
