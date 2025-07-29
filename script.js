@@ -6,9 +6,6 @@ function loading() {
     window.addEventListener("load", function() {
         loading.style.display = "none";
         loadscreen.classList.toggle('fade-out');
-        loadscreen.addEventListener('animationend', function() {
-            loadscreen.style.display = 'none';
-        });
     });
 }
 loading();

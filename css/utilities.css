@@ -80,26 +80,13 @@ section, .section {
 }
 .loadscreen {
     z-index: 200;
-    pointer-events: all;
-    background-color: black;
+    pointer-events: none;
+    user-select: none;
     opacity: 1;
 }
-.loadscreen.fade-out {
-    animation-name: fade-out;
-    animation-delay: 5s;
-    animation-timing-function: ease-in;
-    animation-duration: 0.8s;
-}
-@keyframes fade-out {
-    0% {
-    }
-    100% {
-        opacity: 0;
-    }
-}
 .loadscreen video {
-    height: 100%;
-    width: auto;
+    height: auto;
+    width: 100%;
 }
 .bawal {
     z-index: 199;
