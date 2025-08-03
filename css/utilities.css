@@ -85,8 +85,9 @@ section, .section {
     opacity: 1;
 }
 .loadscreen video {
+    width: 125%;
     height: auto;
-    width: 100%;
+    aspect-ratio: auto;
 }
 .bawal {
     z-index: 199;
