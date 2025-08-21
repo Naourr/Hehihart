@@ -1,81 +1,81 @@
 .parallax {
-  position: relative;
-  height: calc(100vh - var(--navheight));
-  width: 100vw;
-  overflow: hidden;
-  background-image: url('/ken/ken-parallax/1.png');
-  background-size: cover;
-  background-position: center;
-  color: var(--bg2text);
+    position: relative;
+    height: calc(100vh - var(--navheight));
+    width: 100vw;
+    overflow: hidden;
+    background-image: url('/ken/ken-parallax/1.png');
+    background-size: cover;
+    background-position: center;
+    color: var(--bg2text);
 }
 
 .parallax-layer:nth-child(1) {
-  background-image: url('/ken/ken-parallax/2.png');
+    background-image: url('/ken/ken-parallax/2.png');
 }
 .parallax-layer:nth-child(2) {
-  background-image: url('/ken/ken-parallax/3.png');
+    background-image: url('/ken/ken-parallax/3.png');
 }
 .parallax-layer:nth-child(3) {
-  background-image: url('/ken/ken-parallax/4.png');
+    background-image: url('/ken/ken-parallax/4.png');
 }
 .parallax-layer:nth-child(4) {
-  background-image: url('/ken/ken-parallax/5.png');
+    background-image: url('/ken/ken-parallax/5.png');
 }
 .parallax-layer:nth-child(5) {
-  background-image: url('/ken/ken-parallax/6.png');
+    background-image: url('/ken/ken-parallax/6.png');
 }
 .parallax-layer:nth-child(6) {
-  background-image: url('/ken/ken-parallax/7.png');
+    background-image: url('/ken/ken-parallax/7.png');
 }
 .parallax-layer:nth-child(7) {
-  background-image: url('/ken/ken-parallax/8.png');
+    background-image: url('/ken/ken-parallax/8.png');
 }
 .parallax-layer:nth-child(8) {
-  background-image: url('/ken/ken-parallax/9.png');
+    background-image: url('/ken/ken-parallax/9.png');
 }
 .parallax-layer:nth-child(9) {
-  background-image: url('/ken/ken-parallax/10.png');
-  scale: 1.27;
+    background-image: url('/ken/ken-parallax/10.png');
+    scale: 1.27;
 }
 .parallax-layer:nth-child(10) {
-  background-image: url('/ken/ken-parallax/11.png');
-  scale: 1.27;
+    background-image: url('/ken/ken-parallax/11.png');
+    scale: 1.27;
 }
 .parallax-layer:nth-child(11) {
-  background-image: url('/ken/ken-parallax/12.png');
-  scale: 1.27;
+    background-image: url('/ken/ken-parallax/12.png');
+    scale: 1.27;
 }
 .parallax-layer {
-  width: 120%;
-  height: 120%;
-  position: absolute;
-  top: -10%;
-  left: -10%;
-  background-size: cover;
-  background-position: center;
-  will-change: transform;
-  pointer-events: none;
-  transition: all 0.3s ease-out;
+    width: 120%;
+    height: 120%;
+    position: absolute;
+    top: -10%;
+    left: -10%;
+    background-size: cover;
+    background-position: center;
+    will-change: transform;
+    pointer-events: none;
+    transition: all 0.3s ease-out;
 }
 .parallax-title {
-  gap: 2rem;
-  z-index: 4;
-  position: relative;
-  height: 100%;
-  text-align: center;
-  user-select: none;
+    gap: 2rem;
+    z-index: 4;
+    position: relative;
+    height: 100%;
+    text-align: center;
+    user-select: none;
 }
 .parallax-title h1 {
-  font-size: 1.3rem;
-  font-family: 'futura';
-  color: white;
+    font-size: 1.3rem;
+    font-family: 'futura';
+    color: white;
 }
 .parallax-big-title {
-  font-family: 'aquire';
-  font-size: 6rem;
-  margin-bottom: 2rem;
-  text-shadow: 0 0 8px white;
+    font-family: 'aquire';
+    font-size: 6rem;
+    margin-bottom: 2rem;
+    text-shadow: 0 0 8px white;
 }
 .parallax-title a h1:hover {
-  text-shadow: 0 0 5px white;
+    text-shadow: 0 0 5px white;
 }

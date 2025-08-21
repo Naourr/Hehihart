@@ -1,4 +1,3 @@
-
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -24,7 +23,6 @@
     display: none;
 }
 
-/* Enlarged view when radio is checked */
 .gallery-card-radio:checked + .gallery-card {
     position: fixed;
     top: 50%;
