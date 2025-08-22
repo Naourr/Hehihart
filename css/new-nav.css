@@ -8,9 +8,9 @@
 .custom-scrollbar {
     background-color: white;
     width: 3px;
-    height: 100%;
+    height: calc(100%);
     margin: 80px 0 80px 0;
-    overflow: hidden;
+    padding: 1rem 0 1rem 0;
 }
 .track {
     background-color: white;
@@ -22,4 +22,32 @@
     background-color: red;
     width: 5px;
     height: 10px;
+}
+
+.nav-holder {
+    position: fixed;
+    left: 40px;
+    top: 0;
+    z-index: 10;
+    height: 100vh;
+}
+.nav-links {
+    height: 100%;
+    padding: calc(80px + 1rem) 0 calc(80px + 1rem) 0;
+    justify-content: space-between;
+    align-items: start;
+    text-align: left;
+}
+.nav-links > a {
+    font-size: calc(var(--font-size));
+    color: white;
+    transition: all 0.3s ease;
+}
+.nav-links > a:hover {
+    text-shadow: 0 0 4px white;
+}
+.nav-links > a.active {
+    color: red;
+    font-size: calc(var(--font-size) + .2rem);
+    transition: all 0.3s ease;
 }
