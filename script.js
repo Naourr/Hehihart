@@ -13,6 +13,18 @@ function loading() {
 }
 loading();
 
+const music = document.querySelector('#music');
+const playMusic = document.querySelector('.play-music');
+playMusic.addEventListener('click', () => {
+    if (music.paused) {
+        music.play();
+        playMusic.textContent = "⏸"
+    } else {
+        music.paused = true;
+        playMusic.textContent = "♪"
+    }
+})
+
 const hamburger = document.querySelector('.hamburger');
 const navWrapper = document.querySelector('.nav-wrapper');
 hamburger.addEventListener('click', () => {

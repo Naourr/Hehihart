@@ -174,3 +174,25 @@
     left: -50vw;
     transition: left 1s ease-out;
 }
+.play-music {
+    position: fixed;
+    top: 0;
+    right: 0;
+    border-radius: 10px;
+    padding: 0 15px 5px 15px;
+    margin: 10px;
+    border: 2px solid white;
+    color: white;
+    z-index: 11;
+    font-size: 2rem;
+    background-color: transparent;
+    user-select: none;
+}
+.play-music:hover {
+    background-color: rgba(0, 0, 0, 0.452);
+}
+.play-music:active {
+    background-color: transparent;
+    color: var(--accent0);
+    border: 2px solid var(--accent0);
+}
