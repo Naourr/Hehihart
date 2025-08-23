@@ -10,6 +10,30 @@ function loading() {
 }
 loading();
 
+function sectIndicator() {
+    const sections = document.querySelectorAll('section');
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            const id = entry.target.id
+            const indicator = document.querySelector(`.section-indicator .${id}`)
+            const navLink = document.querySelector(`.nav-links a.${id}-nav`)
+
+            if (entry.isIntersecting) {
+                indicator.classList.add('active')
+                navLink.classList.add('active')
+            } else {
+                indicator.classList.remove('active');
+                navLink.classList.remove('active')
+            }
+        })
+    },{
+        threshold: 0.55
+    });
+    sections.forEach(section => observer.observe(section));
+}
+sectIndicator();
+
 function parallax() {
     const layers = document.querySelectorAll('.parallax-layer');
     document.addEventListener('mousemove', e => {
@@ -24,6 +48,22 @@ function parallax() {
     });
 }
 parallax();
+
+function customScrollbar() {
+    window.addEventListener('scroll', () => {
+        const scrolled = window.scrollY;
+        const footer = document.querySelector('footer');
+        const footerHeight = footer.offsetHeight;
+        const canScroll = document.documentElement.scrollHeight - window.innerHeight - footerHeight;
+        
+        const scrollRatio = scrolled / canScroll;
+
+        const track = document.querySelector('.track');
+        
+        track.style.height = `${scrollRatio * 100}%`
+    })
+}
+customScrollbar();
 
 function menubar_slidein() {
     const menuarea = document.querySelector('.menu-area');

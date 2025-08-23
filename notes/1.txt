@@ -1,1 +1,9 @@
 plans hireriji
+
+-punishing gray raven website direct inspo. pgr.kurogame.net
+-animated nav by scroll.
+-anime.js for scrolling animations basta
+-design naka overlay per page and pages only 100vh height.
+-look at wallpapers part at inspo website, ganun
+-also pag pindot magfufullscreen padin at may details sa gilid. pero pano pag iba iba orientation,iba mataas iba malapad. kailangan half half para kaysa padin details.
+-yung bars sa baba na angeexpand pag nasa section ka nayon. (done)

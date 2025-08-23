@@ -8,15 +8,41 @@
     <title>Hehihart</title>
 </head>
 <body>
-    <div class="row fullscreen loading"></div>
-    <div class="row fullscreen loadscreen">
+
+    <!-- <div class="row fullscreen loadscreen">
         <video id="loadvid" autoplay muted playsinline>
             <source src="/ken/newintroanimation.webm" type="video/webm">
         </video>
+    </div> -->
+
+    <div class="column scroll-holder">
+        <div class="custom-scrollbar">
+            <div class="track"></div>
+            <div class="thumb"></div>
+        </div>
     </div>
-    <!-- <div class="row fullscreen bawal">Bawal nakaportrait ahehe. Pls rotate.</div> -->
-    
-    <!-- <div class="behindnav"></div> -->
+    <div class="row nav-holder">
+        <div class="column nav-links">
+            <a href="#home" class="home-nav">Home</a>
+            <a href="#about" class="about-nav">About</a>
+            <a href="#gallery" class="gallery-nav">Gallery</a>
+            <a href="#services" class="services-nav">Services</a>
+            <a href="#TOR" class="TOR-nav">Terms of Service</a>
+            <a href="#contact" class="contact-nav">Contact</a>
+        </div>
+    </div>
+    <div class="indicator-holder">
+        <div class="row section-indicator">
+            <div class="home">gay</div>
+            <div class="about">gay</div>
+            <div class="gallery">gay</div>
+            <div class="services">gay</div>
+            <div class="TOR">gay</div>
+            <div class="contact">gay</div>
+        </div>
+    </div>
+
+
     <nav class="row">
         <div class="row content nav-contents">
             <div class="row nav-left">
@@ -38,20 +64,18 @@
             <div class="menu-area" tabindex="0" aria-label="Open nav menu"></div>
             <div class="row nav-right">
                 <div class="row menu-links">
-                    <a href="/index.html#parallax" class="row"><p>Home</p></a>
+                    <a href="/index.html#home" class="row"><p>Home</p></a>
                     <a href="/index.html#about" class="row"><p>About</p></a>
                     <a href="/index.html#gallery" class="row"><p>Gallery</p></a>
-                    <!-- <a href="/index.html#dnd" class="row"><p>DND Map</p></a>
-                    <a href="/index.html#bgm" class="row"><p>DTM/BGM</p></a>
-                    <a href="/index.html#rig" class="row"><p>Rig</p></a> -->
                     <a href="/index.html#services" class="row"><p>Services</p></a>
+                    <a href="/index.html#TOR" class="row"><p>TOR</p></a>
                     <a href="/index.html#contact" class="row"><p>Contact</p></a>
                     <a class="neg"></a>
                 </div>
             </div>
         </div>
     </nav>
-    <section id="parallax" class="parallax">
+    <section id="home" class="parallax">
         <div class="parallax-layer" data-depth="0.2" ></div>
         <div class="parallax-layer" data-depth="0.3"></div>
         <div class="parallax-layer" data-depth="0.5"></div>
@@ -65,25 +89,9 @@
         <div class="parallax-layer" data-depth="1.9"></div>
         <div class="column parallax-title">
             <span class="parallax-big-title">HEHIHART</span>
-            <h1>Welcome</h1>
-            <a href="#about">
-                <h1>About</h1>
-            </a>
-            <a href="#gallery">
-                <h1>Gallery</h1>
-            </a>
-            <a href="#services">
-                <h1>Services</h1>
-            </a>
-            <a href="#contact">
-                <h1>Contact</h1>
-            </a>
         </div>
     </section>
     <section id="about" class="row section1">
-        <!-- <div class="row title">
-            <h1>ABOUT</h1>
-        </div> -->
         <div class="about-bg"></div>
         <div class="profile">
             <img src="/ken/rand_imageasset/images/random nonesense 4.webp">
@@ -98,587 +106,22 @@
             <h1>GALLERY</h1>
         </div>
         <div>
-            <form class="row dnd-columns-holder">
-                <div class="dnd-column dnd-column1">
-                    <div class="dnd-card-wrapper">
-                        <input id="dnd-c1-card1" class="dnd-card-radio" type="radio" name="dnd-cards">
-                        <div class="row dnd-card-holder">
-                            <label for="dnd-c1-card1" class="row dnd-card">
-                                <img src="/ken/rand_imageasset/images/aka feet thumbs up.webp">
-                            </label>
-                        </div>
-                    </div>
-                    <div class="dnd-card-wrapper">
-                        <input id="dnd-c1-card2" class="dnd-card-radio" type="radio" name="dnd-cards">
-                        <div class="row dnd-card-holder">
-                            <label for="dnd-c1-card2" class="row dnd-card">
-                                <img src="/ken/rand_imageasset/images/brain rot.webp">
-                            </label>
-                        </div>
-                    </div>
-                    <div class="dnd-card-wrapper">
-                        <input id="dnd-c1-card3" class="dnd-card-radio" type="radio" name="dnd-cards">
-                        <div class="row dnd-card-holder">
-                            <label for="dnd-c1-card3" class="row dnd-card">
-                                <img src="/ken/rand_imageasset/images/comp main ggolden ratio.webp">
-                            </label>
-                        </div>
-                    </div>
-                    <div class="dnd-card-wrapper">
-                        <input id="dnd-c1-card4" class="dnd-card-radio" type="radio" name="dnd-cards">
-                        <div class="row dnd-card-holder">
-                            <label for="dnd-c1-card4" class="row dnd-card">
-                                <img src="/ken/rand_imageasset/images/dayum.webp">
-                            </label>
-                        </div>
-                    </div>
-
-                    <div class="dnd-card-wrapper">
-                        <input id="dnd-c1-card5" class="dnd-card-radio" type="radio" name="dnd-cards">
-                        <div class="row dnd-card-holder">
-                            <label for="dnd-c1-card5" class="row dnd-card">
-                                <img src="/ken/rand_imageasset/images/Illustration86.webp">
-                            </label>
-                        </div>
-                    </div>
-                    <div class="dnd-card-wrapper">
-                        <input id="dnd-c1-card6" class="dnd-card-radio" type="radio" name="dnd-cards">
-                        <div class="row dnd-card-holder">
-                            <label for="dnd-c1-card6" class="row dnd-card">
-                                <img src="/ken/rand_imageasset/images/illustration88.webp">
-                            </label>
-                        </div>
-                    </div>
-                    <div class="dnd-card-wrapper">
-                        <input id="dnd-c1-card7" class="dnd-card-radio" type="radio" name="dnd-cards">
-                        <div class="row dnd-card-holder">
-                            <label for="dnd-c1-card7" class="row dnd-card">
-                                <img src="/ken/rand_imageasset/images/Illustration90.webp">
-                            </label>
-                        </div>
-                    </div>
-                    <div class="dnd-card-wrapper">
-                        <input id="dnd-c1-card8" class="dnd-card-radio" type="radio" name="dnd-cards">
-                        <div class="row dnd-card-holder">
-                            <label for="dnd-c1-card8" class="row dnd-card">
-                                <img src="/ken/rand_imageasset/images/Illustration92.webp">
-                            </label>
-                        </div>
-                    </div>
-                    <div class="dnd-card-wrapper">
-                        <input id="dnd-c1-card9" class="dnd-card-radio" type="radio" name="dnd-cards">
-                        <div class="row dnd-card-holder">
-                            <label for="dnd-c1-card9" class="row dnd-card">
-                                <img src="/ken/rand_imageasset/images/omahgah.webp">
-                            </label>
-                        </div>
-                    </div>
-                    <div class="dnd-card-wrapper">
-                        <input id="dnd-c1-card10" class="dnd-card-radio" type="radio" name="dnd-cards">
-                        <div class="row dnd-card-holder">
-                            <label for="dnd-c1-card10" class="row dnd-card">
-                                <img src="/ken/rand_imageasset/images/random nonesense 4.webp">
-                            </label>
-                        </div>
-                    </div>
-                    <div class="dnd-card-wrapper">
-                        <input id="dnd-c1-card11" class="dnd-card-radio" type="radio" name="dnd-cards">
-                        <div class="row dnd-card-holder">
-                            <label for="dnd-c1-card11" class="row dnd-card">
-                                <img src="/ken/rand_imageasset/images/random nonesense illust 76 len 2.webp">
-                            </label>
-                        </div>
-                    </div>
-                    <div class="dnd-card-wrapper">
-                        <input id="dnd-c1-card12" class="dnd-card-radio" type="radio" name="dnd-cards">
-                        <div class="row dnd-card-holder">
-                            <label for="dnd-c1-card12" class="row dnd-card">
-                                <img src="/ken/rand_imageasset/images/random nonesense3.webp">
-                            </label>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="dnd-column dnd-column2">
-                    <div class="dnd-card-wrapper">
-                        <input id="dnd-c2-card1" class="dnd-card-radio" type="radio" name="dnd-cards">
-                        <div class="row dnd-card-holder">
-                            <label for="dnd-c2-card1" class="row dnd-card">
-                                <img src="/ken/rand_imageasset/images/dis gon be hreaat.webp">
-                            </label>
-                        </div>
-                    </div>
-                    <div class="dnd-card-wrapper">
-                        <input id="dnd-c2-card2" class="dnd-card-radio" type="radio" name="dnd-cards">
-                        <div class="row dnd-card-holder">
-                            <label for="dnd-c2-card2" class="row dnd-card">
-                                <img src="/ken/rand_imageasset/images/illust 80 separated.webp">
-                            </label>
-                        </div>
-                    </div>
-                    <div class="dnd-card-wrapper">
-                        <input id="dnd-c2-card3" class="dnd-card-radio" type="radio" name="dnd-cards">
-                        <div class="row dnd-card-holder">
-                            <label for="dnd-c2-card3" class="row dnd-card">
-                                <img src="/ken/rand_imageasset/images/illust from skool.webp">
-                            </label>
-                        </div>
-                    </div>
-                    <div class="dnd-card-wrapper">
-                        <input id="dnd-c2-card4" class="dnd-card-radio" type="radio" name="dnd-cards">
-                        <div class="row dnd-card-holder">
-                            <label for="dnd-c2-card4" class="row dnd-card">
-                                <img src="/ken/rand_imageasset/images/illustration 80 my oc test rig.webp">
-                            </label>
-                        </div>
-                    </div>
-
-
-                    <div class="dnd-card-wrapper">
-                        <input id="dnd-c2-card5" class="dnd-card-radio" type="radio" name="dnd-cards">
-                        <div class="row dnd-card-holder">
-                            <label for="dnd-c2-card5" class="row dnd-card">
-                                <img src="/ken/rand_imageasset/images/Illustration8 que pro.webp">
-                            </label>
-                        </div>
-                    </div>
-                    <div class="dnd-card-wrapper">
-                        <input id="dnd-c2-card6" class="dnd-card-radio" type="radio" name="dnd-cards">
-                        <div class="row dnd-card-holder">
-                            <label for="dnd-c2-card6" class="row dnd-card">
-                                <img src="/ken/rand_imageasset/images/Illustration81white bg.webp">
-                            </label>
-                        </div>
-                    </div>
-                    <div class="dnd-card-wrapper">
-                        <input id="dnd-c2-card7" class="dnd-card-radio" type="radio" name="dnd-cards">
-                        <div class="row dnd-card-holder">
-                            <label for="dnd-c2-card7" class="row dnd-card">
-                                <img src="/ken/rand_imageasset/images/Illustration82 suji reference sheet.webp">
-                            </label>
-                        </div>
-                    </div>
-                    <div class="dnd-card-wrapper">
-                        <input id="dnd-c2-card8" class="dnd-card-radio" type="radio" name="dnd-cards">
-                        <div class="row dnd-card-holder">
-                            <label for="dnd-c2-card8" class="row dnd-card">
-                                <img src="/ken/rand_imageasset/images/Illustration83 FLIPPED.webp">
-                            </label>
-                        </div>
-                    </div>
-                    <div class="dnd-card-wrapper">
-                        <input id="dnd-c2-card9" class="dnd-card-radio" type="radio" name="dnd-cards">
-                        <div class="row dnd-card-holder">
-                            <label for="dnd-c2-card9" class="row dnd-card">
-                                <img src="/ken/rand_imageasset/images/Illustration83nothte blender thingy.webp">
-                            </label>
-                        </div>
-                    </div>
-                    <div class="dnd-card-wrapper">
-                        <input id="dnd-c2-card10" class="dnd-card-radio" type="radio" name="dnd-cards">
-                        <div class="row dnd-card-holder">
-                            <label for="dnd-c2-card10" class="row dnd-card">
-                                <img src="/ken/rand_imageasset/images/Illustration85  for ai.webp">
-                            </label>
-                        </div>
-                    </div>
-                    <div class="dnd-card-wrapper">
-                        <input id="dnd-c2-card11" class="dnd-card-radio" type="radio" name="dnd-cards">
-                        <div class="row dnd-card-holder">
-                            <label for="dnd-c2-card11" class="row dnd-card">
-                                <img src="/ken/rand_imageasset/images/Illustration86.webp">
-                            </label>
-                        </div>
-                    </div>
-
-
-                </div>
-                <div class="dnd-column dnd-column3">
-                    <div class="dnd-card-wrapper">
-                        <input id="dnd-c3-card1" class="dnd-card-radio" type="radio" name="dnd-cards">
-                        <div class="row dnd-card-holder">
-                            <label for="dnd-c3-card1" class="row dnd-card">
-                                <img src="/ken/rand_imageasset/images/Illustration practice 1 actual.webp">
-                            </label>
-                        </div>
-                    </div>
-                    <div class="dnd-card-wrapper">
-                        <input id="dnd-c3-card2" class="dnd-card-radio" type="radio" name="dnd-cards">
-                        <div class="row dnd-card-holder">
-                            <label for="dnd-c3-card2" class="row dnd-card">
-                                <img src="/ken/rand_imageasset/images/Illustration practice 6.webp">
-                            </label>
-                        </div>
-                    </div>
-                    <div class="dnd-card-wrapper">
-                        <input id="dnd-c3-card3" class="dnd-card-radio" type="radio" name="dnd-cards">
-                        <div class="row dnd-card-holder">
-                            <label for="dnd-c3-card3" class="row dnd-card">
-                                <img src="/ken/rand_imageasset/images/Illustration practice 6.webp">
-                            </label>
-                        </div>
-                    </div>
-                    <div class="dnd-card-wrapper">
-                        <input id="dnd-c3-card4" class="dnd-card-radio" type="radio" name="dnd-cards">
-                        <div class="row dnd-card-holder">
-                            <label for="dnd-c3-card4" class="row dnd-card">
-                                <img src="/ken/rand_imageasset/images/Illustration18 VER 2.webp">
-                            </label>
-                        </div>
-                    </div>
-
-
-
-                    <div class="dnd-card-wrapper">
-                        <input id="dnd-c3-card5" class="dnd-card-radio" type="radio" name="dnd-cards">
-                        <div class="row dnd-card-holder">
-                            <label for="dnd-c3-card5" class="row dnd-card">
-                                <img src="/ken/rand_imageasset/images/Illustration63.webp">
-                            </label>
-                        </div>
-                    </div>
-                    <div class="dnd-card-wrapper">
-                        <input id="dnd-c3-card6" class="dnd-card-radio" type="radio" name="dnd-cards">
-                        <div class="row dnd-card-holder">
-                            <label for="dnd-c3-card6" class="row dnd-card">
-                                <img src="/ken/rand_imageasset/images/Illustration66.webp">
-                            </label>
-                        </div>
-                    </div>
-                    <div class="dnd-card-wrapper">
-                        <input id="dnd-c3-card7" class="dnd-card-radio" type="radio" name="dnd-cards">
-                        <div class="row dnd-card-holder">
-                            <label for="dnd-c3-card7" class="row dnd-card">
-                                <img src="/ken/rand_imageasset/images/Illustration71.webp">
-                            </label>
-                        </div>
-                    </div>
-                    <div class="dnd-card-wrapper">
-                        <input id="dnd-c3-card8" class="dnd-card-radio" type="radio" name="dnd-cards">
-                        <div class="row dnd-card-holder">
-                            <label for="dnd-c3-card8" class="row dnd-card">
-                                <img src="/ken/rand_imageasset/images/Illustration72 comms test.webp">
-                            </label>
-                        </div>
-                    </div>
-                    <div class="dnd-card-wrapper">
-                        <input id="dnd-c3-card9" class="dnd-card-radio" type="radio" name="dnd-cards">
-                        <div class="row dnd-card-holder">
-                            <label for="dnd-c3-card9" class="row dnd-card">
-                                <img src="/ken/rand_imageasset/images/Illustration75 flipped.webp">
-                            </label>
-                        </div>
-                    </div>
-                    <div class="dnd-card-wrapper">
-                        <input id="dnd-c3-card10" class="dnd-card-radio" type="radio" name="dnd-cards">
-                        <div class="row dnd-card-holder">
-                            <label for="dnd-c3-card10" class="row dnd-card">
-                                <img src="/ken/rand_imageasset/images/Illustration77 export.webp">
-                            </label>
-                        </div>
-                    </div>
-                    <div class="dnd-card-wrapper">
-                        <input id="dnd-c3-card11" class="dnd-card-radio" type="radio" name="dnd-cards">
-                        <div class="row dnd-card-holder">
-                            <label for="dnd-c3-card11" class="row dnd-card">
-                                <img src="/ken/rand_imageasset/images/Illustration8 que pro.webp">
-                            </label>
-                        </div>
-                    </div>
-
-
-
-                </div>
-                <div class="dnd-column dnd-column4">
-                    <div class="dnd-card-wrapper">
-                        <input id="dnd-c4-card1" class="dnd-card-radio" type="radio" name="dnd-cards">
-                        <div class="row dnd-card-holder">
-                            <label for="dnd-c4-card1" class="row dnd-card">
-                                <img src="/ken/rand_imageasset/images/Illustration32.webp">
-                            </label>
-                        </div>
-                    </div>
-                    <div class="dnd-card-wrapper">
-                        <input id="dnd-c4-card2" class="dnd-card-radio" type="radio" name="dnd-cards">
-                        <div class="row dnd-card-holder">
-                            <label for="dnd-c4-card2" class="row dnd-card">
-                                <img src="/ken/rand_imageasset/images/Illustration34.webp">
-                            </label>
-                        </div>
-                    </div>
-                    <div class="dnd-card-wrapper">
-                        <input id="dnd-c4-card3" class="dnd-card-radio" type="radio" name="dnd-cards">
-                        <div class="row dnd-card-holder">
-                            <label for="dnd-c4-card3" class="row dnd-card">
-                                <img src="/ken/rand_imageasset/images/Illustration35.webp">
-                            </label>
-                        </div>
-                    </div>
-                    <div class="dnd-card-wrapper">
-                        <input id="dnd-c4-card4" class="dnd-card-radio" type="radio" name="dnd-cards">
-                        <div class="row dnd-card-holder">
-                            <label for="dnd-c4-card4" class="row dnd-card">
-                                <img src="/ken/rand_imageasset/images/Illustration38.webp">
-                            </label>
-                        </div>
-                    </div>
-
-
-
-                    <div class="dnd-card-wrapper">
-                        <input id="dnd-c4-card5" class="dnd-card-radio" type="radio" name="dnd-cards">
-                        <div class="row dnd-card-holder">
-                            <label for="dnd-c4-card5" class="row dnd-card">
-                                <img src="/ken/rand_imageasset/images/Illustration39 ver 2.webp">
-                            </label>
-                        </div>
-                    </div>
-                    <div class="dnd-card-wrapper">
-                        <input id="dnd-c4-card6" class="dnd-card-radio" type="radio" name="dnd-cards">
-                        <div class="row dnd-card-holder">
-                            <label for="dnd-c4-card6" class="row dnd-card">
-                                <img src="/ken/rand_imageasset/images/Illustration41.webp">
-                            </label>
-                        </div>
-                    </div>
-                    <div class="dnd-card-wrapper">
-                        <input id="dnd-c4-card7" class="dnd-card-radio" type="radio" name="dnd-cards">
-                        <div class="row dnd-card-holder">
-                            <label for="dnd-c4-card7" class="row dnd-card">
-                                <img src="/ken/rand_imageasset/images/illustration46.webp">
-                            </label>
-                        </div>
-                    </div>
-                    <div class="dnd-card-wrapper">
-                        <input id="dnd-c4-card8" class="dnd-card-radio" type="radio" name="dnd-cards">
-                        <div class="row dnd-card-holder">
-                            <label for="dnd-c4-card8" class="row dnd-card">
-                                <img src="/ken/rand_imageasset/images/Illustration48.webp">
-                            </label>
-                        </div>
-                    </div>
-                    <div class="dnd-card-wrapper">
-                        <input id="dnd-c4-card9" class="dnd-card-radio" type="radio" name="dnd-cards">
-                        <div class="row dnd-card-holder">
-                            <label for="dnd-c4-card9" class="row dnd-card">
-                                <img src="/ken/rand_imageasset/images/Illustration49.webp">
-                            </label>
-                        </div>
-                    </div>
-                    <div class="dnd-card-wrapper">
-                        <input id="dnd-c4-card10" class="dnd-card-radio" type="radio" name="dnd-cards">
-                        <div class="row dnd-card-holder">
-                            <label for="dnd-c4-card10" class="row dnd-card">
-                                <img src="/ken/rand_imageasset/images/Illustration57 cropped.webp">
-                            </label>
-                        </div>
-                    </div>
-                    <div class="dnd-card-wrapper">
-                        <input id="dnd-c4-card11" class="dnd-card-radio" type="radio" name="dnd-cards">
-                        <div class="row dnd-card-holder">
-                            <label for="dnd-c4-card11" class="row dnd-card">
-                                <img src="/ken/rand_imageasset/images/Illustration60jpegfor vgen.webp">
-                            </label>
-                        </div>
-                    </div>
-
-                    <div class="dnd-card-wrapper">
-                        <input id="dnd-c4-card12" class="dnd-card-radio" type="radio" name="dnd-cards">
-                        <div class="row dnd-card-holder">
-                            <label for="dnd-c4-card12" class="row dnd-card">
-                                <img src="/ken/rand_imageasset/images/random nonesense illust 76len 2.webp">
-                            </label>
-                        </div>
-                    </div>
-                    
-                    <div class="dnd-card-wrapper">
-                        <input id="dnd-c4-card13" class="dnd-card-radio" type="radio" name="dnd-cards">
-                        <div class="row dnd-card-holder">
-                            <label for="dnd-c4-card13" class="row dnd-card">
-                                <img src="/ken/rand_imageasset/images/random nonesense illust 76 len 2.webp">
-                            </label>
-                        </div>
-                    </div>
-
-                    <div class="dnd-card-wrapper">
-                        <input id="dnd-c4-card14" class="dnd-card-radio" type="radio" name="dnd-cards">
-                        <div class="row dnd-card-holder">
-                            <label for="dnd-c4-card14" class="row dnd-card">
-                                <img src="/ken/rand_imageasset/images/random pfp nonesense.webp">
-                            </label>
-                        </div>
-                    </div>
-
-
-                </div>
-            </form>
+           
         </div>
     <button type="button" class="close"><img src="/images/closeicon.png" width="100%" height="auto"></button>
     </section>  
-    <!-- <section id="dnd" class="column section1">
-        <div class="row title">
-            <h1>DND MAP</h1>
-        </div>
-        <div>
-            <form class="row dnd-columns-holder">
-                <div class="dnd-column dnd-column1">
-                    <div class="dnd-card-wrapper">
-                        <input id="dnd1-c1-card1" class="dnd-card-radio" type="radio" name="dnd-cards">
-                        <div class="row dnd-card-holder">
-                            <label for="dnd1-c1-card1" class="row dnd-card">
-                                <img src="/ken/rand_imageasset/dnd/bright lights closed curtains.webp">
-                            </label>
-                        </div>
-                    </div>
-                    <div class="dnd-card-wrapper">
-                        <input id="dnd1-c1-card2" class="dnd-card-radio" type="radio" name="dnd-cards">
-                        <div class="row dnd-card-holder">
-                            <label for="dnd1-c1-card2" class="row dnd-card">
-                                <img src="/ken/rand_imageasset/dnd/bright lights curtain open.webp">
-                            </label>
-                        </div>
-                    </div>
-                    <div class="dnd-card-wrapper">
-                        <input id="dnd1-c1-card3" class="dnd-card-radio" type="radio" name="dnd-cards">
-                        <div class="row dnd-card-holder">
-                            <label for="dnd1-c1-card3" class="row dnd-card">
-                                <img src="/ken/rand_imageasset/dnd/dim light curtains open.webp">
-                            </label>
-                        </div>
-                    </div>
-                    <div class="dnd-card-wrapper">
-                        <input id="dnd1-c1-card4" class="dnd-card-radio" type="radio" name="dnd-cards">
-                        <div class="row dnd-card-holder">
-                            <label for="dnd1-c1-card4" class="row dnd-card">
-                                <img src="/ken/rand_imageasset/dnd/dim lights curtain closed.webp">
-                            </label>
-                        </div>
-                    </div>
-                </div>
-                <div class="dnd-column dnd-column2">
-                    <div class="dnd-card-wrapper">
-                        <input id="dnd1-c2-card1" class="dnd-card-radio" type="radio" name="dnd-cards">
-                        <div class="row dnd-card-holder">
-                            <label for="dnd1-c2-card1" class="row dnd-card">
-                                <img src="/ken/rand_imageasset/dnd/forrest fall night.webp">
-                            </label>
-                        </div>
-                    </div>
-                    <div class="dnd-card-wrapper">
-                        <input id="dnd1-c2-card2" class="dnd-card-radio" type="radio" name="dnd-cards">
-                        <div class="row dnd-card-holder">
-                            <label for="dnd1-c2-card2" class="row dnd-card">
-                                <img src="/ken/rand_imageasset/dnd/forrest summer night.webp">
-                            </label>
-                        </div>
-                    </div>
-                    <div class="dnd-card-wrapper">
-                        <input id="dnd1-c2-card3" class="dnd-card-radio" type="radio" name="dnd-cards">
-                        <div class="row dnd-card-holder">
-                            <label for="dnd1-c2-card3" class="row dnd-card">
-                                <img src="/ken/rand_imageasset/dnd/forrest winter bloodmoon.webp">
-                            </label>
-                        </div>
-                    </div>
-                    <div class="dnd-card-wrapper">
-                        <input id="dnd1-c2-card4" class="dnd-card-radio" type="radio" name="dnd-cards">
-                        <div class="row dnd-card-holder">
-                            <label for="dnd1-c2-card4" class="row dnd-card">
-                                <img src="/ken/rand_imageasset/dnd/forrest winter morning.webp">
-                            </label>
-                        </div>
-                    </div>
-                </div>
-                <div class="dnd-column dnd-column3">
-                    <div class="dnd-card-wrapper">
-                        <input id="dnd1-c3-card1" class="dnd-card-radio" type="radio" name="dnd-cards">
-                        <div class="row dnd-card-holder">
-                            <label for="dnd1-c3-card1" class="row dnd-card">
-                                <img src="/ken/rand_imageasset/dnd/forrest winter night.webp">
-                            </label>
-                        </div>
-                    </div>
-                    <div class="dnd-card-wrapper">
-                        <input id="dnd1-c3-card2" class="dnd-card-radio" type="radio" name="dnd-cards">
-                        <div class="row dnd-card-holder">
-                            <label for="dnd1-c3-card2" class="row dnd-card">
-                                <img src="/ken/rand_imageasset/dnd/manor1.webp">
-                            </label>
-                        </div>
-                    </div>
-                    <div class="dnd-card-wrapper">
-                        <input id="dnd1-c3-card3" class="dnd-card-radio" type="radio" name="dnd-cards">
-                        <div class="row dnd-card-holder">
-                            <label for="dnd1-c3-card3" class="row dnd-card">
-                                <img src="/ken/rand_imageasset/dnd/manor2.webp">
-                            </label>
-                        </div>
-                    </div>
-                    <div class="dnd-card-wrapper">
-                        <input id="dnd1-c3-card4" class="dnd-card-radio" type="radio" name="dnd-cards">
-                        <div class="row dnd-card-holder">
-                            <label for="dnd1-c3-card4" class="row dnd-card">
-                                <img src="/images/psycho.jpeg">
-                            </label>
-                        </div>
-                    </div>
-                </div>
-                <div class="dnd-column dnd-column4">
-                    <div class="dnd-card-wrapper">
-                        <input id="dnd1-c4-card1" class="dnd-card-radio" type="radio" name="dnd-cards">
-                        <div class="row dnd-card-holder">
-                            <label for="dnd1-c4-card1" class="row dnd-card">
-                                <img src="/images/neg.png">
-                            </label>
-                        </div>
-                    </div>
-                    <div class="dnd-card-wrapper">
-                        <input id="dnd1-c4-card2" class="dnd-card-radio" type="radio" name="dnd-cards">
-                        <div class="row dnd-card-holder">
-                            <label for="dnd1-c4-card2" class="row dnd-card">
-                                <img src="/images/jerma.jpeg">
-                            </label>
-                        </div>
-                    </div>
-                    <div class="dnd-card-wrapper">
-                        <input id="dnd1-c4-card3" class="dnd-card-radio" type="radio" name="dnd-cards">
-                        <div class="row dnd-card-holder">
-                            <label for="dnd1-c4-card3" class="row dnd-card">
-                                <img src="/images/milesdark3.jpg">
-                            </label>
-                        </div>
-                    </div>
-                    <div class="dnd-card-wrapper">
-                        <input id="dnd1-c4-card4" class="dnd-card-radio" type="radio" name="dnd-cards">
-                        <div class="row dnd-card-holder">
-                            <label for="dnd1-c4-card4" class="row dnd-card">
-                                <img src="/images/heg.jpg">
-                            </label>
-                        </div>
-                    </div>
-                </div>
-            </form>
-        </div>
-    </section> -->
-    <!-- <section id="bgm" class="column section2">
-        <div class="row title">
-            <h1>DTM/BGM</h1>
-        </div>
-        <div class="content">
-            <p>Whaht do i put her. Lorem ipsum dolor sit amet consectetur adipisicing elit. Non iure cum rem, eum, assumenda debitis voluptatum saepe magnam veniam omnis perspiciatis consequatur ut soluta corporis! Aut ea voluptate ipsam debitis.</p>
-        </div>
-    </section>
-    <section id="rig" class="column section1">
-        <div class="row title">
-            <h1>RIG</h1>
-        </div>
-        <div class="content">
-            <p>Whaht do i put her. Lorem ipsum dolor sit amet consectetur adipisicing elit. Non iure cum rem, eum, assumenda debitis voluptatum saepe magnam veniam omnis perspiciatis consequatur ut soluta corporis! Aut ea voluptate ipsam debitis.</p>
-        </div>
-    </section> -->
+    
     <section id="services" class="column section2">
         <div class="row title">
             <h1>SERVICES</h1>
+        </div>
+        <div class="content">
+            <p>i don Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor placeat nostrum assumenda porro temporibus odit enim voluptas amet est corrupti cum expedita et, officiis eligendi eveniet ratione facilis ipsum obcaecati.<br><br>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque ut incidunt, error voluptates eius, veniam possimus dolorem vero voluptas ipsa, fugiat nam. Accusamus voluptates debitis doloremque dolorum necessitatibus voluptatibus soluta?</p>
+        </div>
+    </section>
+    <section id="TOR" class="column section2">
+        <div class="row title">
+            <h1>TERMS OF SERVICE</h1>
         </div>
         <div class="content">
             <p>i don Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor placeat nostrum assumenda porro temporibus odit enim voluptas amet est corrupti cum expedita et, officiis eligendi eveniet ratione facilis ipsum obcaecati.<br><br>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque ut incidunt, error voluptates eius, veniam possimus dolorem vero voluptas ipsa, fugiat nam. Accusamus voluptates debitis doloremque dolorum necessitatibus voluptatibus soluta?</p>

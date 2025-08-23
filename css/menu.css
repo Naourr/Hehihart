@@ -20,8 +20,6 @@
     z-index: 100;
 }
 
-
-
 .menu-links a {
     color: var(--bg1text);
     height: var(--navheight);
@@ -59,7 +57,6 @@
 .neg {
     pointer-events: none;
 }
-
 
 #menubar, .menubar-bg, .menubar-wrapper, .menubar-wrapper video {
     pointer-events: none;

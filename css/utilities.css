@@ -17,7 +17,9 @@ html {
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
     overflow-x: hidden;
-    scrollbar-color: var(--accent2) rgb(41,41,41);
+}
+html::-webkit-scrollbar {
+    display: none;
 }
 a {
     text-decoration: none;
@@ -42,14 +44,14 @@ p {
     justify-content: center;
     align-items: center;
 }
-section, .section {
+section {
     width: 100vw;
     min-height: calc(100vh);
     max-height: fit-content;
     gap: var(--title-content-gap);
     padding: var(--vpad) var(--hpad);
     scroll-snap-align: start;
-    scroll-snap-stop: always;
+    scroll-snap-stop: normal;
 }
 .content {
     width: 100%;
@@ -73,11 +75,6 @@ section, .section {
     height: 100vh;
 }
 
-.loading {
-    background-color: black;
-    color: var(--accent1);
-    z-index: 100;
-}
 .loadscreen {
     z-index: 200;
     pointer-events: none;
@@ -88,15 +85,4 @@ section, .section {
     width: 125%;
     height: auto;
     aspect-ratio: auto;
-}
-.bawal {
-    z-index: 199;
-    background-color: black;
-    color: var(--accent2);
-    pointer-events: none;
-    text-align: center;
-    padding: var(--hpad);
-    font-size: calc(var(--font-size) + 0.4rem);
-    opacity: 0;
-    transition: opacity 0.5s ease-out;
 }

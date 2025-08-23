@@ -38,8 +38,3 @@
         width: 200px;
     }
 }
-@media screen and (orientation: portrait) {
-    .bawal {
-        opacity: 1;
-    }
-}
