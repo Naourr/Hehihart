@@ -1,7 +1,7 @@
 .menu-area, .menu-areaback {
     position: fixed;
-    bottom: 5px;
-    right: 5px;
+    bottom: 35px;
+    right: 15px;
     background-color: transparent;
     border-radius: 50%;
     width: 85px;
@@ -14,8 +14,8 @@
 }
 .menu-vidwrapper {
     position: fixed;
-    bottom: -40px;
-    right: -20px;
+    bottom: -13px;
+    right: -10px;
     pointer-events: none;
     z-index: 100;
 }

@@ -1,14 +1,23 @@
 document.querySelectorAll('img').forEach(img => img.loading = 'lazy');
 
 function loading() {
-    const loadscreen = document.querySelector('.loadscreen');
-    const loading = document.querySelector('.loading');
+    const loadvid = document.querySelector('#loadvid');
+    const overlays = document.querySelector('.overlays');
+
     window.addEventListener("load", function() {
-        loading.style.display = "none";
-        loadscreen.classList.toggle('fade-out');
+        // loadvid.addEventListener('ended', () => {
+        //     overlays.classList.add('animate');
+        // })
+        overlays.classList.add('animate');
     });
 }
 loading();
+
+const hamburger = document.querySelector('.hamburger');
+const navWrapper = document.querySelector('.nav-wrapper');
+hamburger.addEventListener('click', () => {
+    navWrapper.classList.toggle('hidden');
+});
 
 function sectIndicator() {
     const sections = document.querySelectorAll('section');
@@ -16,15 +25,18 @@ function sectIndicator() {
     const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
             const id = entry.target.id
-            const indicator = document.querySelector(`.section-indicator .${id}`)
-            const navLink = document.querySelector(`.nav-links a.${id}-nav`)
+            const indicator = document.querySelector(`.section-indicator .${id}`);
+            const navLink = document.querySelector(`.nav-links a.${id}-nav`);
+            const num = document.querySelector(`.overlays .${id}-num`);
 
             if (entry.isIntersecting) {
                 indicator.classList.add('active')
                 navLink.classList.add('active')
+                num.classList.add('active')
             } else {
                 indicator.classList.remove('active');
                 navLink.classList.remove('active')
+                num.classList.remove('active')
             }
         })
     },{
@@ -33,6 +45,17 @@ function sectIndicator() {
     sections.forEach(section => observer.observe(section));
 }
 sectIndicator();
+
+function followMouse() {
+    const follower = document.querySelector('.follow-mouse');
+    const height = follower.offsetHeight;
+    const width = follower.offsetWidth;
+
+    window.addEventListener('mousemove', (event) => {
+        follower.style.transform = `translate(${event.clientX - width / 2}px, ${event.clientY - height / 2}px)`;
+    });
+}
+followMouse();
 
 function parallax() {
     const layers = document.querySelectorAll('.parallax-layer');

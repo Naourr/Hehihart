@@ -1,6 +1,6 @@
 @import url(/css/menu.css);
 .scroll-holder {
-    position: fixed;
+    position: absolute;
     left: 16px;
     top: 0;
     z-index: 10;
@@ -8,25 +8,25 @@
 }
 .custom-scrollbar {
     background-color: white;
-    width: 3px;
+    width: 1px;
     height: calc(100%);
     margin: 180px 0 80px 0;
     padding: 1rem 0 1rem 0;
 }
 .track {
-    background-color: white;
-    width: 3px;
+    background-color: transparent;
+    width: 1px;
     height: 0%;
     transition: height 0.3s ease-out;
 }
 .thumb {
-    background-color: red;
-    width: 5px;
+    background-color: var(--accent0);
+    width: 10px;
     height: 10px;
 }
 
 .nav-holder {
-    position: fixed;
+    position: absolute;
     left: 40px;
     top: 0;
     z-index: 10;
@@ -45,16 +45,16 @@
     transition: all 0.3s ease;
 }
 .nav-links > a:hover {
-    text-shadow: 0 0 4px white;
+    text-shadow: 0 0 40px white;
 }
 .nav-links > a.active {
-    color: red;
+    color: var(--accent0);
     font-size: calc(var(--font-size) + .3rem);
     transition: all 0.3s ease;
 }
 .indicator-holder {
     position: fixed;
-    bottom: 16px;
+    bottom: 10px;
     left: 0;
     height: 10px;
     width: 100vw;
@@ -66,34 +66,111 @@
     height: 100%;
     user-select: none;
     color: transparent;
+    gap: 10px;
 }
 .section-indicator > div {
    flex-grow: 1;
    transition: flex-grow 0.3s ease-in;
    height: 100%;
-   background-color: transparent;
+   background-color: rgb(36, 36, 36);
 }
 .section-indicator > div.active {
    flex-grow: 2;
    transition: flex-grow 0.3s ease-out;
    background-color: var(--accent0);
 }
-/* 
-.home {
-    background-color: var(--accent0);
+
+.follow-mouse {
+    position: fixed;
+    user-select: none;
+    pointer-events: none;
+    z-index: 100;
+    will-change: transform;
+    transition: transform 0.2s ease-out;
 }
-.about {
-    background-color: transparent;
+.follow-mouse img {
+    width: 100px;
+    height: auto;
 }
-.gallery {
-    background-color: var(--accent0);
+
+.overlays img {
+    width: 600px;
+    height: auto;
 }
-.services {
-    background-color: transparent;
+.overlays h1 {
+    position: absolute;
+    color: black;
+    top: 5px;
+    right: 45px;
+    font-size: calc(var(--font-size) + 2.8rem);
+    height: inherit;
 }
-.TOR {
-    background-color: var(--accent0);
+
+.overlays {
+    position: fixed;
+    top: 30px;
+    left: 10px;
+    opacity: 0;
+    z-index: 10;
 }
-.contact {
-    background-color: transparent;
-} */
+
+.overlays.animate {
+    animation-name: slideTo-left;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slideTo-left {
+    0% {
+        left: 0;
+        opacity: 0;
+    }
+    100% {
+        left: -450px;
+        opacity: 1;
+    }
+}
+.overlays > h1 {
+    display: none;
+}
+.overlays > h1.active {
+    display: flex;
+    animation-name: to-left;
+    animation-duration: 0.4s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes to-left {
+    0% {
+        opacity: 0;
+        transform: translate(40px, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+
+.hamburger {
+    position: fixed;
+    gap: 5px;
+    top: 140px;
+    left: 16px;
+}
+.hamburger span {
+    width: 22px;
+    height: 3px;
+    background-color: white;
+}
+.nav-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0vw;
+    height: 100vh;
+    z-index: 10;
+    transition: left 1s ease-out;
+}
+.nav-wrapper.hidden {
+    left: -50vw;
+    transition: left 1s ease-out;
+}
