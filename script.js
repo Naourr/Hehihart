@@ -46,6 +46,17 @@ function sectIndicator() {
 }
 sectIndicator();
 
+function textParallax() {
+    const layer = document.querySelector('.parallax-big-title');
+    document.addEventListener('mousemove', e => {
+        const x = (e.clientX / window.innerWidth) * 100;
+        const y = (e.clientY / window.innerHeight) * 100;
+    
+        layer.style.backgroundPosition = `${x}% ${y}%`;
+    });
+}
+textParallax();
+
 function followMouse() {
     const follower = document.querySelector('.follow-mouse');
     const height = follower.offsetHeight;

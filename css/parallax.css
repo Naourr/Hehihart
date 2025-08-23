@@ -67,7 +67,17 @@
 }
 .parallax-big-title {
     font-family: 'aquire';
-    font-size: calc(var(--font-size) + 3rem);
-    margin-bottom: 2rem;
-    text-shadow: 0 0 8px white;
+    font-size: calc(var(--font-size) + 7rem);
+    /* text-shadow: 0 0 8px black; */
+    background-color: black;
+    background-image: url(/ken/rand_imageasset/new\ assets/design\ asset.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 150%;
+    background-position: center;
+    height: 400px;
+    width: 700px;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
 }

@@ -58,3 +58,37 @@
     background-repeat: no-repeat;
     aspect-ratio: auto;
 }
+
+#gallery {
+    background-image: url(/ken/rand_imageasset/images/illustration67.webp);
+    position: relative;
+    justify-content: space-evenly;
+    gap: 5rem;
+    padding: 7rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    aspect-ratio: auto;
+}
+#TOS {
+    background-image: url(/ken/rand_imageasset/images/Illustration71.webp);
+    position: relative;
+    justify-content: space-evenly;
+    gap: 5rem;
+    padding: 7rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    aspect-ratio: auto;
+}
+#contact {
+    background-image: url(/ken/rand_imageasset/images/Illustration92.webp);
+    position: relative;
+    justify-content: space-evenly;
+    gap: 5rem;
+    padding: 7rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    aspect-ratio: auto;
+}
