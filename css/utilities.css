@@ -52,7 +52,7 @@ section {
     gap: var(--title-content-gap);
     padding: var(--vpad) var(--hpad);
     scroll-snap-align: start;
-    scroll-snap-stop: normal;
+    scroll-snap-stop: always;
 }
 .content {
     width: 100%;
