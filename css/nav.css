@@ -13,12 +13,3 @@ nav {
     justify-content: space-between;
     gap: 1rem;
 }
-.nav-left {
-    gap: 1rem;
-}
-.nav-logo {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background-color: var(--bg1text);
-}
