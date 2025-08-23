@@ -1,4 +1,4 @@
-document.querySelectorAll('img').forEach(img => img.loading = 'lazy');
+document.querySelectorAll('section').forEach(section => section.loading = 'preload');
 const music = document.querySelector('#music');
 const playMusic = document.querySelector('.play-music');
 
@@ -7,11 +7,11 @@ function loading() {
     const overlays = document.querySelector('.overlays');
 
     window.addEventListener("load", function() {
-        // loadvid.addEventListener('ended', () => {
-        //     overlays.classList.add('animate');
-        //     music.play();
-        // })
-        overlays.classList.add('animate');
+        loadvid.addEventListener('ended', () => {
+            overlays.classList.add('animate');
+            music.play();
+        })
+        //overlays.classList.add('animate');
     });
 }
 loading();
