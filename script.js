@@ -1,18 +1,4 @@
 document.querySelectorAll('img').forEach(img => img.loading = 'lazy');
-
-function loading() {
-    const loadvid = document.querySelector('#loadvid');
-    const overlays = document.querySelector('.overlays');
-
-    window.addEventListener("load", function() {
-        // loadvid.addEventListener('ended', () => {
-        //     overlays.classList.add('animate');
-        // })
-        overlays.classList.add('animate');
-    });
-}
-loading();
-
 const music = document.querySelector('#music');
 const playMusic = document.querySelector('.play-music');
 playMusic.addEventListener('click', () => {
@@ -24,6 +10,21 @@ playMusic.addEventListener('click', () => {
         playMusic.textContent = "♪"
     }
 })
+function loading() {
+    const loadvid = document.querySelector('#loadvid');
+    const overlays = document.querySelector('.overlays');
+
+    window.addEventListener("load", function() {
+        loadvid.addEventListener('ended', () => {
+            overlays.classList.add('animate');
+            music.play();
+        })
+        // overlays.classList.add('animate');
+    });
+}
+loading();
+
+
 
 const hamburger = document.querySelector('.hamburger');
 const navWrapper = document.querySelector('.nav-wrapper');
