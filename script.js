@@ -1,30 +1,30 @@
 document.querySelectorAll('img').forEach(img => img.loading = 'lazy');
 const music = document.querySelector('#music');
 const playMusic = document.querySelector('.play-music');
-playMusic.addEventListener('click', () => {
-    if (music.paused) {
-        music.play();
-        playMusic.textContent = "⏸"
-    } else {
-        music.paused = true;
-        playMusic.textContent = "♪"
-    }
-})
+
 function loading() {
     const loadvid = document.querySelector('#loadvid');
     const overlays = document.querySelector('.overlays');
 
     window.addEventListener("load", function() {
-        loadvid.addEventListener('ended', () => {
-            overlays.classList.add('animate');
-            music.play();
-        })
-        // overlays.classList.add('animate');
+        // loadvid.addEventListener('ended', () => {
+        //     overlays.classList.add('animate');
+        //     music.play();
+        // })
+        overlays.classList.add('animate');
     });
 }
 loading();
 
-
+playMusic.addEventListener('click', () => {
+    if (music.paused) {
+        music.play();
+        playMusic.textContent = "⏸"
+    } else {
+        music.pause()
+        playMusic.textContent = "♪"
+    }
+})
 
 const hamburger = document.querySelector('.hamburger');
 const navWrapper = document.querySelector('.nav-wrapper');
