@@ -1,4 +1,4 @@
-document.querySelectorAll('section').forEach(section => section.loading = 'preload');
+
 const music = document.querySelector('#music');
 const playMusic = document.querySelector('.play-music');
 
