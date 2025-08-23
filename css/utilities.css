@@ -17,6 +17,7 @@ html {
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
     overflow-x: hidden;
+    background-color: rgb(15, 15, 15);
 }
 html::-webkit-scrollbar {
     display: none;
