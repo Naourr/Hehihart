@@ -37,4 +37,12 @@
     .profile {
         width: 200px;
     }
+    .parallax-big-title {
+        font-size: 5rem;
+    }
+}
+@media screen and (max-width: 500px) {
+    .parallax-big-title {
+        font-size: 3rem;
+    }
 }

@@ -3,15 +3,20 @@ const music = document.querySelector('#music');
 const playMusic = document.querySelector('.play-music');
 
 function loading() {
-    const loadvid = document.querySelector('#loadvid');
-    const overlays = document.querySelector('.overlays');
+    
 
     window.addEventListener("load", function() {
-        loadvid.addEventListener('ended', () => {
-            overlays.classList.add('animate');
-            music.play();
-        })
-        //overlays.classList.add('animate');
+        const loadvid = document.querySelector('#loadvid');
+        const hehihart = document.querySelector('.parallax-big-title');
+        const overlays = document.querySelector('.overlays');
+        // loadvid.addEventListener('ended', () => {
+        //     overlays.classList.add('animate');
+        //     hehihart.classlist.add('animate');
+        //     music.play();
+        // })
+        overlays.classList.add('animate');
+        //hehihart.classlist.add('animate');
+        hehihart.style.animationName = 'to-left';
     });
 }
 loading();

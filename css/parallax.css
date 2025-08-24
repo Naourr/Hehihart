@@ -68,7 +68,7 @@
 .parallax-big-title {
     font-family: 'aquire';
     font-size: calc(var(--font-size) + 7rem);
-    /* text-shadow: 0 0 8px white; */
+    text-shadow: 0 0 8px white;
     background-color: white;
     background-image: url(/ken/rand_imageasset/new\ assets/design\ asset.png);
     background-repeat: no-repeat;
@@ -80,4 +80,10 @@
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
+    /* animation-name: to-left; */
+    animation-duration: 1s;
 }
+/* .parallax-big-title.animate {
+    animation-name: to-left;
+    animation-duration: 1s;
+} */
