@@ -11,11 +11,11 @@ function loading() {
         const overlays = document.querySelector('.overlays');
         // loadvid.addEventListener('ended', () => {
         //     overlays.classList.add('animate');
-        //     hehihart.style.animationName = 'to-left';
+        //     hehihart.style.animationName = 'to-left-new';
         //     music.play();
         // })
         overlays.classList.add('animate');
-        hehihart.style.animationName = 'to-left';
+        hehihart.style.animationName = 'to-left-new';
     });
 }
 loading();
@@ -35,6 +35,15 @@ const navWrapper = document.querySelector('.nav-wrapper');
 hamburger.addEventListener('click', () => {
     navWrapper.classList.toggle('hidden');
 });
+
+function menuClick() {
+    const menuBtn = document.querySelector('.menu-btn');
+    const menu = document.querySelector('.menu');
+    menuBtn.addEventListener('click', () => {
+        menu.classList.toggle('active');
+    })
+}
+menuClick();
 
 function sectIndicator() {
     const sections = document.querySelectorAll('section');
@@ -84,7 +93,20 @@ function followMouse() {
     });
 }
 followMouse();
-
+function mapParallax() {
+    const layers = document.querySelectorAll('.parallax-layer-map');
+    document.addEventListener('mousemove', e => {
+        const x = (e.clientX / window.innerWidth - 0.5) * 2;
+        const y = (e.clientY / window.innerHeight - 0.5) * 2;
+        layers.forEach(layer => {
+            const depth = layer.dataset.depth;
+            const translateX = x * depth * 50;
+            const translateY = y * depth * 50;
+            layer.style.transform = `translate(${translateX}px, ${translateY}px)`;
+        });
+    });
+}
+mapParallax();
 function parallax() {
     const layers = document.querySelectorAll('.parallax-layer');
     document.addEventListener('mousemove', e => {

@@ -1,100 +1,91 @@
-.menu-area, .menu-areaback {
+.menu-btn {
+    transform: rotate(45deg);
     position: fixed;
-    bottom: 35px;
-    right: 15px;
-    background-color: transparent;
-    border-radius: 50%;
-    width: 85px;
-    height: 85px;
-    z-index: 100;
+    bottom: -85px;
+    right: -85px;
+    z-index: 15;
+    width: 150px;
+    height: 150px;
+    background-color: var(--accent0);
+    transition: all 0.4s ease-out;
 }
-.menu-areaback {
-    background-color: rgba(36, 36, 36, 0.8);
-    pointer-events: none;
+.menu-btn:hover {
+    bottom: -75px;
+    right: -75px;
+    transition: all 0.4s ease-out;
 }
-.menu-vidwrapper {
-    position: fixed;
-    bottom: -13px;
-    right: -10px;
-    pointer-events: none;
-    z-index: 100;
-}
-
-.menu-links a {
-    color: var(--bg1text);
-    height: var(--navheight);
-    padding: 0px .5rem;
-    transition: all 0.3s ease-in;
-}
-.menu-links a:hover {
-    background-image: linear-gradient(to left, var(--accent1), transparent);
-    transition: all 0.3s ease-out;
-}
-.menu-links a:active {
-    background-image: linear-gradient(to left, var(--accent2), transparent);
-    transition: all 0.3s ease-out;
-}
-.menu-links {
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    bottom: 0px;
-    right: -1000px;
-    width: 50vw;
+.menu {
     height: 100vh;
-    opacity: 1;
-    justify-content: space-evenly;
-    align-items: flex-end;
-    gap: 4px;
-}
-.menu-links.active {
-    right: 0px;
-}
-.menu-links a {
-    width: 320px;
-    color: white;
-}
-.neg {
-    pointer-events: none;
-}
-
-#menubar, .menubar-bg, .menubar-wrapper, .menubar-wrapper video {
-    pointer-events: none;
-}
-.menubar-bg {
-    background-image: linear-gradient(to left, black , transparent );
-    display: flex;
-    flex-direction: column;
+    width: 100vw;
     position: fixed;
-    bottom: 0px;
-    right: -1000px;
-    width: 1000px;
-    height: 100vh;
-    opacity: 1;
+    top: 0;
+    left: 200vw;
+    transition: left 0.6s ease-out;
 }
-.menubar-bg.active {
-    right: 0px;
+.menu.active {
+    left: -48px;
+    transition: left 0.6s ease-out;
 }
-.menubar-wrapper {
-    position: fixed;
-    bottom: 0px;
-    height: 100vh;
-    right: -100vw;
-}
-.menubar-wrapper video {
+.menu-bg {
+    position: absolute;
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.795), transparent);
     height: 100%;
-    width: auto;
-    scale: 1.03;
+    width: 200%;
+    right: -48px;
+    top: 0;
 }
-.menubar-wrapper.active {
-    right: 35px;
+.menu-body {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    /* background-color: blue; */
+    gap: 2rem;
+    padding: 2rem;
 }
-
-.menubar-bg, .menubar-wrapper, .menu-links {
-    transition: right .8s ease-in;
-    transition-delay: .5s;
+.menu-left {
+    /* background-color: cyan; */
+    height: 100%;
+    width: 50%;
+    padding: 5rem;
 }
-.menubar-bg.active, .menubar-wrapper.active, .menu-links.active {
-    transition: right .8s ease-out;
-    transition-delay: .5s;
+.menu-right {
+    background-color: pink;
+    height: 100%;
+    width: 50%;
+}
+.parallax-map {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-image: url('/ken/menuassets/menucicrcle.png');
+    background-size: cover;
+    background-position: center;
+}
+.parallax-layer-map {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    /* top: -10%;
+    left: -10%; */
+    background-size: cover;
+    background-position: center;
+    will-change: transform;
+    pointer-events: none;
+    transition: all 0.3s ease-out;
+}
+.parallax-layer-map:nth-child(1) {
+    background-image: url(/ken/menuassets/topoparallax/1.png);
+}
+.parallax-layer-map:nth-child(2) {
+    background-image: url(/ken/menuassets/topoparallax/2.png);
+}
+.parallax-layer-map:nth-child(3) {
+    background-image: url(/ken/menuassets/topoparallax/3.png);
+}
+.parallax-layer-map:nth-child(4) {
+    background-image: url(/ken/menuassets/topoparallax/4.png);
+}
+.parallax-layer-map:nth-child(5) {
+    background-image: url(/ken/menuassets/topoparallax/5.png);
 }

@@ -80,10 +80,16 @@
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
-    /* animation-name: to-left; */
     animation-duration: 1s;
 }
-/* .parallax-big-title.animate {
-    animation-name: to-left;
-    animation-duration: 1s;
-} */
+
+@keyframes to-left-new {
+    0% {
+        opacity: 0;
+        transform: translate(20vw, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
