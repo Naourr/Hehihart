@@ -46,3 +46,12 @@
         font-size: 3rem;
     }
 }
+@media screen and (orientation: portrait) {
+    .menu-body {
+        flex-direction: column;
+    }
+    .menu-left, .menu-right {
+        height: 50%;
+        width: 100%;
+    }
+}

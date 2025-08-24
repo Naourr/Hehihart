@@ -23,7 +23,7 @@
     transition: left 0.6s ease-out;
 }
 .menu.active {
-    left: -48px;
+    left: 0;
     transition: left 0.6s ease-out;
 }
 .menu-bg {
@@ -31,13 +31,15 @@
     background-image: linear-gradient(to left, rgba(0, 0, 0, 0.795), transparent);
     height: 100%;
     width: 200%;
-    right: -48px;
+    right: 0;
     top: 0;
 }
 .menu-body {
     position: absolute;
     height: 100%;
     width: 100%;
+    left: 0;
+    top: 0;
     /* background-color: blue; */
     gap: 2rem;
     padding: 2rem;
@@ -46,7 +48,7 @@
     /* background-color: cyan; */
     height: 100%;
     width: 50%;
-    padding: 5rem;
+    padding: 0rem;
 }
 .menu-right {
     background-color: pink;
@@ -59,17 +61,26 @@
     width: 100%;
     overflow: hidden;
     background-image: url('/ken/menuassets/menucicrcle.png');
-    background-size: cover;
+    background-size: contain;
     background-position: center;
+    background-repeat: no-repeat;
+}
+.map-bg {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url(/ken/menuassets/topobg.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .parallax-layer-map {
     width: 100%;
     height: 100%;
     position: absolute;
-    /* top: -10%;
-    left: -10%; */
-    background-size: cover;
+    background-size: contain;
     background-position: center;
+    background-repeat: no-repeat;
     will-change: transform;
     pointer-events: none;
     transition: all 0.3s ease-out;
