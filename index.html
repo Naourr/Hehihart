@@ -18,6 +18,12 @@
     <audio id="music" loop>
         <source src="/audio/[Arknights OST] shop.mp3" type="audio/mp3">
     </audio>
+    <audio id="menu-open">
+        <source src="/audio/clickopen.mp3" type="audio/mp3">
+    </audio>
+    <audio id="menu-close">
+        <source src="/audio/clickclose.mp3" type="audio/mp3">
+    </audio>
     <div class="row play-music">♪</div>
     <div class="nav-wrapper">
         <div class="column scroll-holder">
@@ -40,6 +46,8 @@
             <h1 class="TOS-num">04</h1>
             <h1 class="contact-num">05</h1>
         </div>
+
+
         <div class="row overlays-1">
             <div class="left">
                 <img src="/ken/rand_imageasset/new assets/leftframe.png">
@@ -47,6 +55,16 @@
             <div class="right">
                 <img src="/ken/rand_imageasset/new assets/rightframe.png">
             </div>
+        </div>
+
+
+        <div class="row section-labels">
+            <div class="home-label">HOME</div>
+            <div class="about-label">ABOUT</div>
+            <div class="gallery-label">GALLERY</div>
+            <div class="services-label">SERVICES</div>
+            <div class="TOS-label">TERMS OF SERVICE</div>
+            <div class="contact-label">CONTACT</div>
         </div>
 
         <div class="row nav-holder">
@@ -85,13 +103,27 @@
                     <div class="parallax-layer-map" data-depth="0.1"></div>
                     <div class="parallax-layer-map" data-depth="0.2"></div>
                     <div class="parallax-layer-map" data-depth="0.3"></div>
-                    <div class="parallax-layer-map" data-depth="0.3"></div>
                     <div class="parallax-layer-map" data-depth="0.4"></div>
+                    <div class="parallax-layer-map" data-depth="0.5"></div>
                 </div>
             </div>
             <div class="menu-right">
-                <div class="menu-top-right"></div>
-                <div class="menu-bottom-right"></div>
+                <div class="menu-top-right">
+                </div>
+                <div class="column menu-bottom-right">
+                    <div class="row row1">
+                        <img src="/ken/menuassets/iconholder.png">
+                        <img src="/ken/menuassets/iconholder.png">
+                        <img src="/ken/menuassets/iconholder.png">
+                        <img src="/ken/menuassets/iconholder.png">
+                    </div>
+                    <div class="row row2">
+                        <img src="/ken/menuassets/iconholder.png">
+                        <img src="/ken/menuassets/iconholder.png">
+                        <img src="/ken/menuassets/iconholder.png">
+                        <img src="/ken/menuassets/iconholder.png">
+                    </div>
+                </div>
             </div>
         </div>
     </nav>
@@ -123,35 +155,21 @@
     </section>
     
     <section id="gallery" class="column section2">
-        <div class="row title">
-            <h1>GALLERY</h1>
-        </div>
-        <div>
-           
-        </div>
+
     <button type="button" class="close"><img src="/images/closeicon.png" width="100%" height="auto"></button>
     </section>  
     
     <section id="services" class="column section2">
-        <div class="row title">
-            <h1>SERVICES</h1>
-        </div>
         <div class="content">
             <p>i don Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor placeat nostrum assumenda porro temporibus odit enim voluptas amet est corrupti cum expedita et, officiis eligendi eveniet ratione facilis ipsum obcaecati.<br><br>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque ut incidunt, error voluptates eius, veniam possimus dolorem vero voluptas ipsa, fugiat nam. Accusamus voluptates debitis doloremque dolorum necessitatibus voluptatibus soluta?</p>
         </div>
     </section>
     <section id="TOS" class="column section2">
-        <div class="row title">
-            <h1>TERMS OF SERVICE</h1>
-        </div>
         <div class="content">
             <p>i don Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor placeat nostrum assumenda porro temporibus odit enim voluptas amet est corrupti cum expedita et, officiis eligendi eveniet ratione facilis ipsum obcaecati.<br><br>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque ut incidunt, error voluptates eius, veniam possimus dolorem vero voluptas ipsa, fugiat nam. Accusamus voluptates debitis doloremque dolorum necessitatibus voluptatibus soluta?</p>
         </div>
     </section>
     <section id="contact" class="column section1">
-        <div class="title">
-            <h1>CONTACT</h1>
-        </div>
         <div class="column content textbox">
             <p>Sample content only:</p>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia quaerat eaque blanditiis earum obcaecati excepturi esse nostrum totam, placeat dignissimos alias veniam, aut soluta. Nam expedita tenetur error alias dicta!</p>

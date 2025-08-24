@@ -55,8 +55,16 @@ hamburger.addEventListener('click', () => {
 function menuClick() {
     const menuBtn = document.querySelector('.menu-btn');
     const menu = document.querySelector('.menu');
+
     menuBtn.addEventListener('click', () => {
         menu.classList.toggle('active');
+        const open = document.querySelector('#menu-open');
+        const close = document.querySelector('#menu-close');
+        if (menu.classList.contains('active')) {
+            close.play();
+        } else {
+            open.play();
+        }
     })
 }
 menuClick();
@@ -70,15 +78,18 @@ function sectIndicator() {
             const indicator = document.querySelector(`.section-indicator .${id}`);
             const navLink = document.querySelector(`.nav-links a.${id}-nav`);
             const num = document.querySelector(`.overlays .${id}-num`);
+            const label = document.querySelector(`.section-labels .${id}-label`);
 
             if (entry.isIntersecting) {
-                indicator.classList.add('active')
-                navLink.classList.add('active')
-                num.classList.add('active')
+                indicator.classList.add('active');
+                navLink.classList.add('active');
+                num.classList.add('active');
+                label.classList.add('active');
             } else {
                 indicator.classList.remove('active');
-                navLink.classList.remove('active')
-                num.classList.remove('active')
+                navLink.classList.remove('active');
+                num.classList.remove('active');
+                label.classList.remove('active');
             }
         })
     },{

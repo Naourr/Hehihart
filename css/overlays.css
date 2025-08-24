@@ -148,23 +148,44 @@
 }
 .overlays-1 {
     position: fixed;
-    top: 0;
+    top: 13px;
     left: 0;
     width: 100vw;
     justify-content: space-between;
     z-index: 12;
 }
-/* .overlays-1 .left {
-
-}
-.overlays-1 .right {
-    
-} */
 .overlays-1 img {
     height: auto;
     width: 500px;
 }
-
+.section-labels {
+    position: fixed;
+    z-index: 12;
+    top: 10px;
+    left: 0;
+    width: 100vw;
+    color: white;
+}
+.section-labels > div {
+    display: none;
+    font-size: calc(var(--font-size) + .7rem);
+}
+.section-labels > div.active {
+    display: flex;
+    animation-name: to-top;
+    animation-duration: 0.4s;
+    animation-fill-mode: forwards;
+}
+@keyframes to-top {
+    0% {
+        opacity: 0;
+        transform: translate(0, 40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
 .hamburger {
     position: fixed;
     gap: 5px;
@@ -190,7 +211,7 @@
 }
 .play-music {
     position: fixed;
-    top: 0;
+    top: 1rem;
     right: 0;
     border-radius: 10px;
     padding: 0 15px 5px 15px;
