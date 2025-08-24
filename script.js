@@ -11,11 +11,10 @@ function loading() {
         const overlays = document.querySelector('.overlays');
         // loadvid.addEventListener('ended', () => {
         //     overlays.classList.add('animate');
-        //     hehihart.classlist.add('animate');
+        //     hehihart.style.animationName = 'to-left';
         //     music.play();
         // })
         overlays.classList.add('animate');
-        //hehihart.classlist.add('animate');
         hehihart.style.animationName = 'to-left';
     });
 }
