@@ -3,19 +3,29 @@ const music = document.querySelector('#music');
 const playMusic = document.querySelector('.play-music');
 
 function loading() {
-    
-
     window.addEventListener("load", function() {
         const loadvid = document.querySelector('#loadvid');
+        const load_src = this.document.querySelector('#loadvid source'); 
         const hehihart = document.querySelector('.parallax-big-title');
         const overlays = document.querySelector('.overlays');
-        // loadvid.addEventListener('ended', () => {
-        //     overlays.classList.add('animate');
-        //     hehihart.style.animationName = 'to-left-new';
-        //     music.play();
-        // })
-        overlays.classList.add('animate');
-        hehihart.style.animationName = 'to-left-new';
+
+        const roll = getRandomIntInclusive(1, 5);
+        if (roll == 1) load_src.src = "/ken/firstlogotest.webm";
+        if (roll == 2) load_src.src = "/ken/forthelogo.webm";
+        if (roll == 3) load_src.src = "/ken/lenlogo.webm";
+        if (roll == 4) load_src.src = "/ken/loadscreen.webm";
+        if (roll == 5) load_src.src = "/ken/newintroanimation.webm";
+        loadvid.load();
+
+        const loadscreen = document.querySelector('.loadscreen');
+        loadvid.addEventListener('ended', () => {
+            loadscreen.classList.add('fade-out');
+            overlays.classList.add('animate');
+            hehihart.style.animationName = 'to-left-new';
+            music.play();
+        })
+        // overlays.classList.add('animate');
+        // hehihart.style.animationName = 'to-left-new';
     });
 }
 loading();
@@ -29,6 +39,12 @@ playMusic.addEventListener('click', () => {
         playMusic.textContent = "♪"
     }
 })
+
+function getRandomIntInclusive(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
 
 const hamburger = document.querySelector('.hamburger');
 const navWrapper = document.querySelector('.nav-wrapper');

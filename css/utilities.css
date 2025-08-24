@@ -81,9 +81,14 @@ section {
     pointer-events: none;
     user-select: none;
     opacity: 1;
+    background-color: black;
 }
 .loadscreen video {
     width: 125%;
     height: auto;
     aspect-ratio: auto;
+}
+.loadscreen.fade-out {
+    opacity: 0;
+    transition: opacity 1s ease;
 }
