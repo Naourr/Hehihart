@@ -19,21 +19,46 @@
     width: 100vw;
     position: fixed;
     top: 0;
-    left: 300vw;
-    transition: left 0.6s ease-out;
     z-index: 10;
+    left: 100vw;
+    opacity: 0;
+    transition: opacity 2.5s ease-in-out;
+    transition: left 0.6s ease-out;
 }
 .menu.active {
     left: 0;
+    opacity: 1;
+    transition: opacity 2.5s ease-in-out;
     transition: left 0.6s ease-out;
 }
+
 .menu-bg {
-    position: absolute;
-    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.795), transparent);
+    position: fixed;
     height: 100%;
-    width: 300%;
+    width: 100%;
     right: 0;
     top: 0;
+    background-color: rgba(0, 0, 0, 0.678);
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+}
+.menu-bg.active {
+    opacity: 1;
+    transition: opacity 2s ease-in-out;
+}
+.menu-vid {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    right: 0;
+    top: 0;
+    z-index: 99;
+}
+.menu-vid video {
+    height: 100%;
+    width: 100%;
+    aspect-ratio: auto;
+    object-fit: cover;
 }
 .menu-body {
     position: absolute;

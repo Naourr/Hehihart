@@ -55,8 +55,12 @@ hamburger.addEventListener('click', () => {
 function menuClick() {
     const menuBtn = document.querySelector('.menu-btn');
     const menu = document.querySelector('.menu');
-
+    const menuBg = document.querySelector('.menu-bg');
+    const menuVid = document.querySelector('.menu-vid video');
     menuBtn.addEventListener('click', () => {
+        menuVid.playBackRate = 1.2;
+        menuVid.play();
+        menuBg.classList.toggle('active');
         menu.classList.toggle('active');
         const open = document.querySelector('#menu-open');
         const close = document.querySelector('#menu-close');
