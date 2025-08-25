@@ -7,22 +7,50 @@
     height: 100vh;
 }
 .custom-scrollbar {
+    position: relative;
     background-color: white;
     width: 1px;
     height: calc(100%);
-    margin: 180px 0 80px 0;
-    padding: 1rem 0 1rem 0;
+    margin: 190px 0 100px 0;
+    /* padding: 1rem 0 1rem 0; */
 }
-.track {
+/* .track {
     background-color: transparent;
     width: 1px;
     height: 0%;
     transition: height 0.3s ease-out;
-}
+} */
 .thumb {
     background-color: var(--accent0);
     width: 10px;
     height: 10px;
+    position: absolute;
+    top: 0%;
+    transition: top 100s linear;
+}
+.thumb.home-point {
+    top: 0.1%;
+    transition: top 0.3s linear;
+}
+.thumb.about-point {
+    top: 20%;
+    transition: top 0.3s linear;
+}
+.thumb.gallery-point {
+    top: 40%;
+    transition: top 0.3s linear;
+}
+.thumb.services-point {
+    top: 60%;
+    transition: top 0.3s linear;
+}
+.thumb.TOS-point {
+    top: 80%;
+    transition: top 0.3s linear;
+}
+.thumb.contact-point {
+    top: 100%;
+    transition: top 0.3s linear;
 }
 
 .nav-holder {
@@ -34,7 +62,7 @@
 }
 .nav-links {
     height: 100%;
-    padding: calc(180px + 1rem) 0 calc(80px + 1rem) 0;
+    padding: calc(180px) 0 calc(110px) 0;
     justify-content: space-between;
     align-items: start;
     text-align: left;
@@ -43,13 +71,17 @@
     font-size: calc(var(--font-size) - .2rem);
     color: white;
     transition: all 0.3s ease;
+    height: 0;
+    padding: 0 10px 0 10px;
 }
 .nav-links > a:hover {
     text-shadow: 0 0 40px white;
 }
 .nav-links > a.active {
     color: var(--accent0);
-    font-size: calc(var(--font-size) + .3rem);
+    /* font-size: calc(var(--font-size) + .3rem); */
+    scale: 2;
+    transform: translate(9px, 0);
     transition: all 0.3s ease;
 }
 .indicator-holder {
@@ -110,7 +142,7 @@
     top: 30px;
     left: 10px;
     opacity: 0;
-    z-index: 10;
+    z-index: 15;
 }
 .overlays.animate {
     animation-name: slideTo-left;
@@ -146,13 +178,21 @@
         transform: translate(0, 0);
     }
 }
-.overlays-1 {
+.overlays1-wrapper {
     position: fixed;
+    width: 100vw;
+    top: 0;
+    left: 0;
+}
+.overlays-1 {
+    position: absolute;
     top: 13px;
     left: 0;
-    width: 100vw;
+    width: 100%;
     justify-content: space-between;
     z-index: 12;
+    padding: 0 10px 0 10px;
+    gap: 400px;
 }
 .overlays-1 img {
     height: auto;
@@ -160,8 +200,8 @@
 }
 .section-labels {
     position: fixed;
-    z-index: 12;
-    top: 10px;
+    z-index: 11;
+    top: 20px;
     left: 0;
     width: 100vw;
     color: white;
@@ -186,6 +226,13 @@
         transform: translate(0, 0);
     }
 }
+.section-labels img {
+    width: 250px;
+    height: auto;
+    position: absolute;
+}
+
+
 .hamburger {
     position: fixed;
     gap: 5px;

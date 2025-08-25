@@ -83,17 +83,20 @@ function sectIndicator() {
             const navLink = document.querySelector(`.nav-links a.${id}-nav`);
             const num = document.querySelector(`.overlays .${id}-num`);
             const label = document.querySelector(`.section-labels .${id}-label`);
+            const thumb = document.querySelector('.thumb');
 
             if (entry.isIntersecting) {
                 indicator.classList.add('active');
                 navLink.classList.add('active');
                 num.classList.add('active');
                 label.classList.add('active');
+                thumb.classList.add(`${id}-point`)
             } else {
                 indicator.classList.remove('active');
                 navLink.classList.remove('active');
                 num.classList.remove('active');
                 label.classList.remove('active');
+                thumb.classList.remove(`${id}-point`)
             }
         })
     },{
@@ -153,21 +156,21 @@ function parallax() {
 }
 parallax();
 
-function customScrollbar() {
-    window.addEventListener('scroll', () => {
-        const scrolled = window.scrollY;
-        const footer = document.querySelector('footer');
-        const footerHeight = footer.offsetHeight;
-        const canScroll = document.documentElement.scrollHeight - window.innerHeight - footerHeight;
+// function customScrollbar() {
+//     window.addEventListener('scroll', () => {
+//         const scrolled = window.scrollY;
+//         const footer = document.querySelector('footer');
+//         const footerHeight = footer.offsetHeight;
+//         const canScroll = document.documentElement.scrollHeight - window.innerHeight - footerHeight;
         
-        const scrollRatio = scrolled / canScroll;
+//         const scrollRatio = scrolled / canScroll;
 
-        const track = document.querySelector('.track');
+//         const track = document.querySelector('.track');
         
-        track.style.height = `${scrollRatio * 100}%`
-    })
-}
-customScrollbar();
+//         track.style.height = `${scrollRatio * 100}%`
+//     })
+// }
+// customScrollbar();
 
 function menubar_slidein() {
     const menuarea = document.querySelector('.menu-area');

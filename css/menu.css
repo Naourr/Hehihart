@@ -41,6 +41,7 @@
     background-color: rgba(0, 0, 0, 0.678);
     opacity: 0;
     transition: opacity 2s ease-in-out;
+    pointer-events: none;
 }
 .menu-bg.active {
     opacity: 1;
@@ -53,6 +54,7 @@
     right: 0;
     top: 0;
     z-index: 99;
+    pointer-events: none;
 }
 .menu-vid video {
     height: 100%;
