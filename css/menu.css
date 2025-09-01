@@ -90,7 +90,8 @@
 }
 .menu-bottom-right img {
     height: auto;
-    width: 100px;
+    width: 70px;
+    object-fit: scale-down;
 }
 .parallax-map {
     position: relative;
@@ -136,4 +137,26 @@
 }
 .parallax-layer-map:nth-child(5) {
     background-image: url(/ken/menuassets/topoparallax/5.png);
+}
+
+.play-music {
+    position: absolute;
+    top: 1rem;
+    right: 6px;
+    border-radius: 10px;
+    padding: 0 15px 5px 15px;
+    margin: 10px;
+    border: 2px solid white;
+    color: white;
+    font-size: 2rem;
+    background-color: transparent;
+    user-select: none;
+}
+.play-music:hover {
+    background-color: rgba(0, 0, 0, 0.452);
+}
+.play-music:active {
+    background-color: transparent;
+    color: var(--accent0);
+    border: 2px solid var(--accent0);
 }

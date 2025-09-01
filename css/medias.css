@@ -40,10 +40,17 @@
     .parallax-big-title {
         font-size: 5rem;
     }
+    .section-nums {
+        translate: 35px;
+        scale: 0.7;
+    }
 }
 @media screen and (max-width: 500px) {
     .parallax-big-title {
         font-size: 3rem;
+    }
+    .top-line {
+        gap: 100px;
     }
 }
 @media screen and (orientation: portrait) {
