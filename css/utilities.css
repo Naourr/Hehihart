@@ -77,7 +77,7 @@ section {
 }
 
 .loadscreen {
-    z-index: 200;
+    z-index: 100;
     pointer-events: none;
     user-select: none;
     opacity: 1;

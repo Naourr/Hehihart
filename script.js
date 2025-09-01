@@ -7,7 +7,7 @@ function loading() {
         const loadvid = document.querySelector('#loadvid');
         const load_src = this.document.querySelector('#loadvid source'); 
         const hehihart = document.querySelector('.parallax-big-title');
-        const overlays = document.querySelector('.overlays');
+        const sectionNums = document.querySelector('.section-nums');
 
         const roll = getRandomIntInclusive(1, 5);
         if (roll == 1) load_src.src = "/ken/firstlogotest.webm";
@@ -20,11 +20,11 @@ function loading() {
         const loadscreen = document.querySelector('.loadscreen');
         loadvid.addEventListener('ended', () => {
             loadscreen.classList.add('fade-out');
-            overlays.classList.add('animate');
+            sectionNums.classList.add('animate');
             hehihart.style.animationName = 'to-left-new';
             music.play();
         })
-        // overlays.classList.add('animate');
+        // sectionNums.classList.add('animate');
         // hehihart.style.animationName = 'to-left-new';
     });
 }
@@ -81,7 +81,7 @@ function sectIndicator() {
             const id = entry.target.id
             const indicator = document.querySelector(`.section-indicator .${id}`);
             const navLink = document.querySelector(`.nav-links a.${id}-nav`);
-            const num = document.querySelector(`.overlays .${id}-num`);
+            const num = document.querySelector(`.section-nums .${id}-num`);
             const label = document.querySelector(`.section-labels .${id}-label`);
             const thumb = document.querySelector('.thumb');
 
@@ -117,16 +117,8 @@ function textParallax() {
 }
 textParallax();
 
-function followMouse() {
-    const follower = document.querySelector('.follow-mouse');
-    const height = follower.offsetHeight;
-    const width = follower.offsetWidth;
 
-    window.addEventListener('mousemove', (event) => {
-        follower.style.transform = `translate(${event.clientX - width / 2}px, ${event.clientY - height / 2}px)`;
-    });
-}
-followMouse();
+
 function mapParallax() {
     const layers = document.querySelectorAll('.parallax-layer-map');
     document.addEventListener('mousemove', e => {
@@ -265,4 +257,14 @@ function imageplaceholder() {
 }
 imageplaceholder();
 
+function followMouse() {
+    const follower = document.querySelector('.follow-mouse');
+    const height = follower.offsetHeight;
+    const width = follower.offsetWidth;
+
+    window.addEventListener('mousemove', (event) => {
+        follower.style.transform = `translate(${event.clientX - width / 2}px, ${event.clientY - height / 2}px)`;
+    });
+}
+followMouse();
 

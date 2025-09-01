@@ -3,7 +3,6 @@
     position: fixed;
     bottom: -85px;
     right: -85px;
-    z-index: 15;
     width: 150px;
     height: 150px;
     background-color: var(--accent0);
@@ -19,7 +18,6 @@
     width: 100vw;
     position: fixed;
     top: 0;
-    z-index: 10;
     left: 100vw;
     opacity: 0;
     transition: opacity 2.5s ease-in-out;
@@ -53,7 +51,6 @@
     width: 100%;
     right: 0;
     top: 0;
-    z-index: 99;
     pointer-events: none;
 }
 .menu-vid video {

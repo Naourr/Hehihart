@@ -1,9 +1,18 @@
-@import url(/css/menu.css);
+.nav-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0vw;
+    height: 100vh;
+    transition: left 1s ease-out;
+}
+.nav-wrapper.hidden {
+    left: -50vw;
+    transition: left 1s ease-out;
+}
 .scroll-holder {
     position: absolute;
     left: 16px;
     top: 0;
-    z-index: 10;
     height: 100vh;
 }
 .custom-scrollbar {
@@ -52,12 +61,21 @@
     top: 100%;
     transition: top 0.3s linear;
 }
-
+.hamburger {
+    position: fixed;
+    gap: 5px;
+    top: 140px;
+    left: 16px;
+}
+.hamburger span {
+    width: 22px;
+    height: 3px;
+    background-color: white;
+}
 .nav-holder {
     position: absolute;
     left: 40px;
     top: 0;
-    z-index: 10;
     height: 100vh;
 }
 .nav-links {
@@ -84,123 +102,9 @@
     transform: translate(9px, 0);
     transition: all 0.3s ease;
 }
-.indicator-holder {
-    position: fixed;
-    bottom: 10px;
-    left: 0;
-    height: 10px;
-    width: 100vw;
-    z-index: 10;
-    padding: 0 16px 0 16px;
-}
-.section-indicator {
-    width: 100%;
-    height: 100%;
-    user-select: none;
-    color: transparent;
-    gap: 10px;
-}
-.section-indicator > div {
-   flex-grow: 1;
-   transition: flex-grow 0.3s ease-in;
-   height: 100%;
-   background-color: rgb(36, 36, 36);
-}
-.section-indicator > div.active {
-   flex-grow: 2;
-   transition: flex-grow 0.3s ease-out;
-   background-color: var(--accent0);
-}
 
-.follow-mouse {
-    position: fixed;
-    user-select: none;
-    pointer-events: none;
-    z-index: 100;
-    will-change: transform;
-    transition: transform 0.2s ease-out;
-}
-.follow-mouse img {
-    width: 100px;
-    height: auto;
-}
-
-.overlays img {
-    width: 600px;
-    height: auto;
-}
-.overlays h1 {
-    position: absolute;
-    color: black;
-    top: 5px;
-    right: 45px;
-    font-size: calc(var(--font-size) + 2.8rem);
-    height: inherit;
-}
-.overlays {
-    position: fixed;
-    top: 30px;
-    left: 10px;
-    opacity: 0;
-    z-index: 15;
-}
-.overlays.animate {
-    animation-name: slideTo-left;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-}
-@keyframes slideTo-left {
-    0% {
-        left: 0;
-        opacity: 0;
-    }
-    100% {
-        left: -450px;
-        opacity: 1;
-    }
-}
-.overlays > h1 {
-    display: none;
-}
-.overlays > h1.active {
-    display: flex;
-    animation-name: to-left;
-    animation-duration: 0.4s;
-    animation-fill-mode: forwards;
-}
-@keyframes to-left {
-    0% {
-        opacity: 0;
-        transform: translate(40px, 0);
-    }
-    100% {
-        opacity: 1;
-        transform: translate(0, 0);
-    }
-}
-.overlays1-wrapper {
-    position: fixed;
-    width: 100vw;
-    top: 0;
-    left: 0;
-}
-.overlays-1 {
-    position: absolute;
-    top: 13px;
-    left: 0;
-    width: 100%;
-    justify-content: space-between;
-    z-index: 12;
-    padding: 0 10px 0 10px;
-    gap: 400px;
-}
-.overlays-1 img {
-    height: auto;
-    width: 500px;
-}
 .section-labels {
     position: fixed;
-    z-index: 11;
     top: 20px;
     left: 0;
     width: 100vw;
@@ -232,40 +136,115 @@
     position: absolute;
 }
 
+.section-nums img {
+    width: 600px;
+    height: auto;
+}
+.section-nums h1 {
+    position: absolute;
+    color: black;
+    top: 5px;
+    right: 45px;
+    font-size: calc(var(--font-size) + 2.8rem);
+    height: inherit;
+}
+.section-nums {
+    position: fixed;
+    top: 30px;
+    left: 10px;
+    opacity: 0;
+}
+.section-nums.animate {
+    animation-name: slideTo-left;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes slideTo-left {
+    0% {
+        left: 0;
+        opacity: 0;
+    }
+    100% {
+        left: -450px;
+        opacity: 1;
+    }
+}
+.section-nums > h1 {
+    display: none;
+}
+.section-nums > h1.active {
+    display: flex;
+    animation-name: to-left;
+    animation-duration: 0.4s;
+    animation-fill-mode: forwards;
+}
+@keyframes to-left {
+    0% {
+        opacity: 0;
+        transform: translate(40px, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
 
-.hamburger {
+.top-line-wrapper {
     position: fixed;
-    gap: 5px;
-    top: 140px;
-    left: 16px;
-}
-.hamburger span {
-    width: 22px;
-    height: 3px;
-    background-color: white;
-}
-.nav-wrapper {
-    position: fixed;
+    width: 100vw;
     top: 0;
-    left: 0vw;
-    height: 100vh;
-    z-index: 10;
-    transition: left 1s ease-out;
+    left: 0;
 }
-.nav-wrapper.hidden {
-    left: -50vw;
-    transition: left 1s ease-out;
+.top-line {
+    position: absolute;
+    top: 13px;
+    /* left: 0; */
+    width: 100%;
+    justify-content: center;
+    padding: 0 16px 0 16px;
+    gap: 300px;
 }
+.top-line img {
+    height: 100%;
+    width: 100%;
+}
+
+.indicator-holder {
+    position: fixed;
+    bottom: 10px;
+    left: 0;
+    height: 10px;
+    width: 100vw;
+    padding: 0 16px 0 16px;
+}
+.section-indicator {
+    width: 100%;
+    height: 100%;
+    user-select: none;
+    color: transparent;
+    gap: 10px;
+}
+.section-indicator > div {
+   flex-grow: 1;
+   transition: flex-grow 0.3s ease-in;
+   height: 100%;
+   background-color: rgb(36, 36, 36);
+}
+.section-indicator > div.active {
+   flex-grow: 2;
+   transition: flex-grow 0.3s ease-out;
+   background-color: var(--accent0);
+}
+
 .play-music {
     position: fixed;
     top: 1rem;
-    right: 0;
+    right: 6px;
     border-radius: 10px;
     padding: 0 15px 5px 15px;
     margin: 10px;
     border: 2px solid white;
     color: white;
-    z-index: 11;
     font-size: 2rem;
     background-color: transparent;
     user-select: none;
@@ -278,3 +257,19 @@
     color: var(--accent0);
     border: 2px solid var(--accent0);
 }
+
+.follow-mouse {
+    position: fixed;
+    user-select: none;
+    pointer-events: none;
+    will-change: transform;
+    transition: transform 0.2s ease-out;
+    top: 0;
+    left: 0;
+    z-index: 101;
+}
+.follow-mouse img {
+    width: 80px;
+    height: auto;
+}
+
