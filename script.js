@@ -10,11 +10,11 @@ function loading() {
         const sectionNums = document.querySelector('.section-nums');
 
         const roll = getRandomIntInclusive(1, 5);
-        if (roll == 1) load_src.src = "/ken/firstlogotest.webm";
-        if (roll == 2) load_src.src = "/ken/forthelogo.webm";
-        if (roll == 3) load_src.src = "/ken/lenlogo.webm";
-        if (roll == 4) load_src.src = "/ken/loadscreen.webm";
-        if (roll == 5) load_src.src = "/ken/newintroanimation.webm";
+        if (roll == 1) load_src.src = "/assets/videos/firstlogotest.webm";
+        if (roll == 2) load_src.src = "/assets/videos/forthelogo.webm";
+        if (roll == 3) load_src.src = "/assets/videos/lenlogo.webm";
+        if (roll == 4) load_src.src = "/assets/videos/loadscreen.webm";
+        if (roll == 5) load_src.src = "/assets/videos/newintroanimation.webm";
         loadvid.load();
 
         const loadscreen = document.querySelector('.loadscreen');
@@ -188,8 +188,8 @@ function menubar_slidein() {
             menuarea.style.pointerEvents = 'all';
         });
         function changemenuvid() {
-            const reversed = '/ken/animated_menu_reversed.webm';
-            const normal = '/ken/animated_menu.webm';
+            const reversed = '/assets/videos/animated_menu_reversed.webm';
+            const normal = '/assets/videos/animated_menu.webm';
             const current = menuvidsrc.getAttribute('src');
             menuvidsrc.setAttribute('src',
                 current === normal ? reversed : normal

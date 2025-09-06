@@ -98,7 +98,7 @@
     height: 100%;
     width: 100%;
     overflow: hidden;
-    background-image: url('/ken/menuassets/menucicrcle.png');
+    background-image: url(/assets/images/menu/menucicrcle.png);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -107,7 +107,7 @@
     position: absolute;
     height: 100%;
     width: 100%;
-    background-image: url(/ken/menuassets/topobg.png);
+    background-image: url(/assets/images/menu/topobg.png);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -124,19 +124,19 @@
     transition: all 0.3s ease-out;
 }
 .parallax-layer-map:nth-child(1) {
-    background-image: url(/ken/menuassets/topoparallax/1.png);
+    background-image: url(/assets/images/menu/menu-parallax/1.png);
 }
 .parallax-layer-map:nth-child(2) {
-    background-image: url(/ken/menuassets/topoparallax/2.png);
+    background-image: url(/assets/images/menu/menu-parallax/2.png);
 }
 .parallax-layer-map:nth-child(3) {
-    background-image: url(/ken/menuassets/topoparallax/3.png);
+    background-image: url(/assets/images/menu/menu-parallax/3.png);
 }
 .parallax-layer-map:nth-child(4) {
-    background-image: url(/ken/menuassets/topoparallax/4.png);
+    background-image: url(/assets/images/menu/menu-parallax/4.png);
 }
 .parallax-layer-map:nth-child(5) {
-    background-image: url(/ken/menuassets/topoparallax/5.png);
+    background-image: url(/assets/images/menu/menu-parallax/5.png);
 }
 
 .play-music {

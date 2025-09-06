@@ -3,46 +3,46 @@
     height: calc(100vh - var(--navheight));
     width: 100vw;
     overflow: hidden;
-    background-image: url('/ken/ken-parallax/1.png');
+    background-image: url('/assets/images/home/home-parallax/1.png');
     background-size: cover;
     background-position: center;
     color: var(--bg2text);
 }
 
 .parallax-layer:nth-child(1) {
-    background-image: url('/ken/ken-parallax/2.png');
+    background-image: url('/assets/images/home/home-parallax/2.png');
 }
 .parallax-layer:nth-child(2) {
-    background-image: url('/ken/ken-parallax/3.png');
+    background-image: url('/assets/images/home/home-parallax/3.png');
 }
 .parallax-layer:nth-child(3) {
-    background-image: url('/ken/ken-parallax/4.png');
+    background-image: url('/assets/images/home/home-parallax/4.png');
 }
 .parallax-layer:nth-child(4) {
-    background-image: url('/ken/ken-parallax/5.png');
+    background-image: url('/assets/images/home/home-parallax/5.png');
 }
 .parallax-layer:nth-child(5) {
-    background-image: url('/ken/ken-parallax/6.png');
+    background-image: url('/assets/images/home/home-parallax/6.png');
 }
 .parallax-layer:nth-child(6) {
-    background-image: url('/ken/ken-parallax/7.png');
+    background-image: url('/assets/images/home/home-parallax/7.png');
 }
 .parallax-layer:nth-child(7) {
-    background-image: url('/ken/ken-parallax/8.png');
+    background-image: url('/assets/images/home/home-parallax/8.png');
 }
 .parallax-layer:nth-child(8) {
-    background-image: url('/ken/ken-parallax/9.png');
+    background-image: url('/assets/images/home/home-parallax/9.png');
 }
 .parallax-layer:nth-child(9) {
-    background-image: url('/ken/ken-parallax/10.png');
+    background-image: url('/assets/images/home/home-parallax/10.png');
     scale: 1.27;
 }
 .parallax-layer:nth-child(10) {
-    background-image: url('/ken/ken-parallax/11.png');
+    background-image: url('/assets/images/home/home-parallax/11.png');
     scale: 1.27;
 }
 .parallax-layer:nth-child(11) {
-    background-image: url('/ken/ken-parallax/12.png');
+    background-image: url('/assets/images/home/home-parallax/12.png');
     scale: 1.27;
 }
 .parallax-layer {
@@ -69,7 +69,7 @@
     font-size: calc(var(--font-size) + 7rem);
     text-shadow: 0 0 8px white;
     background-color: white;
-    background-image: url(/ken/rand_imageasset/new\ assets/design\ asset.png);
+    background-image: url(/assets/images/home/design\ asset.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-size: 110%;

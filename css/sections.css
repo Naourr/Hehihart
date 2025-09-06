@@ -15,7 +15,7 @@
     justify-content: space-evenly;
     gap: 5rem;
     padding: 7rem;
-    background-image: url(/ken/rand_imageasset/images/Illustration85\ \ for\ ai.webp);
+    background-image: url(/assets/images/sections/Illustration85\ \ for\ ai.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -48,7 +48,7 @@
     position: relative;
 }
 #services {
-    background-image: url(/ken/rand_imageasset/images/Illustration\ practice\ 1\ actual.webp);
+    background-image: url(/assets/images/sections/Illustration\ practice\ 1\ actual.webp);
     position: relative;
     justify-content: space-evenly;
     gap: 5rem;
@@ -60,7 +60,7 @@
 }
 
 #gallery {
-    background-image: url(/ken/rand_imageasset/images/illustration67.webp);
+    background-image: url(/assets/images/sections/illustration67.webp);
     position: relative;
     justify-content: space-evenly;
     gap: 5rem;
@@ -71,7 +71,7 @@
     aspect-ratio: auto;
 }
 #TOS {
-    background-image: url(/ken/rand_imageasset/images/Illustration71.webp);
+    background-image: url(/assets/images/sections/Illustration71.webp);
     position: relative;
     justify-content: space-evenly;
     gap: 5rem;
@@ -82,7 +82,7 @@
     aspect-ratio: auto;
 }
 #contact {
-    background-image: url(/ken/rand_imageasset/images/Illustration92.webp);
+    background-image: url(/assets/images/sections/Illustration92.webp);
     position: relative;
     justify-content: space-evenly;
     gap: 5rem;
