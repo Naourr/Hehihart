@@ -62,9 +62,9 @@
 #gallery {
     background-image: url(/assets/images/sections/illustration67.webp);
     position: relative;
-    justify-content: space-evenly;
+    justify-content: center;
     gap: 5rem;
-    padding: 7rem;
+    padding: 4rem;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

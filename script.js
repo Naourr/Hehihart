@@ -6,6 +6,9 @@ function followMouse() {
     window.addEventListener('mousemove', (event) => {
         follower.style.transform = `translate(${event.clientX - width / 2}px, ${event.clientY - height / 2}px)`;
     });
+    window.addEventListener('mousedown', (event) => {
+        follower.style.transform = `translate(${event.clientX - width / 2}px, ${event.clientY - height / 2}px)`;
+    });
 }
 followMouse();
 
@@ -136,6 +139,68 @@ playMusic.addEventListener('click', () => {
         playMusic.textContent = "♪"
     }
 })
+
+const images = [
+    "aka feet thumbs up.webp",
+    "brain rot.webp",
+    "closeicon.png",
+    "comp main ggolden ratio.webp",
+    "dayum.webp",
+    "dis gon be hreaat.webp",
+    "illust 80 separated.webp",
+    "illust from skool.webp",
+    "Illustration18 VER 2.webp",
+    "Illustration32.webp",
+    "Illustration34.webp",
+    "Illustration35.webp",
+    "Illustration38.webp",
+    "Illustration39 ver 2.webp",
+    "Illustration41.webp",
+    "illustration46.webp",
+    "Illustration48.webp",
+    "Illustration49.webp",
+    "Illustration57 cropped.webp",
+    "Illustration60jpegfor vgen.webp",
+    "Illustration63.webp",
+    "Illustration66.webp",
+    "illustration67.webp",
+    "Illustration71.webp",
+    "Illustration72 comms test.webp",
+    "Illustration75 flipped.webp",
+    "Illustration77 export.webp",
+    "illustration 80 my oc test rig.webp",
+    "Illustration81white bg.webp",
+    "Illustration82 suji reference sheet.webp",
+    "Illustration83 FLIPPED.webp",
+    "Illustration83nothte blender thingy.webp",
+    "Illustration85  for ai.webp",
+    "Illustration86.webp",
+    "illustration88.webp",
+    "Illustration8 que pro.webp",
+    "Illustration90.webp",
+    "Illustration92.webp",
+    "Illustration practice 1 actual.webp",
+    "Illustration practice 6.1.webp",
+    "Illustration practice 6.webp",
+    "omahgah.webp",
+    "random nonesense3.webp",
+    "random nonesense illust 76 len 2.webp",
+    "random nonesense illust 76len 2.webp",
+    "random pfp nonesense.webp"
+];
+
+const galleryHolder = document.querySelector(".gallery-holder");
+images.forEach(name => {
+    const div = document.createElement("div");
+    div.classList.add('img-holder');
+
+    const img = document.createElement("img");
+    img.src = "/assets/images/other/" + name;
+    img.loading = "lazy";
+
+    div.appendChild(img);
+    galleryHolder.appendChild(div);
+});
 
 // function customScrollbar() {
 //     window.addEventListener('scroll', () => {

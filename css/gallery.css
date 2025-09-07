@@ -1,4 +1,4 @@
-.gallery-grid {
+/* .gallery-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     justify-items: center;
@@ -66,4 +66,24 @@
 }
 .close.active {
     display: flex;
+} */
+
+.gallery-holder {
+    justify-content: left;
+    gap: 1rem;
+    height: 70vh;
+    width: 100vw;
+    padding: 1rem;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    scrollbar-color: var(--accent0) transparent;
+}
+
+.img-holder {
+    height: 100%;
+}
+
+.img-holder img {
+    height: 100%;
+    width: auto;
 }

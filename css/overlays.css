@@ -9,6 +9,14 @@
     left: -50vw;
     transition: left 1s ease-out;
 }
+.nav-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.473), transparent);
+    height: 100%;
+    width: 200px;
+}
 .scroll-holder {
     position: absolute;
     left: 16px;
@@ -71,6 +79,7 @@
     width: 22px;
     height: 3px;
     background-color: white;
+    box-shadow: 0 0 4px rgb(44, 44, 44);
 }
 .nav-holder {
     position: absolute;
