@@ -20,14 +20,12 @@
     top: 0;
     left: 100vw;
     opacity: 0;
-    transition: opacity 2.5s ease-in-out;
-    transition: left 0.6s ease-out;
+    transition: left 0.6s ease-out, opacity 1.5s ease-in-out;
 }
 .menu.active {
-    left: 0;
+    left: 0vw;
     opacity: 1;
-    transition: opacity 2.5s ease-in-out;
-    transition: left 0.6s ease-out;
+    transition: left 0.6s ease-out, opacity 1.5s ease-in-out;
 }
 
 .menu-bg {
@@ -38,14 +36,16 @@
     top: 0;
     background-color: rgba(80, 95, 89, 0.514);
     opacity: 0;
-    transition: opacity 2s ease-in-out;
     pointer-events: none;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(0px);
+    transition: opacity 1.5s ease-in-out;
 }
 .menu-bg.active {
     opacity: 1;
-    transition: opacity 2s ease-in-out;
+    backdrop-filter: blur(5px);
+    transition: opacity 1.5s ease-in-out;
 }
+
 .menu-vid {
     position: fixed;
     height: 100%;

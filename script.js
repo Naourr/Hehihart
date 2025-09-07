@@ -143,7 +143,6 @@ playMusic.addEventListener('click', () => {
 const images = [
     "aka feet thumbs up.webp",
     "brain rot.webp",
-    "closeicon.png",
     "comp main ggolden ratio.webp",
     "dayum.webp",
     "dis gon be hreaat.webp",
