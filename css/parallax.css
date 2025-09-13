@@ -81,6 +81,13 @@
     color: transparent;
     animation-duration: 1s;
 }
+.parallax-title {
+    animation-name: floating;
+    animation-timing-function: ease-in-out;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
 
 @keyframes to-left-new {
     0% {
@@ -90,5 +97,16 @@
     100% {
         opacity: 1;
         transform: translate(0, 0);
+    }
+}
+
+@keyframes floating {
+    0% {
+        transform: translate(0, -4px);
+        opacity: 0.85;
+    }
+    100% {
+        transform: translate(0, 4px);
+        opacity: 1;
     }
 }

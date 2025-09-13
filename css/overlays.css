@@ -1,3 +1,12 @@
+.top-blur {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 70px;
+    /* background-image: linear-gradient(to bottom, black, transparent); */
+    backdrop-filter: blur(10px);
+}
 .nav-wrapper {
     position: fixed;
     top: 0;
@@ -128,6 +137,7 @@
     animation-name: to-top;
     animation-duration: 0.4s;
     animation-fill-mode: forwards;
+    text-shadow: 0 0 10px rgb(0, 0, 0);
 }
 @keyframes to-top {
     0% {

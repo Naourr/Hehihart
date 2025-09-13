@@ -51,14 +51,41 @@
     background-image: url(/assets/images/sections/Illustration\ practice\ 1\ actual.webp);
     position: relative;
     justify-content: space-evenly;
-    gap: 5rem;
-    padding: 7rem;
+    /* gap: 5rem;
+    padding: 7rem; */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     aspect-ratio: auto;
 }
-
+section:has(.services-columns) {
+    gap: 0;
+    padding: 0;
+}
+.services-columns {
+    height: 100vh;
+    width: 100vw;
+}
+.services-columns > div {
+    flex-grow: 1;
+    height: 100%;
+    width: 25%;
+    overflow: hidden;
+}
+.services-columns > div img {
+    height: 100%;
+    width: auto;
+    transition: scale 0.3s ease;
+}
+.services-columns > div img:hover {
+    scale: 1.1;
+    transition: scale 0.3s ease;
+}
+.services-columns > div p {
+    position: absolute;
+    color: black;
+    font-size: 2rem;
+}
 #gallery {
     background-image: url(/assets/images/sections/illustration67.webp);
     position: relative;

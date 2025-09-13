@@ -72,12 +72,12 @@
 }
 .menu-left {
     height: 100%;
-    width: 50%;
+    width: 45%;
     padding: 0rem;
 }
 .menu-right {
     height: 100%;
-    width: 50%;
+    width: 55%;
 }
 .menu-right > div {
     height: 50%;
@@ -88,22 +88,89 @@
 }
 .menu-bottom-right .row1, .menu-bottom-right .row2 {
     width: 100%;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 .menu-bottom-right img {
     height: auto;
-    width: 70px;
-    object-fit: scale-down;
+    width: 15%;
+    object-fit: cover;
+    transition: scale 0.3s ease;
+}
+.menu-bottom-right img:hover {
+    scale: 1.1;
+    transition: scale 0.3s ease;
+}
+
+.menu-textbox {
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.253);
+    color: white;
+    height: 100%;
+    width: 100%;
+    padding: 1rem;
+}
+
+.menu-left-wrapper {
+    width: 100%;
+    height: 100%;
 }
 .parallax-map {
     position: relative;
-    height: 100%;
+    height: auto;
     width: 100%;
     overflow: hidden;
     background-image: url(/assets/images/menu/menucicrcle.png);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+    aspect-ratio: 1/1;
+}
+.parallax-map .point {
+    background-color: var(--accent0);
+    border-radius: 50%;
+    position: absolute;
+    transition: scale 0.3s ease;
+}
+.point:hover {
+    scale: 1.4;
+    transition: scale 0.3s ease;
+}
+.home.point {
+    top: 20%;
+    left: 50%;
+    height: 50px;
+    width: 50px;
+}
+.gallery.point {
+    top: 17%;
+    left: 25%;
+    height: 65px;
+    width: 65px;
+}
+.about.point {
+    top: 48%;
+    left: 70%;
+    height: 50px;
+    width: 50px;
+}
+.services.point {
+    top: 53%;
+    left: 8%;
+    height: 55px;
+    width: 55px;
+}
+.contact.point {
+    top: 46%;
+    left: 38%;
+    height: 40px;
+    width: 40px;
+}
+.tos.point {
+    top: 72%;
+    left: 60%;
+    height: 35px;
+    width: 35px;
 }
 .map-bg {
     position: absolute;
@@ -142,17 +209,19 @@
 }
 
 .play-music {
-    position: absolute;
+    position: fixed;
     top: 1rem;
     right: 6px;
     border-radius: 10px;
-    padding: 0 15px 5px 15px;
+    padding: 10px;
     margin: 10px;
     border: 2px solid white;
-    color: white;
-    font-size: 2rem;
     background-color: transparent;
     user-select: none;
+}
+.play-music img {
+    width: 16px;
+    height: auto;
 }
 .play-music:hover {
     background-color: rgba(0, 0, 0, 0.452);
@@ -161,4 +230,10 @@
     background-color: transparent;
     color: var(--accent0);
     border: 2px solid var(--accent0);
+}
+.music-icon, .pause-icon {
+    display: none;
+}
+.music-icon.active, .pause-icon.active {
+    display: flex;
 }

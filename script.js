@@ -31,6 +31,7 @@ function loading() {
             loadscreen.classList.add('fade-out')
             sectionNums.classList.add('animate')
             hehihart.style.animationName = 'to-left-new'
+            music.volume = 0.25
             music.play()
         })
     })
@@ -124,14 +125,38 @@ function menuClick() {
 }
 menuClick()
 
+document.addEventListener('DOMContentLoaded', () => {
+    hoverPoints()
+})
+
+function hoverPoints() {
+  const points = document.querySelectorAll('.point');
+  const textbox = document.querySelector('.menu-textbox');
+
+  points.forEach(point => {
+    point.addEventListener('mouseenter', () => {
+        textbox.textContent = point.dataset.desc;
+    });
+
+    point.addEventListener('mouseleave', () => {
+        textbox.textContent = "Hover over an item to see description";
+    });
+  });
+}
+
 const playMusic = document.querySelector('.play-music')
+const musicIcon = document.querySelector('.music-icon')
+const pauseIcon = document.querySelector('.pause-icon')
+musicIcon.classList.add('active')
 playMusic.addEventListener('click', () => {
     if (music.paused) {
         music.play()
-        playMusic.textContent = "⏸"
+        pauseIcon.classList.add('active')
+        musicIcon.classList.remove('active')
     } else {
         music.pause()
-        playMusic.textContent = "♪"
+        musicIcon.classList.add('active')
+        pauseIcon.classList.remove('active')
     }
 })
 
