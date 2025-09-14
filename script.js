@@ -113,6 +113,33 @@ const navWrapper = document.querySelector('.nav-wrapper')
 hamburger.addEventListener('click', () => {
     navWrapper.classList.toggle('hidden')
 })
+function moveChibi(selector, farLeft, farRight) {
+    const chibi = document.querySelector(selector)
+    const chibi_img = chibi.querySelector('img')
+
+    const idle = "assets/images/about/looktoviewer.png"
+    const walk = "assets/images/about/walk.png"
+
+    if (chibi_img.src.includes("walk.png")) {
+        chibi_img.src = idle
+    } else {
+        chibi_img.src = walk
+
+        if (chibi.style.left === farLeft) {
+            chibi.style.left = farRight
+            chibi_img.style.transform = "scaleX(1)"  // face right
+        } else {
+            chibi.style.left = farLeft
+            chibi_img.style.transform = "scaleX(-1)" // face left
+        }
+    }
+}
+
+// run both every 2s
+setInterval(() => moveChibi(".chibi", "30%", "70%"), 2000)
+setInterval(() => moveChibi(".chibi1", "30%", "90%"), 2500)
+
+
 
 function menuClick() {
     const menuBtn = document.querySelector('.menu-btn')

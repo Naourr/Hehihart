@@ -27,6 +27,44 @@
     width: 100%;
     /* background-color: rgba(0, 0, 0, 0.35); */
 }
+.chibi {
+    position: absolute;
+    top: 70%;
+    left: 90%;
+    transition: all 1s ease;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+.chibi1 {
+    position: absolute;
+    top: 12%;
+    left: 30%;
+    transition: all 1s ease;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+.chibi img, .chibi1 img {
+    height: 150px;
+    width: auto;
+}
+@keyframes go-right {
+    0%{
+        transform: translate(0px 0);
+    }
+    100%{
+        transform: translate(-200px 0)
+    }
+}
+@keyframes go-left {
+    0%{
+        transform: translate(-200px 0);
+    }
+    100%{
+        transform: translate(0px 0)
+    }
+}
 .profile {
     position: relative;
     border-radius: 50%;
