@@ -84,20 +84,20 @@ function sectIndicator() {
             const indicator = document.querySelector(`.section-indicator .${id}`)
             const navLink = document.querySelector(`.nav-links a.${id}-nav`)
             const num = document.querySelector(`.section-nums .${id}-num`)
-            // const label = document.querySelector(`.section-labels .${id}-label`)
+            const label = document.querySelector(`.section-labels .${id}-label`)
             const thumb = document.querySelector('.thumb')
 
             if (entry.isIntersecting) {
                 indicator.classList.add('active')
                 navLink.classList.add('active')
                 num.classList.add('active')
-                // label.classList.add('active')
+                label.classList.add('active')
                 thumb.classList.add(`${id}-point`)
             } else {
                 indicator.classList.remove('active')
                 navLink.classList.remove('active')
                 num.classList.remove('active')
-                // label.classList.remove('active')
+                label.classList.remove('active')
                 thumb.classList.remove(`${id}-point`)
             }
         })

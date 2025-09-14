@@ -1,17 +1,16 @@
 .menu-btn {
-    transform: rotate(45deg);
     position: fixed;
-    bottom: -85px;
-    right: -85px;
-    width: 150px;
-    height: 150px;
-    background-color: var(--accent0);
-    transition: all 0.4s ease-out;
+    bottom: 20px;
+    right: 10px;
+    transition: scale 0.4s ease-out;
+}
+.menu-btn img {
+    width: 75px;
+    height: auto;
 }
 .menu-btn:hover {
-    bottom: -75px;
-    right: -75px;
-    transition: all 0.4s ease-out;
+    scale: 1.15;
+    transition: scale 0.4s ease-out;
 }
 .menu {
     height: 100vh;
@@ -242,34 +241,4 @@
 }
 .parallax-layer-map:nth-child(5) {
     background-image: url(/assets/images/menu/menu-parallax/5.png);
-}
-
-.play-music {
-    position: fixed;
-    top: 1rem;
-    right: 6px;
-    border-radius: 10px;
-    padding: 10px;
-    margin: 10px;
-    border: 2px solid white;
-    background-color: transparent;
-    user-select: none;
-}
-.play-music img {
-    width: 16px;
-    height: auto;
-}
-.play-music:hover {
-    background-color: rgba(0, 0, 0, 0.452);
-}
-.play-music:active {
-    background-color: transparent;
-    color: var(--accent0);
-    border: 2px solid var(--accent0);
-}
-.music-icon, .pause-icon {
-    display: none;
-}
-.music-icon.active, .pause-icon.active {
-    display: flex;
 }

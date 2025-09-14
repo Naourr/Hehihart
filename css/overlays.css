@@ -7,6 +7,46 @@
     background-color: white;
 
 }
+
+.play-music {
+    position: fixed;
+    top: 60px;
+    right: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid white;
+    background-color: transparent;
+    user-select: none;
+}
+.play-music img {
+    width: 16px;
+    height: auto;
+}
+.play-music:hover {
+    background-color: rgba(0, 0, 0, 0.452);
+}
+.play-music:active {
+    background-color: transparent;
+    color: var(--accent0);
+    border: 2px solid var(--accent0);
+}
+.music-icon, .pause-icon {
+    display: none;
+}
+.music-icon.active, .pause-icon.active {
+    display: flex;
+}
+.top-right {
+    position: fixed;
+    top: 0;
+    right: 0;
+
+}
+.top-right img {
+    height: auto;
+    width: 250px;
+}
 .nav-wrapper {
     position: fixed;
     top: 0;
@@ -120,11 +160,12 @@
     top: 20px;
     left: 0;
     width: 100vw;
-    color: var(--accent0);
+    color: black;
 }
 .section-labels > div {
     display: none;
     font-size: calc(var(--font-size) + .7rem);
+    font-weight: bold;
 }
 .section-labels > div.active {
     display: flex;
@@ -151,21 +192,21 @@
 }
 
 .section-nums img {
-    width: 600px;
+    width: 450px;
     height: auto;
 }
 .section-nums h1 {
     position: absolute;
     color: black;
-    top: 5px;
-    right: 45px;
-    font-size: calc(var(--font-size) + 2.8rem);
+    top: 68px;
+    right: 190px;
+    font-size: calc(var(--font-size) + 2rem);
     height: inherit;
 }
 .section-nums {
     position: fixed;
-    top: 30px;
-    left: 10px;
+    top: -10px;
+    left: 100px;
     opacity: 0;
 }
 .section-nums.animate {
@@ -179,7 +220,7 @@
         opacity: 0;
     }
     100% {
-        left: -450px;
+        left: -150px;
         opacity: 1;
     }
 }
@@ -218,9 +259,9 @@
     padding: 0 16px 0 16px;
 }
 .top-line span {
-    height: 1px;
+    height: 2px;
     width: 40px;
-    background-color: white;
+    background-color: black;
     border-radius: 2px;
 }
 .line {
