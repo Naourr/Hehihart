@@ -88,7 +88,22 @@
     animation-iteration-count: infinite;
     animation-direction: alternate-reverse;
 }
-
+.arrow-holder {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    pointer-events: none;
+}
+.arrow-holder a {
+    animation-name: floating;
+    animation-timing-function: ease-in-out;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    pointer-events: all;
+    user-select: none;
+}
 @keyframes to-left-new {
     0% {
         opacity: 0;
