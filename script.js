@@ -136,10 +136,16 @@ function hoverPoints() {
   points.forEach(point => {
     point.addEventListener('mouseenter', () => {
         textbox.textContent = point.dataset.desc;
+        sect = point.textContent
+        let section = document.querySelector(`.${sect}-hover`)
+        section.classList.add('active')
     });
 
     point.addEventListener('mouseleave', () => {
         textbox.textContent = "Hover over an item to see description";
+        sect = point.textContent
+        let section = document.querySelector(`.${sect}-hover`)
+        section.classList.remove('active')
     });
   });
 }

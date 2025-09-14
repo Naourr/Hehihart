@@ -66,7 +66,7 @@
 }
 .parallax-big-title {
     font-family: 'aquire';
-    font-size: calc(var(--font-size) + 7rem);
+    font-size: calc(var(--font-size) + 5rem);
     text-shadow: 0 0 8px white;
     background-color: white;
     background-image: url(/assets/images/home/design\ asset.png);
@@ -102,11 +102,11 @@
 
 @keyframes floating {
     0% {
-        transform: translate(0, -4px);
+        transform: translate(0, -15px);
         opacity: 0.85;
     }
     100% {
-        transform: translate(0, 4px);
+        transform: translate(0, 15px);
         opacity: 1;
     }
 }

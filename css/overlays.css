@@ -3,9 +3,9 @@
     top: 0;
     left: 0;
     width: 100vw;
-    height: 80px;
-    background-image: linear-gradient(to bottom, black, transparent);
-    /* backdrop-filter: blur(10px); */
+    height: 55px;
+    background-color: white;
+
 }
 .nav-wrapper {
     position: fixed;
@@ -126,7 +126,7 @@
     top: 20px;
     left: 0;
     width: 100vw;
-    color: white;
+    color: var(--accent0);
 }
 .section-labels > div {
     display: none;
@@ -137,7 +137,7 @@
     animation-name: to-top;
     animation-duration: 0.4s;
     animation-fill-mode: forwards;
-    text-shadow: 0 0 10px rgb(0, 0, 0);
+    text-shadow: 0 0 10px rgb(255, 255, 255);
 }
 @keyframes to-top {
     0% {
