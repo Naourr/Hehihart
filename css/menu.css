@@ -98,13 +98,13 @@
 }
 
 .home-hover {
-    background-image: url(/assets/images/sections/home.png);
+    background-image: url(/assets/images/sections/home.webp);
 }
 .about-hover {
-    background-image: url(/assets/images/sections/aboutbg.png);
+    background-image: url(/assets/images/sections/aboutbg.webp);
 }
 .gallery-hover {
-    background-image: url(/assets/images/sections/gallerry.png);
+    background-image: url(/assets/images/sections/gallerry.webp);
 }
 .menu-left {
     height: 100%;

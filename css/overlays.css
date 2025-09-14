@@ -38,14 +38,8 @@
     width: 1px;
     height: calc(100%);
     margin: 190px 0 100px 0;
-    /* padding: 1rem 0 1rem 0; */
 }
-/* .track {
-    background-color: transparent;
-    width: 1px;
-    height: 0%;
-    transition: height 0.3s ease-out;
-} */
+
 .thumb {
     background-color: var(--accent0);
     width: 10px;
