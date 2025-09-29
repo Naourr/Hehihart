@@ -38,7 +38,7 @@
 }
 .chibi1 {
     position: absolute;
-    top: 12%;
+    top: 17%;
     left: 30%;
     transition: all 1s ease;
     animation-duration: 1s;
@@ -46,7 +46,7 @@
     animation-fill-mode: forwards;
 }
 .chibi img, .chibi1 img {
-    height: 150px;
+    height: 18vh;
     width: auto;
 }
 @keyframes go-right {

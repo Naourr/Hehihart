@@ -64,8 +64,10 @@ function loading() {
         loadvid.load()
 
         const loadscreen = document.querySelector('.loadscreen')
+        const popup = document.querySelector('.popup-wrapper')
         loadvid.addEventListener('ended', () => {
             loadscreen.classList.add('fade-out')
+            popup.classList.add('hidden')
             sectionNums.classList.add('animate')
             hehihart.style.animationName = 'to-left-new'
             music.volume = 0.25
@@ -135,9 +137,8 @@ function moveChibi(selector, farLeft, farRight) {
     }
 }
 
-// run both every 2s
-setInterval(() => moveChibi(".chibi", "30%", "70%"), 2000)
-setInterval(() => moveChibi(".chibi1", "30%", "90%"), 2500)
+setInterval(() => moveChibi(".chibi", "35%", "80%"), 2000)
+setInterval(() => moveChibi(".chibi1", "40%", "85%"), 2500)
 
 
 
