@@ -44,12 +44,13 @@ function initMouseEffects() {
         ticking = false;
     }
 }
-initMouseEffects();
 
 const music = document.querySelector('#music')
 function loading() {
     window.addEventListener("load", function() {
-    
+        
+        initMouseEffects()
+
         const loadvid = document.querySelector('#loadvid')
         const load_src = this.document.querySelector('#loadvid source') 
         const hehihart = document.querySelector('.parallax-big-title')
@@ -242,6 +243,7 @@ const images = [
 ];
 
 const galleryHolder = document.querySelector(".gallery-holder")
+
 images.forEach(name => {
     const div = document.createElement("div")
     div.classList.add('img-holder')
@@ -252,6 +254,15 @@ images.forEach(name => {
 
     div.appendChild(img)
     galleryHolder.appendChild(div)
+})
+
+const gallery_left = document.querySelector(".gallery-left")
+const gallery_right = document.querySelector(".gallery-right")
+gallery_left.addEventListener("click", () => {
+    galleryHolder.scrollBy(-1, 0)
+})
+gallery_right.addEventListener("click", () => {
+    galleryHolder.scrollBy(1, 0)
 })
 
 function getRandomIntInclusive(min, max) {

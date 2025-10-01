@@ -40,7 +40,7 @@
     padding: 10px;
     margin: 10px;
     border: 2px solid white;
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0.25);
     user-select: none;
 }
 .play-music img {
@@ -63,7 +63,7 @@
 }
 .top-right {
     position: fixed;
-    top: 6px;
+    top: 0px;
     right: 0;
 
 }
@@ -232,6 +232,7 @@
     top: -10px;
     left: 100px;
     opacity: 0;
+    pointer-events: none;
 }
 .section-nums.animate {
     animation-name: slideTo-left;

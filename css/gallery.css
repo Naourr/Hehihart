@@ -79,13 +79,24 @@
     overflow-x: scroll;
     scrollbar-color: var(--accent0) transparent;
     background-color: rgba(0, 0, 0, 0.425);
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
 }
 
 .img-holder {
     height: 100%;
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
 }
 
 .img-holder img {
     height: 100%;
     width: auto;
+}
+
+.gallery-arrows {
+    gap: 20vw;
+}
+.gallery-arrows > button {
+    font-size: 2rem;
 }
