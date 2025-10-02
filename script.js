@@ -1,6 +1,6 @@
 function initMouseEffects() {
     const follower = document.querySelector('.follow-mouse');
-    const layers = document.querySelectorAll('.parallax-layer, .parallax-layer-map');
+    const layers = document.querySelectorAll('.parallax-layer, .parallax-layer-map, .parallax-layer-about');
     const bigTitle = document.querySelector('.parallax-big-title');
 
     const followerW = follower ? follower.offsetWidth : 0;
@@ -63,9 +63,15 @@ function loading() {
         if (roll == 4) load_src.src = "/assets/videos/loadscreen.webm"
         if (roll == 5) load_src.src = "/assets/videos/newintroanimation.webm"
         loadvid.load()
-
+        
         const loadscreen = document.querySelector('.loadscreen')
         const popup = document.querySelector('.popup-wrapper')
+
+        const skip = document.querySelector('.skip')
+        skip.addEventListener("click", () => {
+            loadvid.currentTime = 100
+        })
+        
         loadvid.addEventListener('ended', () => {
             loadscreen.classList.add('fade-out')
             popup.classList.add('hidden')

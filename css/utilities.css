@@ -49,8 +49,8 @@ section {
     width: 100vw;
     min-height: calc(100vh);
     max-height: fit-content;
-    gap: var(--title-content-gap);
-    padding: var(--vpad) var(--hpad);
+    /* gap: var(--title-content-gap);
+    padding: var(--vpad) var(--hpad); */
     scroll-snap-align: start;
     scroll-snap-stop: always;
 }
@@ -78,7 +78,7 @@ section {
 
 .loadscreen {
     z-index: 100;
-    pointer-events: none;
+    pointer-events: all;
     user-select: none;
     opacity: 1;
     background-color: black;
@@ -91,4 +91,5 @@ section {
 .loadscreen.fade-out {
     opacity: 0;
     transition: opacity 1s ease;
+    pointer-events: none;
 }

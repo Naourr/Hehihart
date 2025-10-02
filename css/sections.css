@@ -13,8 +13,8 @@
 #about {
     position: relative;
     justify-content: space-evenly;
-    gap: 5rem;
-    padding: 7rem;
+    /* gap: 5rem;
+    padding: 7rem; */
     background-image: url(/assets/images/sections/aboutbg.webp);
     background-size: cover;
     background-position: center;
@@ -27,6 +27,67 @@
     width: 100%;
     /* background-color: rgba(0, 0, 0, 0.35); */
 }
+
+.about-boxes {
+    width: 40vw;
+}
+
+.voice-box {
+    position: absolute;
+    top: 18vh;
+    left: 52.6vw;
+}
+.desc-box {
+    position: absolute;
+    top: 42vh;
+    left: 48.5vw;
+}
+
+.triangle-box1 {
+    position: absolute;
+    top: 32vh;
+    left: 86.5vw;
+}
+.triangle-box2 {
+    position: absolute;
+    top: 50vh;
+    left: 92.2vw;
+}
+.triangle-box3 {
+    position: absolute;
+    top: 68vh;
+    left: 86.5vw;
+}
+
+.voice-box img {
+    height: 21.5vh;
+    width: auto;
+}
+.desc-box img {
+    height: 33vh;
+    width: auto;
+}
+.triangle-box1 img, .triangle-box2 img, .triangle-box3 img {
+    height: 15vh;
+    width: auto;
+}
+
+.uptriangle-box {
+    position: absolute;
+    width: auto;
+}
+.downtriangle-box {
+    position: absolute;
+    width: auto;
+    height: 50vh;
+    align-items: end;
+}
+
+
+.inlay {
+    position: absolute;
+}
+
 .chibi {
     position: absolute;
     top: 70%;
@@ -88,12 +149,42 @@
 #about .content p {
     color: black;
 }
+.about-parallax {
+    position: relative;
+    height: 100vh;
+    width: 100vh;
+}
+.parallax-layer-about {
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    will-change: transform;
+    pointer-events: none;
+    transition: all 0.3s ease-out;
+    height: 100%;
+    width: 100%;
+    aspect-ratio: auto;
+}
+.parallax-layer-about:nth-child(1) {
+    background-image: url('/assets/images/about/0bg.png');
+}
+.parallax-layer-about:nth-child(2) {
+    background-image: url('/assets/images/about/1tail.png');
+}
+.parallax-layer-about:nth-child(3) {
+    background-image: url('/assets/images/about/2neutral.png');
+}
+.parallax-layer-about:nth-child(4) {
+    background-image: url('/assets/images/about/3foreground.png');
+}
+.parallax-layer-about:nth-child(5) {
+    background-image: url('/assets/images/about/4foreground.png');
+}
+
 #services {
     background-image: url(/assets/images/sections/Illustration\ practice\ 1\ actual.webp);
     position: relative;
     justify-content: space-evenly;
-    /* gap: 5rem;
-    padding: 7rem; */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -130,7 +221,7 @@ section:has(.services-columns) {
 #gallery {
     background-image: url(/assets/images/sections/illustration67.webp);
     position: relative;
-    justify-content: end;
+    justify-content: center;
     gap: 1rem;
     padding-top: 4rem;
     background-size: cover;
@@ -139,7 +230,6 @@ section:has(.services-columns) {
     aspect-ratio: auto;
 }
 #TOS {
-    background-image: url(/assets/images/sections/Illustration71.webp);
     position: relative;
     justify-content: space-evenly;
     gap: 5rem;
@@ -148,6 +238,11 @@ section:has(.services-columns) {
     background-position: center;
     background-repeat: no-repeat;
     aspect-ratio: auto;
+}
+#TOS video {
+    position: absolute;
+    width: inherit;
+    /* aspect-ratio: auto; */
 }
 #contact {
     background-image: url(/assets/images/sections/Illustration92.webp);
