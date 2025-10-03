@@ -3,7 +3,6 @@
     bottom: 5px;
     left: 0;
     width: 100vw;
-    pointer-events: none;
     z-index: 100;
     opacity: 1;
     transition: opacity 0.3s ease-out;
@@ -22,6 +21,23 @@
     transition: opacity 0.3s ease-out;
 }
 
+.skip {
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    border-radius: 10px;
+    padding: 10px 15px;
+    font-size: .8rem;
+    transition: all 0.3s ease;
+}
+
+.skip:hover {
+    background-color: rgba(255, 255, 255, 0.678);
+    color: black;
+    transition: all 0.3s ease;
+}
 .top-blur {
     position: fixed;
     top: 0;
