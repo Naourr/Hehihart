@@ -93,7 +93,7 @@ function sectIndicator() {
             const indicator = document.querySelector(`.section-indicator .${id}`)
             const navLink = document.querySelector(`.nav-links a.${id}-nav`)
             const num = document.querySelector(`.section-nums .${id}-num`)
-            const label = document.querySelector(`.section-labels .${id}-label`)
+            const label = document.querySelector(`.section-indicator .${id}-label`)
             const thumb = document.querySelector('.thumb')
 
             if (entry.isIntersecting) {
@@ -116,6 +116,20 @@ function sectIndicator() {
     sections.forEach(section => observer.observe(section))
 }
 sectIndicator()
+
+const oc = document.querySelector('.oc')
+function about_oc() {
+    oc.addEventListener('click', () => {
+        function neutral() {
+            oc.classList.remove('talking')
+        }
+        if (!oc.classList.contains('talking')) {
+            oc.classList.add('talking')
+            setTimeout(neutral, 5000)
+        }
+    })
+}
+about_oc()
 
 const hamburger = document.querySelector('.hamburger')
 const navWrapper = document.querySelector('.nav-wrapper')

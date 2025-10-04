@@ -9,17 +9,6 @@
 </head>
 <body>
 
-    <div class="row fullscreen loadscreen">
-        <video id="loadvid" autoplay muted playsinline>
-            <source src="" type="video/webm">
-        </video>
-    </div>
-
-    <div class="row popup-wrapper">
-        <div class="skip">skip</div>
-        <div class="popup">Click/tap anywhere to allow intro music.</div>
-    </div>
-
     <div class="audios">
         <audio id="music" loop>
             <source src="/assets/audios/BGMTEST.mp3" type="audio/mp3">
@@ -68,10 +57,11 @@
                 <div class="about-parallax">
                     <div class="parallax-layer-about" data-depth="0.5"></div>
                     <div class="parallax-layer-about" data-depth="0.7"></div>
-                    <div class="parallax-layer-about" data-depth="0.4"></div>
+                    <div class="parallax-layer-about oc" data-depth="0.4"></div>
                     <div class="parallax-layer-about" data-depth="1"></div>
                     <div class="parallax-layer-about" data-depth="1.8"></div>
                 </div>
+                <div class="row filler"></div>
                 <div class="column about-boxes">
                     <div class="row voice-box">
                         <img src="/assets/images/about/about-textbox/voicetextbox.png">
@@ -80,6 +70,9 @@
                     <div class="row desc-box">
                         <img src="/assets/images/about/about-textbox/abouttextbox.png">
                         <img class="inlay" src="/assets/images/about/about-textbox/abouttextboxoverlay.png">
+                        <div class="desc-textbox">
+                            
+                        </div>
                     </div>
                     <div class="column triangle-box1">
                         <div class="row uptriangle-box">
@@ -188,7 +181,7 @@
             <img src="/assets/images/overlays/navbaracc.png">
         </div>
         <div class="nav-wrapper">
-            <div class="nav-bg"></div>
+            <!-- <div class="nav-bg"></div> -->
             
             <div class="column scroll-holder">
                 <div class="column hamburger">
@@ -217,12 +210,12 @@
 
         <div class="row section-labels">
             <img src="/assets/images/overlays/shadowgrid.png">
-            <div class="home-label">HOME</div>
+            <!-- <div class="home-label">HOME</div>
             <div class="about-label">ABOUT</div>
             <div class="gallery-label">GALLERY</div>
             <div class="services-label">SERVICES</div>
             <div class="TOS-label">TERMS OF SERVICE</div>
-            <div class="contact-label">CONTACT</div>
+            <div class="contact-label">CONTACT</div> -->
         </div>
 
         <!-- <div class="row top-line-wrapper">
@@ -250,12 +243,24 @@
 
         <div class="indicator-holder">
             <div class="row section-indicator">
-                <div class="home">gay</div>
-                <div class="about">gay</div>
-                <div class="gallery">gay</div>
-                <div class="services">gay</div>
-                <div class="TOS">gay</div>
-                <div class="contact">gay</div>
+                <div class="row home">
+                    <div class="home-label label">HOME</div>
+                </div>
+                <div class="row about">
+                    <div class="about-label label">ABOUT</div>
+                </div>
+                <div class="row gallery">
+                    <div class="gallery-label label">GALLERY</div>
+                </div>
+                <div class="row services">
+                    <div class="services-label label">SERVICES</div>
+                </div>
+                <div class="row TOS">
+                    <div class="TOS-label label">TERMS OF SERVICE</div>
+                </div>
+                <div class=" row contact">
+                    <div class="contact-label label">CONTACT</div>
+                </div>
             </div>
         </div>
 
@@ -319,6 +324,21 @@
             <img src="/assets/images/overlays/buttonasset.png">
         </div>
 
+    </div>
+
+    <div class="row fullscreen loadscreen">
+        <video id="loadvid" autoplay muted playsinline>
+            <source src="" type="video/webm">
+        </video>
+    </div>
+
+    <div class="row popup-wrapper">
+        <div class="skip">skip</div>
+        <div class="popup">Click/tap anywhere to allow intro music.</div>
+    </div>
+
+    <div class="row dzont">
+        landscape only pls pls pls rotate
     </div>
 
     <div class="follow-mouse">

@@ -3,7 +3,6 @@
     bottom: 5px;
     left: 0;
     width: 100vw;
-    z-index: 100;
     opacity: 1;
     transition: opacity 0.3s ease-out;
 }
@@ -118,6 +117,7 @@
     width: 1px;
     height: calc(100%);
     margin: 190px 0 100px 0;
+    box-shadow: 0 0 4px rgb(44, 44, 44);
 }
 
 .thumb {
@@ -183,6 +183,7 @@
     transition: all 0.3s ease;
     height: 0;
     padding: 0 10px 0 10px;
+    text-shadow: 0 0 4px rgb(0, 0, 0);
 }
 .nav-links > a:hover {
     text-shadow: 0 0 40px white;
@@ -200,20 +201,8 @@
     top: 16px;
     left: 0;
     width: 100vw;
-    color: black;
 }
-.section-labels > div {
-    display: none;
-    font-size: calc(var(--font-size) + .7rem);
-    font-weight: bold;
-}
-.section-labels > div.active {
-    display: flex;
-    animation-name: to-top;
-    animation-duration: 0.4s;
-    animation-fill-mode: forwards;
-    text-shadow: 0 0 10px rgb(255, 255, 255);
-}
+
 @keyframes to-top {
     0% {
         opacity: 0;
@@ -321,7 +310,7 @@
     position: fixed;
     bottom: 10px;
     left: 0;
-    height: 10px;
+    height: 5px;
     width: 100vw;
     padding: 0 16px 0 16px;
 }
@@ -329,7 +318,6 @@
     width: 100%;
     height: 100%;
     user-select: none;
-    color: transparent;
     gap: 10px;
 }
 .section-indicator > div {
@@ -344,6 +332,24 @@
    background-color: var(--accent0);
 }
 
+.label {
+    position: absolute;
+    top: -35px;
+    font-size: calc(var(--font-size) + .1rem);
+    font-weight: bold;
+    opacity: 0;
+    transition: all 0.3s ease;
+    color: white;
+}
+.label.active {
+    /* animation-name: to-top;
+    animation-duration: 0.4s;
+    animation-fill-mode: forwards; */
+    text-shadow: 0 0 10px rgb(0, 0, 0);
+    opacity: 1;
+    transition: all 0.5s ease;
+}
+
 .follow-mouse {
     position: fixed;
     user-select: none;
@@ -352,7 +358,6 @@
     transition: transform 0.2s ease-out;
     top: 0;
     left: 0;
-    z-index: 101;
 }
 .follow-mouse img {
     width: 80px;

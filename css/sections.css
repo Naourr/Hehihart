@@ -27,10 +27,15 @@
     width: 100%;
     /* background-color: rgba(0, 0, 0, 0.35); */
 }
-
-.about-boxes {
-    width: 40vw;
-    z-index: 100;
+.filler {
+    width: 35vw;
+}
+.about-boxes {  
+    position: absolute;
+    right: 20px;
+    top: 0;
+    width: 100vh;
+    height: 100vh;
 }
 .about-boxes img {
     opacity: 0.5;
@@ -38,29 +43,29 @@
 
 .voice-box {
     position: absolute;
-    top: 18vh;
-    left: 52.6vw;
+    top: 18%;
+    right: 22%;
 }
 .desc-box {
     position: absolute;
-    top: 42vh;
-    left: 48.5vw;
+    top: 42%;
+    right: 24%;
 }
 
 .triangle-box1 {
     position: absolute;
-    top: 32vh;
-    left: 86.5vw;
+    top: 32%;
+    right: 22%;
 }
 .triangle-box2 {
     position: absolute;
-    top: 50vh;
-    left: 92.2vw;
+    top: 50%;
+    right: 9.5%;
 }
 .triangle-box3 {
     position: absolute;
-    top: 68vh;
-    left: 86.5vw;
+    top: 68%;
+    right: 22%;
 }
 
 .voice-box img {
@@ -90,7 +95,12 @@
 
 .inlay {
     position: absolute;
+    scale: 0.95;
 }
+.downtriangle-box > .inlay, .uptriangle-box > .inlay {
+    scale: 0.85;
+}
+
 
 .chibi {
     position: absolute;
@@ -180,8 +190,12 @@
 .parallax-layer-about:nth-child(2) {
     background-image: url('/assets/images/about/1tail.png');
 }
-.parallax-layer-about:nth-child(3) {
+.oc {
     background-image: url('/assets/images/about/2neutral.png');
+    pointer-events: all;
+}
+.oc.talking {
+    background-image: url('/assets/images/about/2talking.png');
 }
 .parallax-layer-about:nth-child(4) {
     background-image: url('/assets/images/about/3foreground.png');
@@ -247,11 +261,11 @@ section:has(.services-columns) {
     background-position: center;
     background-repeat: no-repeat;
     aspect-ratio: auto;
+    overflow: hidden;
 }
 #TOS video {
     position: absolute;
     width: inherit;
-    /* aspect-ratio: auto; */
 }
 #contact {
     background-image: url(/assets/images/sections/Illustration92.webp);
