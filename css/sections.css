@@ -36,6 +36,7 @@
     top: 0;
     width: 100vh;
     height: 100vh;
+    pointer-events: none;
 }
 .about-boxes img {
     opacity: 0.5;
@@ -76,10 +77,24 @@
     height: 33vh;
     width: auto;
 }
-.triangle-box1 img, .triangle-box2 img, .triangle-box3 img {
-    height: 15vh;
-    width: auto;
+.desc-textbox {
+    position: absolute;
+    top: 0;
+    left: 8vh;
+    /* border: 2px solid red; */
+    height: 33vh;
+    width: 60vh;
+
+    padding: 10px;
 }
+.about-desc {
+    display: none;
+}
+.about-desc.active {
+    display: flex;
+}
+
+
 
 .uptriangle-box {
     position: absolute;
@@ -88,19 +103,45 @@
 .downtriangle-box {
     position: absolute;
     width: auto;
-    height: 50vh;
+    height: 54vh;
     align-items: end;
 }
-
 
 .inlay {
     position: absolute;
     scale: 0.95;
+    pointer-events: none;
 }
 .downtriangle-box > .inlay, .uptriangle-box > .inlay {
     scale: 0.85;
 }
+.uptriangle-box > .inlay {
+    top: 2.1vh;
+}
+.downtriangle-box > .inlay {
+    top: 36.8vh;
+}
 
+.triangle-box1 img, .triangle-box2 img, .triangle-box3 img {
+    height: 15vh;
+    width: auto;
+    pointer-events: auto;
+}
+
+.tri polygon {
+    fill: rgb(70, 70, 70);
+    height: 15vh;
+    width: auto;
+    pointer-events: auto;
+    opacity: 0.5;
+}
+
+.tri polygon:hover {
+    fill: var(--accent0);
+}
+.tri polygon.select {
+    fill: var(--accent0);
+}
 
 .chibi {
     position: absolute;

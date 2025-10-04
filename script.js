@@ -131,6 +131,34 @@ function about_oc() {
 }
 about_oc()
 
+const tris = document.querySelectorAll('.tri')
+const descs = document.querySelectorAll('.about-desc')
+const tri_polys = document.querySelectorAll('.tri polygon')
+function about_desc() {
+    tris.forEach(tria => {
+        tria.addEventListener('click', () => {
+            descs.forEach(desc => {
+                desc.classList.remove('active')
+            })
+            const id = tria.dataset.tri
+            const partner = document.querySelector(`.about-desc.for-${id}`)
+            partner.classList.add('active')
+
+        })
+    })
+    tri_polys.forEach(poly => {
+        poly.addEventListener('click', () => {
+            if (poly.classList.contains('select')) {
+            poly.classList.remove('select');
+            } else {
+            tri_polys.forEach(p => p.classList.remove('select'));
+            poly.classList.add('select');
+            }
+        });
+    });
+}
+about_desc()
+
 const hamburger = document.querySelector('.hamburger')
 const navWrapper = document.querySelector('.nav-wrapper')
 hamburger.addEventListener('click', () => {
