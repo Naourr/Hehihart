@@ -118,10 +118,10 @@
 @keyframes floating {
     0% {
         transform: translate(0, -15px);
-        opacity: 0.85;
+        /* opacity: 0.85; */
     }
     100% {
         transform: translate(0, 15px);
-        opacity: 1;
+        /* opacity: 1; */
     }
 }

@@ -93,7 +93,7 @@ function sectIndicator() {
             const indicator = document.querySelector(`.section-indicator .${id}`)
             const navLink = document.querySelector(`.nav-links a.${id}-nav`)
             const num = document.querySelector(`.section-nums .${id}-num`)
-            const label = document.querySelector(`.section-labels .${id}-label`)
+            const label = document.querySelector(`.section-indicator .${id}-label`)
             const thumb = document.querySelector('.thumb')
 
             if (entry.isIntersecting) {
@@ -116,6 +116,48 @@ function sectIndicator() {
     sections.forEach(section => observer.observe(section))
 }
 sectIndicator()
+
+const oc = document.querySelector('.oc')
+function about_oc() {
+    oc.addEventListener('click', () => {
+        function neutral() {
+            oc.classList.remove('talking')
+        }
+        if (!oc.classList.contains('talking')) {
+            oc.classList.add('talking')
+            setTimeout(neutral, 5000)
+        }
+    })
+}
+about_oc()
+
+const tris = document.querySelectorAll('.tri')
+const descs = document.querySelectorAll('.about-desc')
+const tri_polys = document.querySelectorAll('.tri polygon')
+function about_desc() {
+    tris.forEach(tria => {
+        tria.addEventListener('click', () => {
+            descs.forEach(desc => {
+                desc.classList.remove('active')
+            })
+            const id = tria.dataset.tri
+            const partner = document.querySelector(`.about-desc.for-${id}`)
+            partner.classList.add('active')
+
+        })
+    })
+    tri_polys.forEach(poly => {
+        poly.addEventListener('click', () => {
+            if (poly.classList.contains('select')) {
+            poly.classList.remove('select');
+            } else {
+            tri_polys.forEach(p => p.classList.remove('select'));
+            poly.classList.add('select');
+            }
+        });
+    });
+}
+about_desc()
 
 const hamburger = document.querySelector('.hamburger')
 const navWrapper = document.querySelector('.nav-wrapper')

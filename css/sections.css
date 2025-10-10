@@ -27,40 +27,32 @@
     width: 100%;
     /* background-color: rgba(0, 0, 0, 0.35); */
 }
+.filler {
+    width: 35vw;
+}
 
-.about-boxes {
-    width: 40vw;
-    z-index: 100;
+.about-boxes {  
+    position: absolute;
+    right: 20px;
+    top: 0;
+    width: 100vh;   /* keeps the section square */
+    height: 100vh;
+    pointer-events: none;
 }
 .about-boxes img {
     opacity: 0.5;
 }
 
+/* --- Voice and Description Boxes --- */
 .voice-box {
     position: absolute;
     top: 18vh;
-    left: 52.6vw;
+    right: 22vh;
 }
 .desc-box {
     position: absolute;
     top: 42vh;
-    left: 48.5vw;
-}
-
-.triangle-box1 {
-    position: absolute;
-    top: 32vh;
-    left: 86.5vw;
-}
-.triangle-box2 {
-    position: absolute;
-    top: 50vh;
-    left: 92.2vw;
-}
-.triangle-box3 {
-    position: absolute;
-    top: 68vh;
-    left: 86.5vw;
+    right: 24vh;
 }
 
 .voice-box img {
@@ -71,11 +63,57 @@
     height: 33vh;
     width: auto;
 }
-.triangle-box1 img, .triangle-box2 img, .triangle-box3 img {
-    height: 15vh;
-    width: auto;
+.desc-textbox {
+    position: absolute;
+    top: 0;
+    left: 8vh;
+    height: 33vh;
+    width: 60vh;
+    padding: 10px;
 }
 
+.about-desc {
+    display: none;
+}
+.about-desc.active {
+    display: flex;
+}
+
+/* --- Triangle Box Positions --- */
+.triangle-box1 {
+    position: absolute;
+    top: 31.5vh;
+    right: 22vh;
+}
+.triangle-box2 {
+    position: absolute;
+    top: 49vh;
+    right: 9.5vh;
+}
+.triangle-box3 {
+    position: absolute;
+    top: 69vh;
+    right: 22vh;
+}
+
+/* --- Triangles (SVGs) --- */
+.tri {
+    width: 19vh;
+    height: auto;
+    pointer-events: auto;
+}
+.tri polygon {
+    fill: rgb(70, 70, 70);
+    opacity: 0.5;
+    transition: fill 0.3s;
+    cursor: pointer;
+}
+.tri polygon:hover,
+.tri polygon.select {
+    fill: var(--accent0);
+}
+
+/* --- Overlay Inlays --- */
 .uptriangle-box {
     position: absolute;
     width: auto;
@@ -83,14 +121,41 @@
 .downtriangle-box {
     position: absolute;
     width: auto;
-    height: 50vh;
+    height: 55vh;
     align-items: end;
 }
 
-
 .inlay {
     position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    pointer-events: none;
+    scale: 0.95;
 }
+.downtriangle-box > .inlay,
+.uptriangle-box > .inlay {
+    scale: 0.85;
+}
+.uptriangle-box > .inlay {
+    top: 2.1vh;
+}
+.downtriangle-box > .inlay {
+    top: 37.8vh;
+}
+
+/* --- Triangle Images (fallback if not using SVGs) --- */
+.triangle-box1 img,
+.triangle-box2 img,
+.triangle-box3 img {
+    height: 15vh;
+    width: auto;
+    pointer-events: auto;
+}
+
+
+
 
 .chibi {
     position: absolute;
@@ -180,8 +245,12 @@
 .parallax-layer-about:nth-child(2) {
     background-image: url('/assets/images/about/1tail.png');
 }
-.parallax-layer-about:nth-child(3) {
+.oc {
     background-image: url('/assets/images/about/2neutral.png');
+    pointer-events: all;
+}
+.oc.talking {
+    background-image: url('/assets/images/about/2talking.png');
 }
 .parallax-layer-about:nth-child(4) {
     background-image: url('/assets/images/about/3foreground.png');
@@ -247,11 +316,11 @@ section:has(.services-columns) {
     background-position: center;
     background-repeat: no-repeat;
     aspect-ratio: auto;
+    overflow: hidden;
 }
 #TOS video {
     position: absolute;
     width: inherit;
-    /* aspect-ratio: auto; */
 }
 #contact {
     background-image: url(/assets/images/sections/Illustration92.webp);

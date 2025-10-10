@@ -61,4 +61,8 @@
         height: 50%;
         width: 60%;
     }
+    .dzont {
+        display: flex;
+        pointer-events: all;
+    }
 }
