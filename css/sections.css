@@ -31,6 +31,16 @@
     width: 35vw;
 }
 
+.about-main {
+    /* position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw; */
+    perspective: 1000px;
+    perspective-origin: center center;
+}
+
 .about-boxes {  
     position: absolute;
     right: 20px;
@@ -38,6 +48,7 @@
     width: 100vh;   /* keeps the section square */
     height: 100vh;
     pointer-events: none;
+    transform-style: preserve-3d;
 }
 .about-boxes img {
     opacity: 0.5;

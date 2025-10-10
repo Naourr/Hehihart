@@ -41,6 +41,14 @@ function initMouseEffects() {
             bigTitle.style.backgroundPosition = `${percX}% ${percY}%`;
         }
 
+        // 3D tilt (testing element)
+        const about_boxes = document.querySelector('.about-boxes');
+        if (about_boxes) {
+            const rotX = (mouseY / window.innerHeight - 0.5) * -15; // tilt up/down
+            const rotY = (mouseX / window.innerWidth - 0.5) * 15;   // tilt left/right
+            about_boxes.style.transform = `rotateX(${rotX}deg) rotateY(${rotY}deg)`;
+        }
+
         ticking = false;
     }
 }

@@ -364,4 +364,38 @@
     height: auto;
 }
 
+/* .testing-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 50vh;
+    width: 100vw;
+    perspective: 800px;
+    perspective-origin: center center;
+}
+.testing {
+    position: absolute;
+    height: 20vh;
+    width: 50vw;
+    background-color: gray;
+    animation-name: flipx;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-play-state: paused;
+    transform-style: preserve-3d;
+}
 
+.testing:hover {
+    animation-play-state: running;
+}
+
+@keyframes flipx {
+    0%{
+
+    }
+    100% {
+        transform: rotateY(180deg)
+    }
+} */
