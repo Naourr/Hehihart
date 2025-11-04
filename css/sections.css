@@ -51,7 +51,7 @@
     transform-style: preserve-3d;
 }
 .about-boxes img {
-    opacity: 0.5;
+    opacity: 0.7 ;
 }
 
 /* --- Voice and Description Boxes --- */
@@ -81,10 +81,24 @@
     height: 33vh;
     width: 60vh;
     padding: 10px;
-}
 
+    /* 3D / animation settings */
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    will-change: transform;
+    transition: transform 140ms cubic-bezier(.2,.9,.2,1);
+    pointer-events: auto;
+}
 .about-desc {
     display: none;
+    font-family: var(--your-font, Arial), sans-serif;
+    font-size: clamp(20px, 1.4vw, 18px); /* responsive size */
+    line-height: 1.5;
+    color: var(--bg1text);
+    margin: 0 0 0.6rem 0;
+    hyphens: auto;        /* optional */
+    word-wrap: break-word;
+    pointer-events: auto;
 }
 .about-desc.active {
     display: flex;
@@ -143,7 +157,12 @@
     height: 100%;
     object-fit: contain;
     pointer-events: none;
-    scale: 0.95;
+    will-change: transform;
+    transition: transform 120ms linear;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    color: white;
+    scale: 1;
 }
 .downtriangle-box > .inlay,
 .uptriangle-box > .inlay {
@@ -238,6 +257,7 @@
     animation-duration: 2.5s;
     animation-iteration-count: infinite;
     animation-direction: alternate-reverse;
+    z-index: 1;
 }
 .parallax-layer-about {
     position: absolute;

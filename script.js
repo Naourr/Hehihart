@@ -48,7 +48,32 @@ function initMouseEffects() {
             const rotY = (mouseX / window.innerWidth - 0.5) * 15;   // tilt left/right
             about_boxes.style.transform = `rotateX(${rotX}deg) rotateY(${rotY}deg)`;
         }
+        const inlays = document.querySelectorAll('.about-boxes .inlay');
+        if (inlays.length) {
+            const inlayDepth = 1.5;   // tweak to taste
+            const maxPx = 40;
+            const tx = normX * inlayDepth * maxPx;
+            const ty = normY * inlayDepth * maxPx;
+            inlays.forEach(inlay => {
+                inlay.style.transform = `translate3d(${tx}px, ${ty}px, 0)`;
+                inlay.style.willChange = 'transform';
+                inlay.style.transition = 'transform 120ms linear';
+            });
+        }
+        const descBox = document.querySelector('.desc-textbox');
+        if (descBox) {
+            // tweak these to change strength/feel
+            const depth = 1.2;        // movement multiplier
+            const maxTranslate = 24;  // px
+            const tx = normX * depth * maxTranslate;
+            const ty = normY * depth * maxTranslate * 0.6; // smaller vertical move
+            const rotX = (mouseY / window.innerHeight - 0.5) * -6; // subtle rotate X
+            const rotY = (mouseX / window.innerWidth - 0.5) * 6;   // subtle rotate Y
 
+            descBox.style.transform = `translate3d(${tx}px, ${ty}px, 0) rotateX(${rotX}deg) rotateY(${rotY}deg)`;
+            descBox.style.willChange = 'transform';
+            descBox.style.transition = 'transform 120ms linear';
+        }
         ticking = false;
     }
 }
@@ -91,6 +116,12 @@ function loading() {
     })
 }
 loading()
+
+document.addEventListener('DOMContentLoaded', () => {
+    attachAboutDescSounds();
+    const first = document.querySelector('.about-desc.for-tri1');
+    if (first) first.classList.add('active'); // make clickable/visible
+});
 
 function sectIndicator() {
     const sections = document.querySelectorAll('section')
