@@ -75,6 +75,55 @@ function initMouseEffects() {
             descBox.style.transition = 'transform 120ms linear';
         }
         ticking = false;
+
+        const menubtn = document.querySelector('.menu-btn');
+        if (menubtn) {
+         const depth = 1.0;              // how strong the movement is (tweak)
+         const maxTranslate = 18;        // px movement
+         const tx = normX * depth * maxTranslate;
+         const ty = normY * depth * maxTranslate * 0.8;
+
+         const rotX = (mouseY / window.innerHeight - 0.5) * -40; // tilt up/down
+         const rotY = (mouseX / window.innerWidth - 0.5) * 40;   // tilt left/right
+
+         menubtn.style.transform =
+         `translate3d(${tx}px, ${ty}px, 0) rotateX(${rotX}deg) rotateY(${rotY}deg)`;
+         menubtn.style.willChange = 'transform';
+         menubtn.style.transition = 'transform 120ms linear';
+        }
+        const sectionNums = document.querySelector('.section-nums');
+        if (sectionNums) {
+        const depth = 1.0;          // movement intensity (adjust)
+        const maxTranslate = 20;    // px (adjust)
+    
+        const tx = normX * depth * maxTranslate * 2; // more horizontal movement
+        const ty = normY * depth * maxTranslate * 0.7; // less vertical movement
+    
+        const rotX = (mouseY / window.innerHeight - -0.5) * -15; // tilt up/down
+        const rotY = (mouseX / window.innerWidth - 1.5) * 4;    // tilt left/right
+
+        sectionNums.style.transform =
+            `translate3d(${tx}px, ${ty}px, 0) rotateX(${rotX}deg) rotateY(${rotY}deg)`;
+        sectionNums.style.willChange = 'transform';
+        sectionNums.style.transition = 'transform 300ms linear';
+        }
+        const parallaxBigTitle = document.querySelector('.parallax-big-title');
+        if (parallaxBigTitle) {
+        const depth = 2.0;          // movement intensity (adjust)
+        const maxTranslate = 20;    // px (adjust)
+    
+        const tx = normX * depth * maxTranslate * 1; // more horizontal movement
+        const ty = normY * depth * maxTranslate * 1; // less vertical movement
+    
+        const rotX = (mouseY / window.innerHeight - 0.5) * -35; // tilt up/down
+        const rotY = (mouseX / window.innerWidth - 0.5) * 55;    // tilt left/right
+
+        parallaxBigTitle.style.transform =
+            `translate3d(${tx}px, ${ty}px, 0) rotateX(${rotX}deg) rotateY(${rotY}deg)`;
+        parallaxBigTitle.style.willChange = 'transform';
+        parallaxBigTitle.style.transition = 'transform 200ms linear';
+        }
+
     }
 }
 

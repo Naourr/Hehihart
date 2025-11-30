@@ -1,16 +1,16 @@
 .menu-btn {
     position: fixed;
     bottom: 20px;
-    right: 10px;
-    transition: scale 0.4s ease-out;
+    right: 20px;
+    transition: transform 0.4s ease-out;
 }
 .menu-btn img {
-    width: 75px;
+    width: 100px;
     height: auto;
 }
 .menu-btn:hover {
     scale: 1.15;
-    transition: scale 0.4s ease-out;
+    transform: scale(1.15);
 }
 .menu {
     height: 100vh;
